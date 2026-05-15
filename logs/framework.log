@@ -1,0 +1,119 @@
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-15T11:08:00.320Z"}
+{"level":"info","message":"Performing login","timestamp":"2026-05-15T11:08:01.119Z"}
+{"level":"info","message":"Performing login","timestamp":"2026-05-15T11:08:01.120Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-15T11:08:05.532Z"}
+{"level":"info","message":"Performing login","timestamp":"2026-05-15T11:08:17.872Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-15T11:11:29.016Z"}
+{"level":"info","message":"Performing login","timestamp":"2026-05-15T11:11:30.137Z"}
+{"level":"info","message":"Performing login","timestamp":"2026-05-15T11:11:31.726Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-15T11:11:33.175Z"}
+{"level":"info","message":"Validating successful login","timestamp":"2026-05-15T11:11:33.319Z"}
+{"level":"info","message":"Performing login","timestamp":"2026-05-15T11:11:43.454Z"}
+{"level":"info","message":"Validating successful login","timestamp":"2026-05-15T11:11:46.057Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-15T11:11:59.487Z"}
+{"level":"info","message":"Performing login","timestamp":"2026-05-15T11:12:01.717Z"}
+{"level":"info","message":"Performing login","timestamp":"2026-05-15T11:12:02.184Z"}
+{"level":"info","message":"Validating successful login","timestamp":"2026-05-15T11:12:03.726Z"}
+{"level":"info","message":"Performing login","timestamp":"2026-05-15T11:15:05.099Z"}
+{"level":"info","message":"Validating successful login","timestamp":"2026-05-15T11:15:06.191Z"}
+{"level":"info","message":"Performing login","timestamp":"2026-05-15T11:15:21.411Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-15T11:16:56.635Z"}
+{"level":"info","message":"GET Accounts API Triggered","timestamp":"2026-05-15T11:16:57.725Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-15T11:18:25.359Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-15T11:19:40.807Z"}
+{"level":"info","message":"Entering registration details","timestamp":"2026-05-15T11:19:43.200Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-15T11:19:44.022Z"}
+{"level":"info","message":"Performing login","timestamp":"2026-05-15T11:20:08.319Z"}
+{"level":"info","message":"Validating successful login","timestamp":"2026-05-15T11:20:10.354Z"}
+{"level":"info","message":"Performing login","timestamp":"2026-05-15T11:20:35.752Z"}
+{"level":"info","message":"Performing login","timestamp":"2026-05-15T11:20:57.108Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-15T11:21:27.448Z"}
+{"level":"info","message":"Entering registration details","timestamp":"2026-05-15T11:21:32.507Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-15T11:21:34.941Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-15T11:21:49.125Z"}
+{"level":"info","message":"Entering registration details","timestamp":"2026-05-15T11:21:52.806Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-15T11:21:56.672Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-15T11:22:15.822Z"}
+{"level":"info","message":"Entering registration details","timestamp":"2026-05-15T11:22:19.198Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-15T11:22:23.286Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-15T11:25:55.440Z"}
+{"level":"info","message":"Performing login","timestamp":"2026-05-15T11:26:00.369Z"}
+{"level":"info","message":"Performing login","timestamp":"2026-05-15T11:26:00.394Z"}
+{"level":"info","message":"Entering registration details","timestamp":"2026-05-15T11:26:02.043Z"}
+{"level":"info","message":"Validating successful login","timestamp":"2026-05-15T11:26:02.588Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-15T11:26:03.318Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-15T11:26:03.959Z"}
+{"level":"info","message":"Entering registration details","timestamp":"2026-05-15T11:26:07.536Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-15T11:26:10.492Z"}
+{"level":"info","message":"Performing login","timestamp":"2026-05-15T11:26:18.775Z"}
+{"level":"info","message":"Validating successful login","timestamp":"2026-05-15T11:26:20.460Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-15T11:26:22.073Z"}
+{"level":"info","message":"Entering registration details","timestamp":"2026-05-15T11:26:27.409Z"}
+{"level":"info","message":"Performing login","timestamp":"2026-05-15T11:26:28.001Z"}
+{"level":"info","message":"Performing login","timestamp":"2026-05-15T11:26:34.802Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-15T11:26:36.326Z"}
+{"level":"info","message":"Validating successful login","timestamp":"2026-05-15T11:26:37.801Z"}
+{"level":"info","message":"Performing login","timestamp":"2026-05-15T11:26:38.194Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-15T11:27:40.659Z"}
+{"level":"info","message":"Performing login","timestamp":"2026-05-15T11:27:43.357Z"}
+{"level":"info","message":"Performing login","timestamp":"2026-05-15T11:27:43.566Z"}
+{"level":"info","message":"Entering registration details","timestamp":"2026-05-15T11:27:44.114Z"}
+{"level":"info","message":"Validating successful login","timestamp":"2026-05-15T11:27:44.962Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-15T11:27:45.389Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-15T11:27:46.003Z"}
+{"level":"info","message":"Entering registration details","timestamp":"2026-05-15T11:27:51.151Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-15T11:27:54.654Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-15T11:27:58.027Z"}
+{"level":"info","message":"Entering registration details","timestamp":"2026-05-15T11:28:06.777Z"}
+{"level":"info","message":"Performing login","timestamp":"2026-05-15T11:28:07.711Z"}
+{"level":"info","message":"Validating successful login","timestamp":"2026-05-15T11:28:09.523Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-15T11:28:15.691Z"}
+{"level":"info","message":"Performing login","timestamp":"2026-05-15T11:28:16.826Z"}
+{"level":"info","message":"Performing login","timestamp":"2026-05-15T11:28:20.458Z"}
+{"level":"info","message":"Validating successful login","timestamp":"2026-05-15T11:28:21.612Z"}
+{"level":"info","message":"Performing login","timestamp":"2026-05-15T11:28:24.088Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-15T12:26:34.656Z"}
+{"level":"info","message":"Entering registration details","timestamp":"2026-05-15T12:26:38.483Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-15T12:26:40.352Z"}
+{"level":"info","message":"Performing login","timestamp":"2026-05-15T12:28:07.587Z"}
+{"level":"info","message":"Validating successful login","timestamp":"2026-05-15T12:28:08.721Z"}
+{"level":"info","message":"Performing login","timestamp":"2026-05-15T12:31:45.252Z"}
+{"level":"info","message":"Performing login","timestamp":"2026-05-15T12:32:28.371Z"}
+{"level":"info","message":"Validating successful login","timestamp":"2026-05-15T12:32:29.493Z"}
+{"level":"info","message":"Performing login","timestamp":"2026-05-15T12:50:56.726Z"}
+{"level":"info","message":"Validating successful login","timestamp":"2026-05-15T12:50:58.459Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-15T12:52:18.821Z"}
+{"level":"info","message":"Entering registration details","timestamp":"2026-05-15T12:52:23.019Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-15T13:11:15.515Z"}
+{"level":"info","message":"Entering registration details","timestamp":"2026-05-15T13:11:18.367Z"}
+{"level":"info","message":"Validating password mismatch error","timestamp":"2026-05-15T13:11:19.215Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-15T13:12:19.459Z"}
+{"level":"info","message":"Entering registration details","timestamp":"2026-05-15T13:12:23.712Z"}
+{"level":"info","message":"Validating password mismatch error","timestamp":"2026-05-15T13:12:25.592Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-15T13:13:55.724Z"}
+{"level":"info","message":"Entering registration details","timestamp":"2026-05-15T13:14:00.371Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-15T13:14:02.562Z"}
+{"level":"info","message":"Performing login","timestamp":"2026-05-15T13:14:05.804Z"}
+{"level":"info","message":"Validating successful login","timestamp":"2026-05-15T13:14:06.774Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-15T13:15:26.787Z"}
+{"level":"info","message":"Entering registration details with mismatched passwords","timestamp":"2026-05-15T13:15:31.242Z"}
+{"level":"info","message":"Validating password mismatch error","timestamp":"2026-05-15T13:15:33.473Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-15T13:19:02.539Z"}
+{"level":"info","message":"Entering registration details with mismatched passwords","timestamp":"2026-05-15T13:19:06.018Z"}
+{"level":"info","message":"Validating password mismatch error","timestamp":"2026-05-15T13:19:07.732Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-15T13:22:58.203Z"}
+{"level":"info","message":"Submitting registration form with blank fields","timestamp":"2026-05-15T13:23:02.080Z"}
+{"level":"info","message":"Validating blank field error messages","timestamp":"2026-05-15T13:23:03.644Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-15T13:24:08.168Z"}
+{"level":"info","message":"Submitting registration form with blank fields","timestamp":"2026-05-15T13:24:13.264Z"}
+{"level":"info","message":"Validating blank field error messages","timestamp":"2026-05-15T13:24:14.908Z"}
+{"level":"info","message":"Logging in with invalid password","timestamp":"2026-05-15T13:34:49.468Z"}
+{"level":"info","message":"Validating invalid login error message","timestamp":"2026-05-15T13:34:50.188Z"}
+{"level":"info","message":"Logging in with invalid password","timestamp":"2026-05-15T13:35:15.215Z"}
+{"level":"info","message":"Validating invalid login error message","timestamp":"2026-05-15T13:35:15.861Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-15T13:38:57.176Z"}
+{"level":"info","message":"Entering special characters in username field","timestamp":"2026-05-15T13:38:59.910Z"}
+{"level":"info","message":"Validating username special character error","timestamp":"2026-05-15T13:39:01.847Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-15T13:40:31.732Z"}
+{"level":"info","message":"Entering special characters in username field","timestamp":"2026-05-15T13:40:35.023Z"}
+{"level":"info","message":"Validating username special character error","timestamp":"2026-05-15T13:40:37.224Z"}

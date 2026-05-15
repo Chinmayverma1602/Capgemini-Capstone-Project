@@ -1,0 +1,3 @@
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-15T13:40:31.732Z"}
+{"level":"info","message":"Entering special characters in username field","timestamp":"2026-05-15T13:40:35.023Z"}
+{"level":"info","message":"Validating username special character error","timestamp":"2026-05-15T13:40:37.224Z"}
