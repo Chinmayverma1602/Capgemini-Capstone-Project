@@ -175,6 +175,64 @@ async verifySpecialCharacterUsernameError() {
     this.page.locator("//span[@id='customer.username.errors']"))
 }
   
+async registerWithMandatoryFieldsBlank(userData: any) {
+
+  logger.info('Submitting form with mandatory fields blank');
+
+  // Filling only optional/non-mandatory fields
+  await this.page.fill('input[id="customer.phoneNumber"]', userData.phone);
+
+  await this.page.screenshot({
+    path: 'screenshots/mandatory-fields-blank.png'
+  });
+
+  await this.page.click('input[value="Register"]');
+}
+
+async verifyMandatoryFieldValidationMessages() {
+
+  logger.info('Validating mandatory field validation messages');
+
+  await expect(
+    this.page.locator("//span[@id='customer.firstName.errors']")
+  ).toContainText('First name is required.');
+
+  await expect(
+    this.page.locator("//span[@id='customer.lastName.errors']")
+  ).toContainText('Last name is required.');
+
+  await expect(
+    this.page.locator("//span[@id='customer.address.street.errors']")
+  ).toContainText('Address is required.');
+
+  await expect(
+    this.page.locator("//span[@id='customer.address.city.errors']")
+  ).toContainText('City is required.');
+
+  await expect(
+    this.page.locator("//span[@id='customer.address.state.errors']")
+  ).toContainText('State is required.');
+
+  await expect(
+    this.page.locator("//span[@id='customer.address.zipCode.errors']")
+  ).toContainText('Zip Code is required.');
+
+  await expect(
+    this.page.locator("//span[@id='customer.ssn.errors']")
+  ).toContainText('Social Security Number is required.');
+
+  await expect(
+    this.page.locator("//span[@id='customer.username.errors']")
+  ).toContainText('Username is required.');
+
+  await expect(
+    this.page.locator("//span[@id='customer.password.errors']")
+  ).toContainText('Password is required.');
+
+  await expect(
+    this.page.locator("//span[@id='repeatedPassword.errors']")
+  ).toContainText('Password confirmation is required.');
+}
 
  
 

@@ -84,4 +84,17 @@ test('TC-NEG-06 Username with Special Characters', async ({ page }) => {
 
   await registerPage.verifySpecialCharacterUsernameError();
 });
+
+test('TC-AC-UI-02 Mandatory Field Validation', async ({ page }) => {
+
+  const registerPage = new RegisterPage(page);
+
+  await registerPage.navigateToRegisterPage();
+
+  await registerPage.registerWithMandatoryFieldsBlank(
+    registerData.validUser
+  );
+
+  await registerPage.verifyMandatoryFieldValidationMessages();
+});
 });
