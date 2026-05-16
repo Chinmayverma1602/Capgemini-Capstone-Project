@@ -1,0 +1,2 @@
+{"level":"info","message":"API Context Created","timestamp":"2026-05-15T14:20:04.023Z"}
+{"level":"info","message":"GET Accounts API Triggered for account 12345","timestamp":"2026-05-15T14:20:05.428Z"}

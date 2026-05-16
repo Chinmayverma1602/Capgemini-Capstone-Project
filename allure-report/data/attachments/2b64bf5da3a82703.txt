@@ -1,0 +1,3 @@
+{"level":"info","message":"Calling API: POST /parabank/services/bank/createAccount — invalid customerId: 99999999","timestamp":"2026-05-16T06:40:08.184Z"}
+{"level":"info","message":"API response: Could not create new account for customer 99999999 from account 12345","timestamp":"2026-05-16T06:40:08.358Z"}
+{"level":"info","message":"✅ Confirmed: status was 400 — invalid customer ID rejected","timestamp":"2026-05-16T06:40:08.364Z"}

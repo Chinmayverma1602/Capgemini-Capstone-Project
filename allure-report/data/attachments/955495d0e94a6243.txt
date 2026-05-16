@@ -1,0 +1,1 @@
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-15T16:03:24.157Z"}

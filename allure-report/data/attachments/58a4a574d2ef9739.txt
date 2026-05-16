@@ -1,0 +1,3 @@
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-16T07:47:28.054Z"}
+{"level":"info","message":"Entering registration details with mismatched passwords","timestamp":"2026-05-16T07:47:30.908Z"}
+{"level":"info","message":"Validating password mismatch error","timestamp":"2026-05-16T07:47:33.978Z"}

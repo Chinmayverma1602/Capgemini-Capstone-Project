@@ -1,0 +1,7 @@
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-16T05:57:12.224Z"}
+{"level":"info","message":"Entering registration details","timestamp":"2026-05-16T05:57:12.842Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-16T05:57:13.673Z"}
+{"level":"info","message":"Creating new savings account","timestamp":"2026-05-16T05:57:13.772Z"}
+{"level":"info","message":"New Account ID: ","timestamp":"2026-05-16T05:57:16.324Z"}
+
+{"level":"info","message":"Status = 404","timestamp":"2026-05-16T05:57:16.391Z"}

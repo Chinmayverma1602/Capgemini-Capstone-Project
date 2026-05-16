@@ -1,0 +1,6 @@
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-16T06:02:58.619Z"}
+{"level":"info","message":"Entering registration details","timestamp":"2026-05-16T06:02:59.009Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-16T06:02:59.545Z"}
+{"level":"info","message":"Creating new savings account","timestamp":"2026-05-16T06:02:59.616Z"}
+{"level":"info","message":"New Account ID = ","timestamp":"2026-05-16T06:02:59.884Z"}
+Captured Account ID: 

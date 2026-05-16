@@ -1,0 +1,11 @@
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-16T06:14:25.812Z"}
+{"level":"info","message":"Entering registration details","timestamp":"2026-05-16T06:14:26.095Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-16T06:14:26.514Z"}
+{"level":"info","message":"Navigating to Open New Account page","timestamp":"2026-05-16T06:14:26.591Z"}
+{"level":"info","message":"Selected account type: SAVINGS (value=1)","timestamp":"2026-05-16T06:14:26.819Z"}
+{"level":"info","message":"Selected from-account ID: 14676","timestamp":"2026-05-16T06:14:26.931Z"}
+{"level":"info","message":"New account created via UI — ID: 14787","timestamp":"2026-05-16T06:14:27.050Z"}
+{"level":"info","message":"Calling API: GET /parabank/services/bank/accounts/14787","timestamp":"2026-05-16T06:14:27.142Z"}
+{"level":"info","message":"API response: {\"id\":14787,\"customerId\":13433,\"type\":\"SAVINGS\",\"balance\":100}","timestamp":"2026-05-16T06:14:27.935Z"}
+{"level":"info","message":"✅ Account ID matches: UI=\"14787\" API=\"14787\"","timestamp":"2026-05-16T06:14:27.937Z"}
+{"level":"info","message":"✅ Account type matches: expected=\"SAVINGS\" API=\"SAVINGS\"","timestamp":"2026-05-16T06:14:27.938Z"}

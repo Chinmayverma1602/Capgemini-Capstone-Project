@@ -1,0 +1,19 @@
+{"level":"info","message":"API Context Created","timestamp":"2026-05-16T07:17:46.678Z"}
+{"level":"info","message":"Launching registration flow","timestamp":"2026-05-16T07:17:46.691Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-16T07:17:46.692Z"}
+{"level":"info","message":"Registering a new user","timestamp":"2026-05-16T07:17:48.783Z"}
+{"level":"info","message":"Entering registration details","timestamp":"2026-05-16T07:17:48.784Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-16T07:17:53.044Z"}
+{"level":"info","message":"User registration completed successfully","timestamp":"2026-05-16T07:17:53.088Z"}
+{"level":"info","message":"Navigating to Open New Account page","timestamp":"2026-05-16T07:17:53.088Z"}
+{"level":"info","message":"Selected account type: SAVINGS","timestamp":"2026-05-16T07:17:54.926Z"}
+{"level":"info","message":"Selected source account ID: 16230","timestamp":"2026-05-16T07:17:55.799Z"}
+{"level":"info","message":"Submitting account creation request","timestamp":"2026-05-16T07:17:57.793Z"}
+{"level":"info","message":"New account created successfully: 16341","timestamp":"2026-05-16T07:17:57.853Z"}
+{"level":"info","message":"Screenshot captured successfully","timestamp":"2026-05-16T07:17:59.844Z"}
+{"level":"info","message":"Calling API: GET /parabank/services/bank/accounts/16341","timestamp":"2026-05-16T07:17:59.844Z"}
+{"level":"info","message":"API response: {\"id\":16341,\"customerId\":13655,\"type\":\"SAVINGS\",\"balance\":100}","timestamp":"2026-05-16T07:17:59.911Z"}
+{"level":"info","message":"Account ID validation successful | UI=\"16341\" API=\"16341\"","timestamp":"2026-05-16T07:17:59.912Z"}
+{"level":"info","message":"Account type validation successful | Expected=\"SAVINGS\" API=\"SAVINGS\"","timestamp":"2026-05-16T07:17:59.913Z"}
+{"level":"info","message":"Hybrid E2E test completed successfully","timestamp":"2026-05-16T07:17:59.913Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-16T07:17:59.918Z"}

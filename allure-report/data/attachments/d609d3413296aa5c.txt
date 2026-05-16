@@ -1,0 +1,5 @@
+{"level":"info","message":"API Context Created","timestamp":"2026-05-16T07:47:50.603Z"}
+{"level":"info","message":"Calling API: POST /parabank/services/bank/createAccount — invalid customerId: 99999999","timestamp":"2026-05-16T07:47:50.603Z"}
+{"level":"info","message":"API response: Could not create new account for customer 99999999 from account 12345","timestamp":"2026-05-16T07:47:50.664Z"}
+{"level":"info","message":"Confirmed: status was 400 — invalid customer ID rejected","timestamp":"2026-05-16T07:47:50.666Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-16T07:47:50.684Z"}

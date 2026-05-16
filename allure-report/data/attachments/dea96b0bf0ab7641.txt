@@ -1,0 +1,3 @@
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-15T16:13:01.853Z"}
+{"level":"info","message":"Entering registration details","timestamp":"2026-05-15T16:13:05.761Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-15T16:13:07.273Z"}

@@ -1,0 +1,5 @@
+{"level":"info","message":"API Context Created","timestamp":"2026-05-15T17:36:15.018Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-15T17:36:15.021Z"}
+{"level":"info","message":"Entering registration details","timestamp":"2026-05-15T17:36:18.733Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-15T17:36:20.761Z"}
+{"level":"info","message":"Creating new savings account","timestamp":"2026-05-15T17:36:22.157Z"}

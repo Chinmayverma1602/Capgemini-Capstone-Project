@@ -1,0 +1,3 @@
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-16T07:56:59.951Z"}
+{"level":"info","message":"Submitting form with mandatory fields blank","timestamp":"2026-05-16T07:57:01.983Z"}
+{"level":"info","message":"Validating mandatory field validation messages","timestamp":"2026-05-16T07:57:04.125Z"}
