@@ -1,0 +1,170 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: parabank_UI.spec.ts >> UI Test Cases >> TC-LOGIN-01 Login with Valid Credentials
+- Location: tests\parabank_UI.spec.ts:12:7
+
+# Error details
+
+```
+Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:9090/parabank/index.htm
+Call log:
+  - navigating to "http://localhost:9090/parabank/index.htm", waiting until "load"
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - generic [ref=e6]:
+    - heading "This site can’t be reached" [level=1] [ref=e7]
+    - paragraph [ref=e8]:
+      - strong [ref=e9]: localhost
+      - text: refused to connect.
+    - generic [ref=e10]:
+      - paragraph [ref=e11]: "Try:"
+      - list [ref=e12]:
+        - listitem [ref=e13]: Checking the connection
+        - listitem [ref=e14]:
+          - link "Checking the proxy and the firewall" [ref=e15] [cursor=pointer]:
+            - /url: "#buttons"
+    - generic [ref=e16]: ERR_CONNECTION_REFUSED
+  - generic [ref=e17]:
+    - button "Reload" [ref=e19] [cursor=pointer]
+    - button "Details" [ref=e20] [cursor=pointer]
+```
+
+# Test source
+
+```ts
+  1   | // pages/LoginPage.ts
+  2   | 
+  3   | import { Page, expect } from '@playwright/test';
+  4   | import { logger } from '../utils/logger';
+  5   | 
+  6   | export class LoginPage {
+  7   | 
+  8   |   constructor(private page: Page) {}
+  9   | 
+  10  | 
+  11  |   private selectors = {
+  12  |     usernameInput: 'input[name="username"]',
+  13  |     passwordInput: 'input[name="password"]',
+  14  |     loginButton: 'input[value="Log In"]',
+  15  |     errorMessage: '.error',
+  16  |   };
+  17  | 
+  18  | 
+  19  |   private async navigateToLoginPage() {
+  20  | 
+  21  |     logger.info('Opening login page');
+  22  | 
+> 23  |     await this.page.goto(
+      |                     ^ Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:9090/parabank/index.htm
+  24  |       'http://localhost:9090/parabank/index.htm'
+  25  |     );
+  26  |   }
+  27  | 
+  28  |   private async enterCredentials(
+  29  |     username: string,
+  30  |     password: string
+  31  |   ) {
+  32  | 
+  33  |     logger.info('Entering login credentials');
+  34  | 
+  35  |     await this.page.fill(
+  36  |       this.selectors.usernameInput,
+  37  |       username
+  38  |     );
+  39  | 
+  40  |     await this.page.fill(
+  41  |       this.selectors.passwordInput,
+  42  |       password
+  43  |     );
+  44  |   }
+  45  | 
+  46  |   private async clickLoginButton() {
+  47  | 
+  48  |     logger.info('Clicking login button');
+  49  | 
+  50  |     await this.page.click(
+  51  |       this.selectors.loginButton
+  52  |     );
+  53  |   }
+  54  | 
+  55  |   private async captureScreenshot(
+  56  |     fileName: string
+  57  |   ) {
+  58  | 
+  59  |     await this.page.screenshot({
+  60  |       path: `screenshots/${fileName}.png`,
+  61  |     });
+  62  | 
+  63  |     logger.info(
+  64  |       `Screenshot captured: ${fileName}.png`
+  65  |     );
+  66  |   }
+  67  | 
+  68  | 
+  69  |   async login(
+  70  |     username: string,
+  71  |     password: string
+  72  |   ) {
+  73  | 
+  74  |     logger.info('Starting valid login flow');
+  75  | 
+  76  |     await this.navigateToLoginPage();
+  77  | 
+  78  |     await this.enterCredentials(
+  79  |       username,
+  80  |       password
+  81  |     );
+  82  | 
+  83  |     await this.clickLoginButton();
+  84  |   }
+  85  | 
+  86  |   async verifyLoginSuccess() {
+  87  | 
+  88  |     logger.info(
+  89  |       'Validating successful login'
+  90  |     );
+  91  | 
+  92  |     await expect(
+  93  |       this.page.getByText('Welcome')
+  94  |     );
+  95  | 
+  96  |     logger.info(
+  97  |       'User logged in successfully'
+  98  |     );
+  99  |   }
+  100 | 
+  101 | 
+  102 |   async loginWithInvalidPassword(
+  103 |     username: string,
+  104 |     password: string
+  105 |   ) {
+  106 | 
+  107 |     logger.info(
+  108 |       'Starting invalid login scenario'
+  109 |     );
+  110 | 
+  111 |     await this.navigateToLoginPage();
+  112 | 
+  113 |     await this.enterCredentials(
+  114 |       username,
+  115 |       password
+  116 |     );
+  117 | 
+  118 |     await this.captureScreenshot(
+  119 |       'invalid-login'
+  120 |     );
+  121 | 
+  122 |     await this.clickLoginButton();
+  123 |   }
+```

@@ -163,7 +163,8 @@ export class RegisterPage {
 
     await expect(
       this.page.locator(this.selectors.pageTitle)
-    ).toContainText('Welcome');
+    ).toContainText('Signing up is easy!');
+
   }
 
 

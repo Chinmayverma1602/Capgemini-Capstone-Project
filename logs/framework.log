@@ -1048,3 +1048,42 @@
 {"level":"info","message":"Account type validation successful | Expected=\"SAVINGS\" API=\"SAVINGS\"","timestamp":"2026-05-16T09:58:40.386Z"}
 {"level":"info","message":"Hybrid E2E test completed successfully","timestamp":"2026-05-16T09:58:40.387Z"}
 {"level":"info","message":"API Context Disposed","timestamp":"2026-05-16T09:58:40.391Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-16T16:29:28.739Z"}
+{"level":"info","message":"Calling API: GET /parabank/services/bank/accounts/999999999 — expecting failure","timestamp":"2026-05-16T16:29:28.743Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-16T16:29:28.807Z"}
+{"level":"info","message":"Calling API: POST /parabank/services/bank/createAccount — SAVINGS","timestamp":"2026-05-16T16:29:28.811Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-16T16:29:28.824Z"}
+{"level":"info","message":"Calling API: POST /parabank/services/bank/createAccount — CHECKING","timestamp":"2026-05-16T16:29:28.830Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-16T16:29:29.108Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-16T16:29:29.173Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-16T16:29:29.209Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-16T16:29:30.487Z"}
+{"level":"info","message":"Calling API: POST /parabank/services/bank/createAccount — invalid customerId: 99999999","timestamp":"2026-05-16T16:29:30.492Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-16T16:29:30.873Z"}
+{"level":"info","message":"RegisterPage instance created","timestamp":"2026-05-16T16:29:32.707Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-16T16:29:32.711Z"}
+{"level":"info","message":"LoginPage instance created","timestamp":"2026-05-16T16:29:32.760Z"}
+{"level":"info","message":"Starting valid login flow","timestamp":"2026-05-16T16:29:32.765Z"}
+{"level":"info","message":"Opening login page","timestamp":"2026-05-16T16:29:32.766Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-16T16:29:32.782Z"}
+{"level":"info","message":"Launching registration flow","timestamp":"2026-05-16T16:29:32.976Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-16T16:29:32.978Z"}
+{"level":"info","message":"RegisterPage instance created","timestamp":"2026-05-16T16:29:34.582Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-16T16:29:34.585Z"}
+{"level":"info","message":"LoginPage instance disposed","timestamp":"2026-05-16T16:29:35.340Z"}
+{"level":"info","message":"RegisterPage instance disposed","timestamp":"2026-05-16T16:29:35.455Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-16T16:29:35.736Z"}
+{"level":"info","message":"RegisterPage instance disposed","timestamp":"2026-05-16T16:29:37.207Z"}
+{"level":"info","message":"LoginPage instance created","timestamp":"2026-05-16T16:29:38.801Z"}
+{"level":"info","message":"Starting invalid login scenario","timestamp":"2026-05-16T16:29:38.804Z"}
+{"level":"info","message":"Opening login page","timestamp":"2026-05-16T16:29:38.804Z"}
+{"level":"info","message":"RegisterPage instance created","timestamp":"2026-05-16T16:29:38.831Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-16T16:29:38.835Z"}
+{"level":"info","message":"RegisterPage instance created","timestamp":"2026-05-16T16:29:39.834Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-16T16:29:39.838Z"}
+{"level":"info","message":"RegisterPage instance created","timestamp":"2026-05-16T16:29:40.803Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-16T16:29:40.806Z"}
+{"level":"info","message":"LoginPage instance disposed","timestamp":"2026-05-16T16:29:41.289Z"}
+{"level":"info","message":"RegisterPage instance disposed","timestamp":"2026-05-16T16:29:41.877Z"}
+{"level":"info","message":"RegisterPage instance disposed","timestamp":"2026-05-16T16:29:42.942Z"}
+{"level":"info","message":"RegisterPage instance disposed","timestamp":"2026-05-16T16:29:43.361Z"}
