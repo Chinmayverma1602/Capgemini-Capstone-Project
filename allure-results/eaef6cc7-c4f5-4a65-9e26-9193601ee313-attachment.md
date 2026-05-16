@@ -1,0 +1,143 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: parabank_ui.spec.ts >> UI Test Cases >> TC-LOGIN-01 Login with Valid Credentials
+- Location: tests\parabank_ui.spec.ts:21:7
+
+# Error details
+
+```
+Error: page.goto: net::ERR_INTERNET_DISCONNECTED at https://parabank.parasoft.com/parabank/index.htm
+Call log:
+  - navigating to "https://parabank.parasoft.com/parabank/index.htm", waiting until "load"
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - generic [ref=e5]:
+    - heading "Press space to play" [level=1] [ref=e6]
+    - generic [ref=e7]:
+      - paragraph [ref=e8]: "Try:"
+      - list [ref=e9]:
+        - listitem [ref=e10]: Checking the network cables, modem, and router
+        - listitem [ref=e11]: Reconnecting to Wi-Fi
+        - listitem [ref=e12]:
+          - link "Running Windows Network Diagnostics" [ref=e13] [cursor=pointer]:
+            - /url: javascript:diagnoseErrors()
+    - generic [ref=e14]: ERR_INTERNET_DISCONNECTED
+  - application "Dino game, press space to play" [ref=e16]
+```
+
+# Test source
+
+```ts
+  1   | import { test, expect } from '@playwright/test';
+  2   | 
+  3   | import registerData from '../test-data/registerData.json';
+  4   | 
+  5   | import { RegisterPage } from '../pages/RegisterPage';
+  6   | import { LoginPage } from '../pages/LoginPage';
+  7   | 
+  8   | test.describe('UI Test Cases', () => {
+  9   | 
+  10  |   test('TC-AC-UI-01 Create New User Account with Valid Data', async ({ page }) => {
+  11  | 
+  12  |     const registerPage = new RegisterPage(page);
+  13  | 
+  14  |     await registerPage.navigateToRegisterPage();
+  15  | 
+  16  |     await registerPage.registerUser(registerData.validUser);
+  17  | 
+  18  |     await registerPage.verifyRegistrationSuccess();
+  19  |   });
+  20  | 
+  21  |   test('TC-LOGIN-01 Login with Valid Credentials', async ({ page }) => {
+  22  | 
+  23  |     const loginPage = new LoginPage(page);
+  24  | 
+> 25  |     await page.goto('https://parabank.parasoft.com/parabank/index.htm');
+      |                ^ Error: page.goto: net::ERR_INTERNET_DISCONNECTED at https://parabank.parasoft.com/parabank/index.htm
+  26  | 
+  27  |     await loginPage.login(
+  28  |       registerData.validUser.username,
+  29  |       registerData.validUser.password
+  30  |     );
+  31  | 
+  32  |     await loginPage.verifyLoginSuccess();
+  33  |   });
+  34  | 
+  35  | test('TC-NEG-02 Register with Mismatched Passwords', async ({ page }) => {
+  36  | 
+  37  |   const registerPage = new RegisterPage(page);
+  38  | 
+  39  |   await registerPage.navigateToRegisterPage();
+  40  | 
+  41  |   await registerPage.registerUserWithMismatchedPassword(
+  42  |     registerData.validUser,
+  43  |     'WrongPass@123'
+  44  |   );
+  45  | 
+  46  |   await registerPage.verifyPasswordMismatchError();
+  47  | });
+  48  | 
+  49  | test('TC-NEG-01 Register with All Blank Fields', async ({ page }) => {
+  50  | 
+  51  |   const registerPage = new RegisterPage(page);
+  52  | 
+  53  |   await registerPage.navigateToRegisterPage();
+  54  | 
+  55  |   await registerPage.registerWithBlankFields();
+  56  | 
+  57  |   await registerPage.verifyBlankFieldValidationErrors();
+  58  | });
+  59  | 
+  60  | test('TC-LOGIN-02 Login with Invalid Password', async ({ page }) => {
+  61  | 
+  62  |   const loginPage = new LoginPage(page);
+  63  | 
+  64  |   await page.goto('https://parabank.parasoft.com/parabank/index.htm');
+  65  | 
+  66  |   await loginPage.loginWithInvalidPassword(
+  67  |     registerData.validUser.username,
+  68  |     registerData.invalidPasswordUser.password
+  69  |   );
+  70  | 
+  71  |   await loginPage.verifyInvalidLoginError();
+  72  | });
+  73  | 
+  74  | test('TC-NEG-06 Username with Special Characters', async ({ page }) => {
+  75  | 
+  76  |   const registerPage = new RegisterPage(page);
+  77  | 
+  78  |   await registerPage.navigateToRegisterPage();
+  79  | 
+  80  |   await registerPage.registerWithSpecialCharacterUsername(
+  81  |     registerData.validUser,
+  82  |     registerData.specialCharUser.username
+  83  |   );
+  84  | 
+  85  |   await registerPage.verifySpecialCharacterUsernameError();
+  86  | });
+  87  | 
+  88  | test('TC-AC-UI-02 Mandatory Field Validation', async ({ page }) => {
+  89  | 
+  90  |   const registerPage = new RegisterPage(page);
+  91  | 
+  92  |   await registerPage.navigateToRegisterPage();
+  93  | 
+  94  |   await registerPage.registerWithMandatoryFieldsBlank(
+  95  |     registerData.validUser
+  96  |   );
+  97  | 
+  98  |   await registerPage.verifyMandatoryFieldValidationMessages();
+  99  | });
+  100 | });
+```

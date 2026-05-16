@@ -1,23 +1,23 @@
 {
   "validUser": {
-    "firstName": "John",
-    "lastName": "Doe",
-    "address": "New York",
-    "city": "NY",
-    "state": "NY",
-    "zipCode": "10001",
-    "phone": "9999999999",
-    "ssn": "12345",
-    "username": "johnplaywright01",
-    "password": "Pass@123"
+    "firstName": "Chinmay",
+    "lastName": "Verma",
+    "address": "Hinoo",
+    "city": "Ranchi",
+    "state": "Jharkhand",
+    "zipCode": "834002",
+    "phone": "989897562",
+    "ssn": "89745244",
+    "username": "Mukul",
+    "password": "Pass@23"
   },
 
   "invalidPasswordUser": {
-    "username": "johnplaywright01",
-    "password": "wrongpass"
+    "username": "Mukul",
+    "password": "wrong"
   },
 
   "specialCharUser": {
-    "username": "@@@###"
+    "username": "@##@"
   }
 }

@@ -9,7 +9,8 @@ export class RegisterPage {
 
     logger.info('Opening registration page');
 
-    await this.page.goto('https://parabank.parasoft.com/parabank/register.htm');
+    // await this.page.goto('https://parabank.parasoft.com/parabank/register.htm');
+    await this.page.goto('http://localhost:9090/parabank/register.htm');
 
     await this.page.click('text=Register');
   }
@@ -179,7 +180,6 @@ async registerWithMandatoryFieldsBlank(userData: any) {
 
   logger.info('Submitting form with mandatory fields blank');
 
-  // Filling only optional/non-mandatory fields
   await this.page.fill('input[id="customer.phoneNumber"]', userData.phone);
 
   await this.page.screenshot({

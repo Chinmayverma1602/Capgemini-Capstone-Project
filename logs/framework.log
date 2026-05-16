@@ -120,3 +120,409 @@
 {"level":"info","message":"Opening registration page","timestamp":"2026-05-15T14:00:44.513Z"}
 {"level":"info","message":"Submitting form with mandatory fields blank","timestamp":"2026-05-15T14:00:48.669Z"}
 {"level":"info","message":"Validating mandatory field validation messages","timestamp":"2026-05-15T14:00:50.071Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-15T14:03:21.790Z"}
+{"level":"info","message":"API Response Time: 1134","timestamp":"2026-05-15T14:03:22.928Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-15T14:03:36.640Z"}
+{"level":"info","message":"GET Accounts API Triggered","timestamp":"2026-05-15T14:03:37.836Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-15T14:08:42.260Z"}
+{"level":"info","message":"API Response Time: 1384","timestamp":"2026-05-15T14:08:43.646Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-15T14:11:35.373Z"}
+{"level":"info","message":"GET Accounts API Triggered","timestamp":"2026-05-15T14:11:36.756Z"}
+{"level":"info","message":"<html>\r\n<head><title>404 Not Found</title></head>\r\n<body>\r\n<center><h1>404 Not Found</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n","timestamp":"2026-05-15T14:11:36.758Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-15T14:18:06.895Z"}
+{"level":"info","message":"GET Accounts API Triggered","timestamp":"2026-05-15T14:18:08.247Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-15T14:20:04.023Z"}
+{"level":"info","message":"GET Accounts API Triggered for account 12345","timestamp":"2026-05-15T14:20:05.428Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-15T14:20:50.235Z"}
+{"level":"info","message":"GET Accounts API Triggered for account 12345","timestamp":"2026-05-15T14:20:52.349Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-15T14:25:51.028Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-15T14:25:53.126Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-15T14:25:54.010Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-15T14:25:55.726Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-15T14:25:56.728Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-15T14:26:32.207Z"}
+{"level":"info","message":"Entering registration details","timestamp":"2026-05-15T14:26:37.945Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-15T14:26:40.636Z"}
+{"level":"info","message":"Performing login","timestamp":"2026-05-15T14:26:45.876Z"}
+{"level":"info","message":"Validating successful login","timestamp":"2026-05-15T14:26:47.329Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-15T16:00:51.084Z"}
+{"level":"info","message":"Entering registration details with mismatched passwords","timestamp":"2026-05-15T16:00:55.525Z"}
+{"level":"info","message":"Validating password mismatch error","timestamp":"2026-05-15T16:00:58.144Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-15T16:00:58.567Z"}
+{"level":"info","message":"Submitting registration form with blank fields","timestamp":"2026-05-15T16:01:01.719Z"}
+{"level":"info","message":"Validating blank field error messages","timestamp":"2026-05-15T16:01:03.517Z"}
+{"level":"info","message":"Logging in with invalid password","timestamp":"2026-05-15T16:01:06.775Z"}
+{"level":"info","message":"Validating invalid login error message","timestamp":"2026-05-15T16:01:08.044Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-15T16:01:13.809Z"}
+{"level":"info","message":"Entering special characters in username field","timestamp":"2026-05-15T16:01:17.380Z"}
+{"level":"info","message":"Validating username special character error","timestamp":"2026-05-15T16:01:19.875Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-15T16:01:20.743Z"}
+{"level":"info","message":"Submitting form with mandatory fields blank","timestamp":"2026-05-15T16:01:23.895Z"}
+{"level":"info","message":"Validating mandatory field validation messages","timestamp":"2026-05-15T16:01:26.536Z"}
+{"level":"info","message":"Performing login","timestamp":"2026-05-15T16:01:48.479Z"}
+{"level":"info","message":"Validating successful login","timestamp":"2026-05-15T16:01:49.192Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-15T16:02:07.931Z"}
+{"level":"info","message":"Entering registration details","timestamp":"2026-05-15T16:02:12.144Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-15T16:02:13.838Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-15T16:02:41.003Z"}
+{"level":"info","message":"Entering registration details","timestamp":"2026-05-15T16:02:44.778Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-15T16:02:46.782Z"}
+{"level":"info","message":"Performing login","timestamp":"2026-05-15T16:02:52.724Z"}
+{"level":"info","message":"Validating successful login","timestamp":"2026-05-15T16:02:53.589Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-15T16:02:59.382Z"}
+{"level":"info","message":"Entering registration details with mismatched passwords","timestamp":"2026-05-15T16:03:03.020Z"}
+{"level":"info","message":"Validating password mismatch error","timestamp":"2026-05-15T16:03:05.614Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-15T16:03:05.833Z"}
+{"level":"info","message":"Submitting registration form with blank fields","timestamp":"2026-05-15T16:03:09.276Z"}
+{"level":"info","message":"Validating blank field error messages","timestamp":"2026-05-15T16:03:11.370Z"}
+{"level":"info","message":"Logging in with invalid password","timestamp":"2026-05-15T16:03:15.543Z"}
+{"level":"info","message":"Validating invalid login error message","timestamp":"2026-05-15T16:03:16.524Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-15T16:03:22.308Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-15T16:03:24.157Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-15T16:03:43.849Z"}
+{"level":"info","message":"Entering special characters in username field","timestamp":"2026-05-15T16:03:47.188Z"}
+{"level":"info","message":"Validating username special character error","timestamp":"2026-05-15T16:03:49.330Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-15T16:06:50.179Z"}
+{"level":"info","message":"Entering registration details","timestamp":"2026-05-15T16:06:53.801Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-15T16:06:56.601Z"}
+{"level":"info","message":"Performing login","timestamp":"2026-05-15T16:07:08.534Z"}
+{"level":"info","message":"Validating successful login","timestamp":"2026-05-15T16:07:09.346Z"}
+{"level":"info","message":"Logging in with invalid password","timestamp":"2026-05-15T16:07:32.969Z"}
+{"level":"info","message":"Validating invalid login error message","timestamp":"2026-05-15T16:07:33.662Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-15T16:07:45.463Z"}
+{"level":"info","message":"Entering special characters in username field","timestamp":"2026-05-15T16:07:50.675Z"}
+{"level":"info","message":"Validating username special character error","timestamp":"2026-05-15T16:07:52.374Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-15T16:08:00.800Z"}
+{"level":"info","message":"Submitting form with mandatory fields blank","timestamp":"2026-05-15T16:08:06.027Z"}
+{"level":"info","message":"Validating mandatory field validation messages","timestamp":"2026-05-15T16:08:07.164Z"}
+{"level":"info","message":"Performing login","timestamp":"2026-05-15T16:09:10.518Z"}
+{"level":"info","message":"Validating successful login","timestamp":"2026-05-15T16:09:11.260Z"}
+{"level":"info","message":"Logging in with invalid password","timestamp":"2026-05-15T16:09:32.099Z"}
+{"level":"info","message":"Validating invalid login error message","timestamp":"2026-05-15T16:09:32.798Z"}
+{"level":"info","message":"Logging in with invalid password","timestamp":"2026-05-15T16:11:12.813Z"}
+{"level":"info","message":"Validating invalid login error message","timestamp":"2026-05-15T16:11:14.140Z"}
+{"level":"info","message":"Performing login","timestamp":"2026-05-15T16:11:54.982Z"}
+{"level":"info","message":"Validating successful login","timestamp":"2026-05-15T16:11:57.216Z"}
+{"level":"info","message":"Performing login","timestamp":"2026-05-15T16:12:30.235Z"}
+{"level":"info","message":"Validating successful login","timestamp":"2026-05-15T16:12:32.368Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-15T16:13:01.853Z"}
+{"level":"info","message":"Entering registration details","timestamp":"2026-05-15T16:13:05.761Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-15T16:13:07.273Z"}
+{"level":"info","message":"Performing login","timestamp":"2026-05-15T16:13:23.389Z"}
+{"level":"info","message":"Validating successful login","timestamp":"2026-05-15T16:13:24.153Z"}
+{"level":"info","message":"Performing login","timestamp":"2026-05-15T16:14:01.408Z"}
+{"level":"info","message":"Validating successful login","timestamp":"2026-05-15T16:14:02.188Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-15T16:14:16.976Z"}
+{"level":"info","message":"Entering registration details with mismatched passwords","timestamp":"2026-05-15T16:14:21.395Z"}
+{"level":"info","message":"Validating password mismatch error","timestamp":"2026-05-15T16:14:23.296Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-15T16:14:33.473Z"}
+{"level":"info","message":"Submitting registration form with blank fields","timestamp":"2026-05-15T16:14:37.635Z"}
+{"level":"info","message":"Validating blank field error messages","timestamp":"2026-05-15T16:14:39.154Z"}
+{"level":"info","message":"Logging in with invalid password","timestamp":"2026-05-15T16:14:53.543Z"}
+{"level":"info","message":"Validating invalid login error message","timestamp":"2026-05-15T16:14:54.225Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-15T16:15:12.388Z"}
+{"level":"info","message":"Entering special characters in username field","timestamp":"2026-05-15T16:15:15.918Z"}
+{"level":"info","message":"Validating username special character error","timestamp":"2026-05-15T16:15:17.589Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-15T16:15:32.639Z"}
+{"level":"info","message":"Submitting form with mandatory fields blank","timestamp":"2026-05-15T16:15:36.534Z"}
+{"level":"info","message":"Validating mandatory field validation messages","timestamp":"2026-05-15T16:15:37.092Z"}
+{"level":"info","message":"Performing login","timestamp":"2026-05-15T16:21:04.413Z"}
+{"level":"info","message":"Validating successful login","timestamp":"2026-05-15T16:21:05.065Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-15T16:22:18.143Z"}
+{"level":"info","message":"Entering registration details","timestamp":"2026-05-15T16:22:23.069Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-15T16:22:24.150Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-15T16:25:34.543Z"}
+{"level":"info","message":"Entering registration details","timestamp":"2026-05-15T16:25:38.300Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-15T16:25:40.167Z"}
+{"level":"info","message":"Performing login","timestamp":"2026-05-15T16:25:46.972Z"}
+{"level":"info","message":"Validating successful login","timestamp":"2026-05-15T16:25:51.165Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-15T16:25:58.380Z"}
+{"level":"info","message":"Entering registration details with mismatched passwords","timestamp":"2026-05-15T16:26:01.600Z"}
+{"level":"info","message":"Validating password mismatch error","timestamp":"2026-05-15T16:26:03.319Z"}
+{"level":"info","message":"Logging in with invalid password","timestamp":"2026-05-15T16:26:12.921Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-15T16:26:50.618Z"}
+{"level":"info","message":"Entering registration details","timestamp":"2026-05-15T16:26:53.219Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-15T16:26:55.607Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-15T16:26:55.650Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-15T16:26:57.512Z"}
+{"level":"info","message":"GET Accounts API Triggered for account 12345","timestamp":"2026-05-15T16:26:58.559Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-15T16:26:59.252Z"}
+{"level":"info","message":"Entering registration details","timestamp":"2026-05-15T16:27:03.964Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-15T16:27:06.606Z"}
+{"level":"info","message":"Performing login","timestamp":"2026-05-15T16:27:12.389Z"}
+{"level":"info","message":"Validating successful login","timestamp":"2026-05-15T16:27:17.065Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-15T16:27:19.338Z"}
+{"level":"info","message":"Entering registration details with mismatched passwords","timestamp":"2026-05-15T16:27:22.500Z"}
+{"level":"info","message":"Validating password mismatch error","timestamp":"2026-05-15T16:27:24.223Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-15T16:27:24.390Z"}
+{"level":"info","message":"Submitting registration form with blank fields","timestamp":"2026-05-15T16:27:28.070Z"}
+{"level":"info","message":"Validating blank field error messages","timestamp":"2026-05-15T16:27:30.394Z"}
+{"level":"info","message":"Logging in with invalid password","timestamp":"2026-05-15T16:27:30.644Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-15T16:27:38.826Z"}
+{"level":"info","message":"Entering special characters in username field","timestamp":"2026-05-15T16:27:43.219Z"}
+{"level":"info","message":"Validating username special character error","timestamp":"2026-05-15T16:27:44.661Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-15T16:27:45.600Z"}
+{"level":"info","message":"Submitting form with mandatory fields blank","timestamp":"2026-05-15T16:27:51.478Z"}
+{"level":"info","message":"Validating mandatory field validation messages","timestamp":"2026-05-15T16:27:55.240Z"}
+{"level":"info","message":"Logging in with invalid password","timestamp":"2026-05-15T16:28:54.716Z"}
+{"level":"info","message":"Logging in with invalid password","timestamp":"2026-05-15T16:29:16.589Z"}
+{"level":"info","message":"Logging in with invalid password","timestamp":"2026-05-15T16:29:53.406Z"}
+{"level":"info","message":"Validating invalid login error message","timestamp":"2026-05-15T16:29:58.380Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-15T17:20:48.989Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-15T17:20:48.993Z"}
+{"level":"info","message":"Entering registration details","timestamp":"2026-05-15T17:20:57.772Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-15T17:21:00.202Z"}
+{"level":"info","message":"Performing login","timestamp":"2026-05-15T17:21:01.363Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-15T17:22:03.966Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-15T17:22:03.973Z"}
+{"level":"info","message":"Entering registration details","timestamp":"2026-05-15T17:22:09.252Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-15T17:22:13.949Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-15T17:33:22.277Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-15T17:33:22.285Z"}
+{"level":"info","message":"Entering registration details","timestamp":"2026-05-15T17:33:26.581Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-15T17:33:29.633Z"}
+{"level":"info","message":"Creating new savings account","timestamp":"2026-05-15T17:33:29.692Z"}
+{"level":"info","message":"New Savings Account Created: ","timestamp":"2026-05-15T17:33:30.321Z"}
+{"level":"info","message":"Accounts API Triggered","timestamp":"2026-05-15T17:33:32.514Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-15T17:35:56.875Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-15T17:35:56.878Z"}
+{"level":"info","message":"Entering registration details","timestamp":"2026-05-15T17:36:00.983Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-15T17:36:02.903Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-15T17:36:15.018Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-15T17:36:15.021Z"}
+{"level":"info","message":"Entering registration details","timestamp":"2026-05-15T17:36:18.733Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-15T17:36:20.761Z"}
+{"level":"info","message":"Creating new savings account","timestamp":"2026-05-15T17:36:22.157Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-15T17:40:45.284Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-15T17:40:45.288Z"}
+{"level":"info","message":"Entering registration details","timestamp":"2026-05-15T17:40:49.556Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-15T17:40:51.708Z"}
+{"level":"info","message":"Creating new savings account","timestamp":"2026-05-15T17:40:51.788Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-16T05:11:29.778Z"}
+{"level":"info","message":"Entering registration details","timestamp":"2026-05-16T05:11:31.703Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-16T05:11:32.454Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-16T05:12:10.651Z"}
+{"level":"info","message":"Entering registration details","timestamp":"2026-05-16T05:12:12.607Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-16T05:12:13.286Z"}
+{"level":"info","message":"Performing login","timestamp":"2026-05-16T05:12:19.209Z"}
+{"level":"info","message":"Validating successful login","timestamp":"2026-05-16T05:12:21.415Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-16T05:12:21.707Z"}
+{"level":"info","message":"Entering registration details with mismatched passwords","timestamp":"2026-05-16T05:12:23.136Z"}
+{"level":"info","message":"Validating password mismatch error","timestamp":"2026-05-16T05:12:23.754Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-16T05:12:23.904Z"}
+{"level":"info","message":"Submitting registration form with blank fields","timestamp":"2026-05-16T05:12:25.317Z"}
+{"level":"info","message":"Validating blank field error messages","timestamp":"2026-05-16T05:12:25.822Z"}
+{"level":"info","message":"Logging in with invalid password","timestamp":"2026-05-16T05:12:26.057Z"}
+{"level":"info","message":"Validating invalid login error message","timestamp":"2026-05-16T05:12:27.682Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-16T05:12:33.526Z"}
+{"level":"info","message":"Entering special characters in username field","timestamp":"2026-05-16T05:12:35.228Z"}
+{"level":"info","message":"Validating username special character error","timestamp":"2026-05-16T05:12:35.896Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-16T05:12:36.108Z"}
+{"level":"info","message":"Submitting form with mandatory fields blank","timestamp":"2026-05-16T05:12:37.566Z"}
+{"level":"info","message":"Validating mandatory field validation messages","timestamp":"2026-05-16T05:12:38.091Z"}
+{"level":"info","message":"Logging in with invalid password","timestamp":"2026-05-16T05:12:55.753Z"}
+{"level":"info","message":"Validating invalid login error message","timestamp":"2026-05-16T05:12:57.875Z"}
+{"level":"info","message":"Logging in with invalid password","timestamp":"2026-05-16T05:13:38.440Z"}
+{"level":"info","message":"Validating invalid login error message","timestamp":"2026-05-16T05:13:40.490Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-16T05:14:01.010Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-16T05:14:01.013Z"}
+{"level":"info","message":"Entering registration details","timestamp":"2026-05-16T05:14:03.818Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-16T05:14:04.498Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-16T05:14:20.512Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-16T05:14:20.517Z"}
+{"level":"info","message":"Entering registration details","timestamp":"2026-05-16T05:14:22.405Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-16T05:14:23.064Z"}
+{"level":"info","message":"Creating new savings account","timestamp":"2026-05-16T05:14:23.110Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-16T05:15:11.847Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-16T05:15:11.851Z"}
+{"level":"info","message":"Entering registration details","timestamp":"2026-05-16T05:15:13.724Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-16T05:15:14.379Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-16T05:15:38.302Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-16T05:15:38.306Z"}
+{"level":"info","message":"Entering registration details","timestamp":"2026-05-16T05:15:40.164Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-16T05:15:40.935Z"}
+{"level":"info","message":"Creating new savings account","timestamp":"2026-05-16T05:15:40.978Z"}
+{"level":"info","message":"New Savings Account Created: ","timestamp":"2026-05-16T05:15:41.390Z"}
+{"level":"info","message":"Accounts API Triggered","timestamp":"2026-05-16T05:15:41.891Z"}
+{"level":"info","message":"Response Status: 404","timestamp":"2026-05-16T05:15:41.892Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-16T05:19:26.156Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-16T05:19:26.158Z"}
+{"level":"info","message":"Entering registration details","timestamp":"2026-05-16T05:19:27.851Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-16T05:19:28.425Z"}
+{"level":"info","message":"Creating new savings account","timestamp":"2026-05-16T05:19:28.461Z"}
+{"level":"info","message":"New Savings Account Created: ","timestamp":"2026-05-16T05:19:28.898Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-16T05:21:39.029Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-16T05:21:39.039Z"}
+{"level":"info","message":"Entering registration details","timestamp":"2026-05-16T05:21:41.278Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-16T05:21:42.016Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-16T05:22:25.405Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-16T05:22:25.409Z"}
+{"level":"info","message":"Entering registration details","timestamp":"2026-05-16T05:22:29.638Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-16T05:22:31.396Z"}
+{"level":"info","message":"Creating new savings account","timestamp":"2026-05-16T05:22:31.515Z"}
+{"level":"info","message":"New Savings Account Created: ","timestamp":"2026-05-16T05:22:32.290Z"}
+{"level":"info","message":"Accounts API Triggered","timestamp":"2026-05-16T05:22:32.557Z"}
+{"level":"info","message":"Response Status: 404","timestamp":"2026-05-16T05:22:32.557Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-16T05:29:15.096Z"}
+{"level":"info","message":"Entering registration details","timestamp":"2026-05-16T05:29:16.995Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-16T05:29:17.880Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-16T05:29:56.569Z"}
+{"level":"info","message":"Entering registration details","timestamp":"2026-05-16T05:30:01.411Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-16T05:30:03.465Z"}
+{"level":"info","message":"Creating new savings account","timestamp":"2026-05-16T05:30:03.718Z"}
+{"level":"info","message":"New Account ID: 28107","timestamp":"2026-05-16T05:30:05.484Z"}
+{"level":"info","message":"Status = 200","timestamp":"2026-05-16T05:30:07.186Z"}
+{"level":"info","message":"<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><account><id>28107</id><customerId>21092</customerId><type>SAVINGS</type><balance>100.00</balance></account>","timestamp":"2026-05-16T05:30:07.190Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-16T05:30:31.287Z"}
+{"level":"info","message":"Entering registration details","timestamp":"2026-05-16T05:30:33.922Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-16T05:30:34.806Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-16T05:30:51.658Z"}
+{"level":"info","message":"Entering registration details","timestamp":"2026-05-16T05:30:53.594Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-16T05:30:54.479Z"}
+{"level":"info","message":"Creating new savings account","timestamp":"2026-05-16T05:30:54.557Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-16T05:31:52.459Z"}
+{"level":"info","message":"Entering registration details","timestamp":"2026-05-16T05:31:57.722Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-16T05:31:59.650Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-16T05:32:49.828Z"}
+{"level":"info","message":"Entering registration details","timestamp":"2026-05-16T05:32:54.969Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-16T05:32:56.812Z"}
+{"level":"info","message":"Creating new savings account","timestamp":"2026-05-16T05:32:56.907Z"}
+{"level":"info","message":"New Account ID: 29217","timestamp":"2026-05-16T05:33:11.483Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-16T05:36:01.879Z"}
+{"level":"info","message":"Entering registration details","timestamp":"2026-05-16T05:36:07.698Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-16T05:36:09.329Z"}
+{"level":"info","message":"Creating new savings account","timestamp":"2026-05-16T05:36:09.407Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-16T05:40:26.178Z"}
+{"level":"info","message":"Entering registration details","timestamp":"2026-05-16T05:40:27.327Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-16T05:40:28.269Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-16T05:41:16.829Z"}
+{"level":"info","message":"Entering registration details","timestamp":"2026-05-16T05:41:24.447Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-16T05:41:27.408Z"}
+{"level":"info","message":"Creating new savings account","timestamp":"2026-05-16T05:41:27.638Z"}
+{"level":"info","message":"New Account ID: ","timestamp":"2026-05-16T05:41:28.406Z"}
+{"level":"info","message":"Status = 404","timestamp":"2026-05-16T05:41:28.956Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-16T05:44:14.323Z"}
+{"level":"info","message":"Entering registration details","timestamp":"2026-05-16T05:44:15.869Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-16T05:44:17.205Z"}
+{"level":"info","message":"Creating Savings Account","timestamp":"2026-05-16T05:44:17.384Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-16T05:50:27.216Z"}
+{"level":"info","message":"Entering registration details","timestamp":"2026-05-16T05:50:28.446Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-16T05:50:29.796Z"}
+{"level":"info","message":"Creating Savings Account","timestamp":"2026-05-16T05:50:29.886Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-16T05:51:40.805Z"}
+{"level":"info","message":"Entering registration details","timestamp":"2026-05-16T05:51:41.500Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-16T05:51:43.195Z"}
+{"level":"info","message":"Creating new savings account","timestamp":"2026-05-16T05:51:43.445Z"}
+{"level":"info","message":"New Account ID: ","timestamp":"2026-05-16T05:51:44.294Z"}
+{"level":"info","message":"Status = 404","timestamp":"2026-05-16T05:51:47.817Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-16T05:54:20.171Z"}
+{"level":"info","message":"Entering registration details","timestamp":"2026-05-16T05:54:21.737Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-16T05:54:22.878Z"}
+{"level":"info","message":"Creating new savings account","timestamp":"2026-05-16T05:54:23.002Z"}
+{"level":"info","message":"New Account ID: ","timestamp":"2026-05-16T05:54:23.838Z"}
+{"level":"info","message":"Status = 404","timestamp":"2026-05-16T05:54:24.205Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-16T05:57:12.224Z"}
+{"level":"info","message":"Entering registration details","timestamp":"2026-05-16T05:57:12.842Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-16T05:57:13.673Z"}
+{"level":"info","message":"Creating new savings account","timestamp":"2026-05-16T05:57:13.772Z"}
+{"level":"info","message":"New Account ID: ","timestamp":"2026-05-16T05:57:16.324Z"}
+{"level":"info","message":"Status = 404","timestamp":"2026-05-16T05:57:16.391Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-16T06:02:14.575Z"}
+{"level":"info","message":"Entering registration details","timestamp":"2026-05-16T06:02:15.618Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-16T06:02:16.528Z"}
+{"level":"info","message":"Creating new savings account","timestamp":"2026-05-16T06:02:16.601Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-16T06:02:58.619Z"}
+{"level":"info","message":"Entering registration details","timestamp":"2026-05-16T06:02:59.009Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-16T06:02:59.545Z"}
+{"level":"info","message":"Creating new savings account","timestamp":"2026-05-16T06:02:59.616Z"}
+{"level":"info","message":"New Account ID = ","timestamp":"2026-05-16T06:02:59.884Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-16T06:14:03.313Z"}
+{"level":"info","message":"Entering registration details","timestamp":"2026-05-16T06:14:04.054Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-16T06:14:04.806Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-16T06:14:25.812Z"}
+{"level":"info","message":"Entering registration details","timestamp":"2026-05-16T06:14:26.095Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-16T06:14:26.514Z"}
+{"level":"info","message":"Navigating to Open New Account page","timestamp":"2026-05-16T06:14:26.591Z"}
+{"level":"info","message":"Selected account type: SAVINGS (value=1)","timestamp":"2026-05-16T06:14:26.819Z"}
+{"level":"info","message":"Selected from-account ID: 14676","timestamp":"2026-05-16T06:14:26.931Z"}
+{"level":"info","message":"New account created via UI — ID: 14787","timestamp":"2026-05-16T06:14:27.050Z"}
+{"level":"info","message":"Calling API: GET /parabank/services/bank/accounts/14787","timestamp":"2026-05-16T06:14:27.142Z"}
+{"level":"info","message":"API response: {\"id\":14787,\"customerId\":13433,\"type\":\"SAVINGS\",\"balance\":100}","timestamp":"2026-05-16T06:14:27.935Z"}
+{"level":"info","message":"✅ Account ID matches: UI=\"14787\" API=\"14787\"","timestamp":"2026-05-16T06:14:27.937Z"}
+{"level":"info","message":"✅ Account type matches: expected=\"SAVINGS\" API=\"SAVINGS\"","timestamp":"2026-05-16T06:14:27.938Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-16T06:22:54.703Z"}
+{"level":"info","message":"Entering registration details","timestamp":"2026-05-16T06:22:55.509Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-16T06:22:56.076Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-16T06:23:28.704Z"}
+{"level":"info","message":"Entering registration details","timestamp":"2026-05-16T06:23:28.951Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-16T06:23:29.351Z"}
+{"level":"info","message":"Navigating to Open New Account page","timestamp":"2026-05-16T06:23:29.390Z"}
+{"level":"info","message":"Selected account type: SAVINGS (value=1)","timestamp":"2026-05-16T06:23:29.561Z"}
+{"level":"info","message":"Selected from-account ID: 14898","timestamp":"2026-05-16T06:23:29.630Z"}
+{"level":"info","message":"New account created via UI — ID: 15009","timestamp":"2026-05-16T06:23:29.777Z"}
+{"level":"info","message":"Calling API: GET /parabank/services/bank/accounts/15009","timestamp":"2026-05-16T06:23:29.854Z"}
+{"level":"info","message":"API response: {\"id\":15009,\"customerId\":13544,\"type\":\"SAVINGS\",\"balance\":100}","timestamp":"2026-05-16T06:23:29.970Z"}
+{"level":"info","message":"✅ Account ID matches: UI=\"15009\" API=\"15009\"","timestamp":"2026-05-16T06:23:29.971Z"}
+{"level":"info","message":"✅ Account type matches: expected=\"SAVINGS\" API=\"SAVINGS\"","timestamp":"2026-05-16T06:23:29.973Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-16T06:32:50.118Z"}
+{"level":"info","message":"GET /accounts/13344 triggered","timestamp":"2026-05-16T06:32:50.751Z"}
+{"level":"info","message":"Response: <html>\r\n<head><title>404 Not Found</title></head>\r\n<body>\r\n<center><h1>404 Not Found</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n","timestamp":"2026-05-16T06:32:50.752Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-16T06:37:35.241Z"}
+{"level":"info","message":"POST /createAccount triggered for SAVINGS account","timestamp":"2026-05-16T06:37:35.848Z"}
+{"level":"info","message":"Calling API: POST /parabank/services/bank/createAccount — SAVINGS","timestamp":"2026-05-16T06:39:38.908Z"}
+{"level":"info","message":"API response: {\"id\":15453,\"customerId\":12212,\"type\":\"SAVINGS\",\"balance\":0}","timestamp":"2026-05-16T06:39:39.242Z"}
+{"level":"info","message":"✅ Account type matches: expected=\"SAVINGS\" API=\"SAVINGS\"","timestamp":"2026-05-16T06:39:39.243Z"}
+{"level":"info","message":"✅ Customer ID matches: expected=\"12212\" API=\"12212\"","timestamp":"2026-05-16T06:39:39.245Z"}
+{"level":"info","message":"✅ New account ID received: 15453","timestamp":"2026-05-16T06:39:39.247Z"}
+{"level":"info","message":"Calling API: GET /parabank/services/bank/accounts/15453","timestamp":"2026-05-16T06:39:39.247Z"}
+{"level":"info","message":"API response: {\"id\":15453,\"customerId\":12212,\"type\":\"SAVINGS\",\"balance\":100}","timestamp":"2026-05-16T06:39:39.291Z"}
+{"level":"info","message":"✅ Account ID matches: POST=\"15453\" GET=\"15453\"","timestamp":"2026-05-16T06:39:39.292Z"}
+{"level":"info","message":"✅ Account type matches: expected=\"SAVINGS\" GET=\"SAVINGS\"","timestamp":"2026-05-16T06:39:39.294Z"}
+{"level":"info","message":"Calling API: POST /parabank/services/bank/createAccount — CHECKING","timestamp":"2026-05-16T06:39:46.837Z"}
+{"level":"info","message":"API response: {\"id\":15564,\"customerId\":12212,\"type\":\"CHECKING\",\"balance\":0}","timestamp":"2026-05-16T06:39:46.924Z"}
+{"level":"info","message":"✅ Account type matches: expected=\"CHECKING\" API=\"CHECKING\"","timestamp":"2026-05-16T06:39:46.926Z"}
+{"level":"info","message":"✅ Customer ID matches: expected=\"12212\" API=\"12212\"","timestamp":"2026-05-16T06:39:46.927Z"}
+{"level":"info","message":"✅ Balance is 0 for a newly opened account","timestamp":"2026-05-16T06:39:46.929Z"}
+{"level":"info","message":"✅ New CHECKING account ID received: 15564","timestamp":"2026-05-16T06:39:46.931Z"}
+{"level":"info","message":"Calling API: GET /parabank/services/bank/accounts/999999999 — expecting failure","timestamp":"2026-05-16T06:40:03.675Z"}
+{"level":"info","message":"API response: Could not find account #999999999","timestamp":"2026-05-16T06:40:03.830Z"}
+{"level":"info","message":"✅ Confirmed: status was 400 — invalid account ID rejected","timestamp":"2026-05-16T06:40:03.835Z"}
+{"level":"info","message":"Calling API: POST /parabank/services/bank/createAccount — invalid customerId: 99999999","timestamp":"2026-05-16T06:40:08.184Z"}
+{"level":"info","message":"API response: Could not create new account for customer 99999999 from account 12345","timestamp":"2026-05-16T06:40:08.358Z"}
+{"level":"info","message":"✅ Confirmed: status was 400 — invalid customer ID rejected","timestamp":"2026-05-16T06:40:08.364Z"}
+{"level":"info","message":"Calling API: POST /parabank/services/bank/createAccount — SAVINGS","timestamp":"2026-05-16T06:48:15.094Z"}
+{"level":"info","message":"API response: {\"id\":15675,\"customerId\":12212,\"type\":\"SAVINGS\",\"balance\":0}","timestamp":"2026-05-16T06:48:15.619Z"}
+{"level":"info","message":"Account type matches: expected=\"SAVINGS\" API=\"SAVINGS\"","timestamp":"2026-05-16T06:48:15.621Z"}
+{"level":"info","message":"Customer ID matches: expected=\"12212\" API=\"12212\"","timestamp":"2026-05-16T06:48:15.622Z"}
+{"level":"info","message":"New account ID received: 15675","timestamp":"2026-05-16T06:48:15.624Z"}
+{"level":"info","message":"Calling API: GET /parabank/services/bank/accounts/15675","timestamp":"2026-05-16T06:48:15.624Z"}
+{"level":"info","message":"API response: {\"id\":15675,\"customerId\":12212,\"type\":\"SAVINGS\",\"balance\":100}","timestamp":"2026-05-16T06:48:15.656Z"}
+{"level":"info","message":"Account ID matches: POST=\"15675\" GET=\"15675\"","timestamp":"2026-05-16T06:48:15.658Z"}
+{"level":"info","message":"Account type matches: expected=\"SAVINGS\" GET=\"SAVINGS\"","timestamp":"2026-05-16T06:48:15.659Z"}
+{"level":"info","message":"Calling API: GET /parabank/services/bank/accounts/999999999 — expecting failure","timestamp":"2026-05-16T06:48:30.485Z"}
+{"level":"info","message":"API response: Could not find account #999999999","timestamp":"2026-05-16T06:48:30.632Z"}
+{"level":"info","message":"Confirmed: status was 400 — invalid account ID rejected","timestamp":"2026-05-16T06:48:30.638Z"}
+{"level":"info","message":"Calling API: POST /parabank/services/bank/createAccount — invalid customerId: 99999999","timestamp":"2026-05-16T06:48:34.660Z"}
+{"level":"info","message":"API response: Could not create new account for customer 99999999 from account 12345","timestamp":"2026-05-16T06:48:34.723Z"}
+{"level":"info","message":"Confirmed: status was 400 — invalid customer ID rejected","timestamp":"2026-05-16T06:48:34.730Z"}
+{"level":"info","message":"Calling API: POST /parabank/services/bank/createAccount — SAVINGS","timestamp":"2026-05-16T06:56:17.598Z"}
+{"level":"info","message":"API response: {\"id\":15786,\"customerId\":12212,\"type\":\"SAVINGS\",\"balance\":0}","timestamp":"2026-05-16T06:56:17.981Z"}
+{"level":"info","message":"Account type matches: expected=\"SAVINGS\" API=\"SAVINGS\"","timestamp":"2026-05-16T06:56:17.983Z"}
+{"level":"info","message":"Customer ID matches: expected=\"12212\" API=\"12212\"","timestamp":"2026-05-16T06:56:17.984Z"}
+{"level":"info","message":"New account ID received: 15786","timestamp":"2026-05-16T06:56:17.986Z"}
+{"level":"info","message":"Calling API: GET /parabank/services/bank/accounts/15786","timestamp":"2026-05-16T06:56:17.986Z"}
+{"level":"info","message":"API response: {\"id\":15786,\"customerId\":12212,\"type\":\"SAVINGS\",\"balance\":100}","timestamp":"2026-05-16T06:56:18.020Z"}
+{"level":"info","message":"Account ID matches: POST=\"15786\" GET=\"15786\"","timestamp":"2026-05-16T06:56:18.022Z"}
+{"level":"info","message":"Account type matches: expected=\"SAVINGS\" GET=\"SAVINGS\"","timestamp":"2026-05-16T06:56:18.023Z"}
+{"level":"info","message":"Calling API: POST /parabank/services/bank/createAccount — CHECKING","timestamp":"2026-05-16T06:56:18.049Z"}
+{"level":"info","message":"API response: {\"id\":15897,\"customerId\":12212,\"type\":\"CHECKING\",\"balance\":0}","timestamp":"2026-05-16T06:56:18.102Z"}
+{"level":"info","message":"Account type matches: expected=\"CHECKING\" API=\"CHECKING\"","timestamp":"2026-05-16T06:56:18.103Z"}
+{"level":"info","message":"Customer ID matches: expected=\"12212\" API=\"12212\"","timestamp":"2026-05-16T06:56:18.105Z"}
+{"level":"info","message":"Balance is 0 for a newly opened account","timestamp":"2026-05-16T06:56:18.106Z"}
+{"level":"info","message":"New CHECKING account ID received: 15897","timestamp":"2026-05-16T06:56:18.108Z"}
+{"level":"info","message":"Calling API: GET /parabank/services/bank/accounts/999999999 — expecting failure","timestamp":"2026-05-16T06:56:18.131Z"}
+{"level":"info","message":"API response: Could not find account #999999999","timestamp":"2026-05-16T06:56:18.206Z"}
+{"level":"info","message":"Confirmed: status was 400 — invalid account ID rejected","timestamp":"2026-05-16T06:56:18.207Z"}
+{"level":"info","message":"Calling API: POST /parabank/services/bank/createAccount — invalid customerId: 99999999","timestamp":"2026-05-16T06:56:18.226Z"}
+{"level":"info","message":"API response: Could not create new account for customer 99999999 from account 12345","timestamp":"2026-05-16T06:56:18.282Z"}
+{"level":"info","message":"Confirmed: status was 400 — invalid customer ID rejected","timestamp":"2026-05-16T06:56:18.283Z"}

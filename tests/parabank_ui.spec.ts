@@ -22,7 +22,6 @@ test.describe('UI Test Cases', () => {
 
     const loginPage = new LoginPage(page);
 
-    await page.goto('https://parabank.parasoft.com/parabank/index.htm');
 
     await loginPage.login(
       registerData.validUser.username,
@@ -61,7 +60,6 @@ test('TC-LOGIN-02 Login with Invalid Password', async ({ page }) => {
 
   const loginPage = new LoginPage(page);
 
-  await page.goto('https://parabank.parasoft.com/parabank/index.htm');
 
   await loginPage.loginWithInvalidPassword(
     registerData.validUser.username,

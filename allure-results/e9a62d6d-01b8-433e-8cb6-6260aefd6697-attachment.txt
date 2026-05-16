@@ -1,0 +1,3 @@
+{"level":"info","message":"Calling API: GET /parabank/services/bank/accounts/999999999 — expecting failure","timestamp":"2026-05-16T06:56:18.131Z"}
+{"level":"info","message":"API response: Could not find account #999999999","timestamp":"2026-05-16T06:56:18.206Z"}
+{"level":"info","message":"Confirmed: status was 400 — invalid account ID rejected","timestamp":"2026-05-16T06:56:18.207Z"}

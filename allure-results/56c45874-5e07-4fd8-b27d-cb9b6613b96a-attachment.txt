@@ -1,0 +1,7 @@
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-16T05:29:56.569Z"}
+{"level":"info","message":"Entering registration details","timestamp":"2026-05-16T05:30:01.411Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-16T05:30:03.465Z"}
+{"level":"info","message":"Creating new savings account","timestamp":"2026-05-16T05:30:03.718Z"}
+{"level":"info","message":"New Account ID: 28107","timestamp":"2026-05-16T05:30:05.484Z"}
+{"level":"info","message":"Status = 200","timestamp":"2026-05-16T05:30:07.186Z"}
+{"level":"info","message":"<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><account><id>28107</id><customerId>21092</customerId><type>SAVINGS</type><balance>100.00</balance></account>","timestamp":"2026-05-16T05:30:07.190Z"}

@@ -4,7 +4,7 @@ import { logger } from '../utils/logger';
 export async function createAPIContext(): Promise<APIRequestContext> {
 
   const apiContext = await request.newContext({
-    baseURL: 'https://parabank.parasoft.com/parabank/api-docs/index.html'
+    baseURL: 'http://localhost:9090'
   });
 
   logger.info('API Context Created');

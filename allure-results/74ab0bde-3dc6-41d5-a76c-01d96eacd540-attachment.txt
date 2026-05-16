@@ -1,0 +1,5 @@
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-16T05:32:49.828Z"}
+{"level":"info","message":"Entering registration details","timestamp":"2026-05-16T05:32:54.969Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-16T05:32:56.812Z"}
+{"level":"info","message":"Creating new savings account","timestamp":"2026-05-16T05:32:56.907Z"}
+{"level":"info","message":"New Account ID: 29217","timestamp":"2026-05-16T05:33:11.483Z"}

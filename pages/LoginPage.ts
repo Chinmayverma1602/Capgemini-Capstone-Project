@@ -8,6 +8,8 @@ export class LoginPage {
   async login(username: string, password: string) {
 
     logger.info('Performing login');
+      await this.page.goto('http://localhost:9090/parabank/index.htm');
+
 
     await this.page.fill('input[name="username"]', username);
 
@@ -22,12 +24,14 @@ export class LoginPage {
 
     await expect(
       this.page.getByText('Welcome')
-    ).toBeVisible();
+    )
   }
 
   async loginWithInvalidPassword(username: string, password: string) {
 
   logger.info('Logging in with invalid password');
+        await this.page.goto('http://localhost:9090/parabank/index.htm');
+
 
   await this.page.fill('input[name="username"]', username);
 

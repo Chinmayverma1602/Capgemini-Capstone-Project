@@ -1,0 +1,5 @@
+{"level":"info","message":"API Context Created","timestamp":"2026-05-15T17:20:48.989Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-15T17:20:48.993Z"}
+{"level":"info","message":"Entering registration details","timestamp":"2026-05-15T17:20:57.772Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-15T17:21:00.202Z"}
+{"level":"info","message":"Performing login","timestamp":"2026-05-15T17:21:01.363Z"}
