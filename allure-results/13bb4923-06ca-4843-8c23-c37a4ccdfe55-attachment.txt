@@ -1,0 +1,6 @@
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-16T08:52:49.376Z"}
+{"level":"info","message":"Submitting form with mandatory fields blank","timestamp":"2026-05-16T08:52:51.457Z"}
+{"level":"info","message":"Filling registration form","timestamp":"2026-05-16T08:52:51.457Z"}
+{"level":"info","message":"Screenshot captured: mandatory-fields-blank.png","timestamp":"2026-05-16T08:52:53.444Z"}
+{"level":"info","message":"Clicked Register button","timestamp":"2026-05-16T08:52:53.508Z"}
+{"level":"info","message":"Validating mandatory field messages","timestamp":"2026-05-16T08:52:53.509Z"}

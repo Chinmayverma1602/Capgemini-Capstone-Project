@@ -1,0 +1,6 @@
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-16T08:58:26.994Z"}
+{"level":"info","message":"Registering new user","timestamp":"2026-05-16T08:58:29.045Z"}
+{"level":"info","message":"Filling registration form","timestamp":"2026-05-16T08:58:29.046Z"}
+{"level":"info","message":"Screenshot captured: register-filled.png","timestamp":"2026-05-16T08:58:31.080Z"}
+{"level":"info","message":"Clicked Register button","timestamp":"2026-05-16T08:58:33.260Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-16T08:58:33.260Z"}

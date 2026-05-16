@@ -1,0 +1,7 @@
+{"level":"info","message":"Starting invalid login scenario","timestamp":"2026-05-16T08:52:34.937Z"}
+{"level":"info","message":"Opening login page","timestamp":"2026-05-16T08:52:34.937Z"}
+{"level":"info","message":"Entering login credentials","timestamp":"2026-05-16T08:52:35.021Z"}
+{"level":"info","message":"Screenshot captured: invalid-login.png","timestamp":"2026-05-16T08:52:37.021Z"}
+{"level":"info","message":"Clicking login button","timestamp":"2026-05-16T08:52:37.022Z"}
+{"level":"info","message":"Validating invalid login error message","timestamp":"2026-05-16T08:52:37.141Z"}
+{"level":"info","message":"Invalid login error message displayed correctly","timestamp":"2026-05-16T08:52:37.177Z"}

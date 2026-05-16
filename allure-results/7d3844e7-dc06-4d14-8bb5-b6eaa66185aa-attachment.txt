@@ -1,0 +1,6 @@
+{"level":"info","message":"Starting valid login flow","timestamp":"2026-05-16T08:58:16.742Z"}
+{"level":"info","message":"Opening login page","timestamp":"2026-05-16T08:58:16.753Z"}
+{"level":"info","message":"Entering login credentials","timestamp":"2026-05-16T08:58:17.163Z"}
+{"level":"info","message":"Clicking login button","timestamp":"2026-05-16T08:58:17.256Z"}
+{"level":"info","message":"Validating successful login","timestamp":"2026-05-16T08:58:18.927Z"}
+{"level":"info","message":"User logged in successfully","timestamp":"2026-05-16T08:58:18.928Z"}

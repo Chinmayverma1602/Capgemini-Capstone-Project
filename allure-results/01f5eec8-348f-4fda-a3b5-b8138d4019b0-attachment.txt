@@ -1,0 +1,8 @@
+{"level":"info","message":"RegisterPage instance created","timestamp":"2026-05-16T09:56:54.852Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-16T09:56:54.856Z"}
+{"level":"info","message":"Registering with special character username","timestamp":"2026-05-16T09:56:56.892Z"}
+{"level":"info","message":"Filling registration form","timestamp":"2026-05-16T09:56:56.892Z"}
+{"level":"info","message":"Screenshot captured: special-character-username.png","timestamp":"2026-05-16T09:56:58.958Z"}
+{"level":"info","message":"Clicked Register button","timestamp":"2026-05-16T09:57:01.261Z"}
+{"level":"info","message":"Validating username format error","timestamp":"2026-05-16T09:57:01.262Z"}
+{"level":"info","message":"RegisterPage instance disposed","timestamp":"2026-05-16T09:57:01.408Z"}

@@ -13,7 +13,7 @@ export const test = base.extend<ApiFixture>({
       extraHTTPHeaders: {
         Accept: 'application/json',
       },
-    });
+    }); 
 
     logger.info('API Context Created');
 

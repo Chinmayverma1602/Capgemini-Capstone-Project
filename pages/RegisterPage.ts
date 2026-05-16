@@ -1,3 +1,5 @@
+// pages/RegisterPage.ts
+
 import { Page, expect } from '@playwright/test';
 import { logger } from '../utils/logger';
 
@@ -5,236 +7,348 @@ export class RegisterPage {
 
   constructor(private page: Page) {}
 
+
+  private selectors = {
+    firstName: 'input[id="customer.firstName"]',
+    lastName: 'input[id="customer.lastName"]',
+    address: 'input[id="customer.address.street"]',
+    city: 'input[id="customer.address.city"]',
+    state: 'input[id="customer.address.state"]',
+    zipCode: 'input[id="customer.address.zipCode"]',
+    phone: 'input[id="customer.phoneNumber"]',
+    ssn: 'input[id="customer.ssn"]',
+    username: 'input[id="customer.username"]',
+    password: 'input[id="customer.password"]',
+    confirmPassword: 'input[id="repeatedPassword"]',
+    registerButton: 'input[value="Register"]',
+    pageTitle: 'h1.title',
+  };
+
+
   async navigateToRegisterPage() {
 
     logger.info('Opening registration page');
 
-    // await this.page.goto('https://parabank.parasoft.com/parabank/register.htm');
-    await this.page.goto('http://localhost:9090/parabank/register.htm');
+    await this.page.goto(
+      'http://localhost:9090/parabank/register.htm'
+    );
 
     await this.page.click('text=Register');
   }
 
-  async registerUser(userData: any) {
+  private async fillRegistrationForm(
+    userData: any,
+    options?: {
+      username?: string;
+      confirmPassword?: string;
+      fillMandatoryOnly?: boolean;
+    }
+  ) {
 
-    logger.info('Entering registration details');
+    const {
+      username,
+      confirmPassword,
+      fillMandatoryOnly = false,
+    } = options || {};
 
-    await this.page.fill('input[id="customer.firstName"]', userData.firstName);
-    await this.page.fill('input[id="customer.lastName"]', userData.lastName);
-    await this.page.fill('input[id="customer.address.street"]', userData.address);
-    await this.page.fill('input[id="customer.address.city"]', userData.city);
-    await this.page.fill('input[id="customer.address.state"]', userData.state);
-    await this.page.fill('input[id="customer.address.zipCode"]', userData.zipCode);
-    await this.page.fill('input[id="customer.phoneNumber"]', userData.phone);
-    await this.page.fill('input[id="customer.ssn"]', userData.ssn);
+    logger.info('Filling registration form');
 
-    await this.page.fill('input[id="customer.username"]', userData.username);
-    await this.page.fill('input[id="customer.password"]', userData.password);
+    if (fillMandatoryOnly) {
 
-    await this.page.fill('input[id="repeatedPassword"]', userData.password);
+      await this.page.fill(
+        this.selectors.phone,
+        userData.phone
+      );
 
+      return;
+    }
+
+    await this.page.fill(
+      this.selectors.firstName,
+      userData.firstName
+    );
+
+    await this.page.fill(
+      this.selectors.lastName,
+      userData.lastName
+    );
+
+    await this.page.fill(
+      this.selectors.address,
+      userData.address
+    );
+
+    await this.page.fill(
+      this.selectors.city,
+      userData.city
+    );
+
+    await this.page.fill(
+      this.selectors.state,
+      userData.state
+    );
+
+    await this.page.fill(
+      this.selectors.zipCode,
+      userData.zipCode
+    );
+
+    await this.page.fill(
+      this.selectors.phone,
+      userData.phone
+    );
+
+    await this.page.fill(
+      this.selectors.ssn,
+      userData.ssn
+    );
+
+    await this.page.fill(
+      this.selectors.username,
+      username || userData.username
+    );
+
+    await this.page.fill(
+      this.selectors.password,
+      userData.password
+    );
+
+    await this.page.fill(
+      this.selectors.confirmPassword,
+      confirmPassword || userData.password
+    );
+  }
+
+  private async takeScreenshot(fileName: string) {
 
     await this.page.screenshot({
-      path: 'screenshots/register-filled.png'
+      path: `screenshots/${fileName}.png`,
     });
 
-    await this.page.click('input[value="Register"]');
+    logger.info(`Screenshot captured: ${fileName}.png`);
+  }
+
+  private async clickRegisterButton() {
+
+    await this.page.click(this.selectors.registerButton);
+
+    logger.info('Clicked Register button');
+  }
+
+  private async verifyErrorMessage(
+    locator: string,
+    expectedText: string
+  ) {
+
+    await expect(
+      this.page.locator(locator)
+    ).toContainText(expectedText);
   }
 
 
-  async registerUserWithMismatchedPassword(userData: any, wrongPassword: string) {
+  async registerUser(userData: any) {
 
-  logger.info('Entering registration details with mismatched passwords');
+    logger.info('Registering new user');
 
-  await this.page.fill('input[id="customer.firstName"]', userData.firstName);
-  await this.page.fill('input[id="customer.lastName"]', userData.lastName);
-  await this.page.fill('input[id="customer.address.street"]', userData.address);
-  await this.page.fill('input[id="customer.address.city"]', userData.city);
-  await this.page.fill('input[id="customer.address.state"]', userData.state);
-  await this.page.fill('input[id="customer.address.zipCode"]', userData.zipCode);
-  await this.page.fill('input[id="customer.phoneNumber"]', userData.phone);
-  await this.page.fill('input[id="customer.ssn"]', userData.ssn);
+    await this.fillRegistrationForm(userData);
 
-  await this.page.fill('input[id="customer.username"]', userData.username);
-  await this.page.fill('input[id="customer.password"]', userData.password);
+    await this.takeScreenshot('register-filled');
 
-  await this.page.fill('input[id="repeatedPassword"]', wrongPassword);
-
-  await this.page.screenshot({
-    path: 'screenshots/mismatched-password.png'
-  });
-
-  await this.page.click('input[value="Register"]');
-}
-
-async verifyPasswordMismatchError() {
-
-  logger.info('Validating password mismatch error');
-
-  await expect(
-    this.page.locator("//span[@id='repeatedPassword.errors']")
-  )
-}
-
-
-async registerWithBlankFields() {
-
-  logger.info('Submitting registration form with blank fields');
-
-  await this.page.screenshot({
-    path: 'screenshots/blank-registration-form.png'
-  });
-
-  await this.page.click('input[value="Register"]');
-}
-
-async verifyBlankFieldValidationErrors() {
-
-  logger.info('Validating blank field error messages');
-
-  await expect(
-    this.page.locator("//span[@id='customer.firstName.errors']")
-  ).toContainText('First name is required.');
-
-  await expect(
-    this.page.locator("//span[@id='customer.lastName.errors']")
-  ).toContainText('Last name is required.');
-
-  await expect(
-    this.page.locator("//span[@id='customer.address.street.errors']")
-  ).toContainText('Address is required.');
-
-  await expect(
-    this.page.locator("//span[@id='customer.address.city.errors']")
-  ).toContainText('City is required.');
-
-  await expect(
-    this.page.locator("//span[@id='customer.address.state.errors']")
-  ).toContainText('State is required.');
-
-  await expect(
-    this.page.locator("//span[@id='customer.address.zipCode.errors']")
-  ).toContainText('Zip Code is required.');
-
-  await expect(
-    this.page.locator("//span[@id='customer.ssn.errors']")
-  ).toContainText('Social Security Number is required.');
-
-  await expect(
-    this.page.locator("//span[@id='customer.username.errors']")
-  ).toContainText('Username is required.');
-
-  await expect(
-    this.page.locator("//span[@id='customer.password.errors']")
-  ).toContainText('Password is required.');
-
-  await expect(
-    this.page.locator("//span[@id='repeatedPassword.errors']")
-  ).toContainText('Password confirmation is required.');
-}
+    await this.clickRegisterButton();
+  }
 
   async verifyRegistrationSuccess() {
 
     logger.info('Validating successful registration');
 
     await expect(
-      this.page.locator('h1.title')
+      this.page.locator(this.selectors.pageTitle)
     ).toContainText('Welcome');
   }
 
-async registerWithSpecialCharacterUsername(userData: any, specialUsername: string) {
 
-  logger.info('Entering special characters in username field');
+  async registerUserWithMismatchedPassword(
+    userData: any,
+    wrongPassword: string
+  ) {
 
-  await this.page.fill('input[id="customer.firstName"]', userData.firstName);
-  await this.page.fill('input[id="customer.lastName"]', userData.lastName);
-  await this.page.fill('input[id="customer.address.street"]', userData.address);
-  await this.page.fill('input[id="customer.address.city"]', userData.city);
-  await this.page.fill('input[id="customer.address.state"]', userData.state);
-  await this.page.fill('input[id="customer.address.zipCode"]', userData.zipCode);
-  await this.page.fill('input[id="customer.phoneNumber"]', userData.phone);
-  await this.page.fill('input[id="customer.ssn"]', userData.ssn);
+    logger.info(
+      'Registering user with mismatched password'
+    );
 
-  await this.page.fill('input[id="customer.username"]', specialUsername);
+    await this.fillRegistrationForm(userData, {
+      confirmPassword: wrongPassword,
+    });
 
-  await this.page.fill('input[id="customer.password"]', userData.password);
+    await this.takeScreenshot(
+      'mismatched-password'
+    );
 
-  await this.page.fill('input[id="repeatedPassword"]', userData.password);
+    await this.clickRegisterButton();
+  }
 
-  await this.page.screenshot({
-    path: 'screenshots/special-character-username.png'
-  });
+  async verifyPasswordMismatchError() {
 
-  await this.page.click('input[value="Register"]');
-}
+    logger.info(
+      'Validating password mismatch error'
+    );
 
-async verifySpecialCharacterUsernameError() {
+    await this.verifyErrorMessage(
+      "//span[@id='repeatedPassword.errors']",
+      'Passwords did not match.'
+    );
+  }
 
-  logger.info('Validating username special character error');
 
-  await expect(
-    this.page.locator("//span[@id='customer.username.errors']"))
-}
+  async registerWithBlankFields() {
+
+    logger.info(
+      'Submitting registration form with blank fields'
+    );
+
+    await this.takeScreenshot(
+      'blank-registration-form'
+    );
+
+    await this.clickRegisterButton();
+  }
+
+  async verifyBlankFieldValidationErrors() {
+
+    logger.info(
+      'Validating blank field error messages'
+    );
+
+    await this.verifyMandatoryFieldErrors();
+  }
+
+
+  async registerWithSpecialCharacterUsername(
+    userData: any,
+    specialUsername: string
+  ) {
+
+    logger.info(
+      'Registering with special character username'
+    );
+
+    await this.fillRegistrationForm(userData, {
+      username: specialUsername,
+    });
+
+    await this.takeScreenshot(
+      'special-character-username'
+    );
+
+    await this.clickRegisterButton();
+  }
+
+  async verifySpecialCharacterUsernameError() {
+
+    logger.info(
+      'Validating username format error'
+    );
+
+    await expect(
+      this.page.locator(
+        "//span[@id='customer.username.errors']"
+      )
+    ).toBeVisible();
+  }
   
-async registerWithMandatoryFieldsBlank(userData: any) {
 
-  logger.info('Submitting form with mandatory fields blank');
+  async registerWithMandatoryFieldsBlank(
+    userData: any
+  ) {
 
-  await this.page.fill('input[id="customer.phoneNumber"]', userData.phone);
+    logger.info(
+      'Submitting form with mandatory fields blank'
+    );
 
-  await this.page.screenshot({
-    path: 'screenshots/mandatory-fields-blank.png'
-  });
+    await this.fillRegistrationForm(userData, {
+      fillMandatoryOnly: true,
+    });
 
-  await this.page.click('input[value="Register"]');
-}
+    await this.takeScreenshot(
+      'mandatory-fields-blank'
+    );
 
-async verifyMandatoryFieldValidationMessages() {
+    await this.clickRegisterButton();
+  }
 
-  logger.info('Validating mandatory field validation messages');
+  async verifyMandatoryFieldValidationMessages() {
 
-  await expect(
-    this.page.locator("//span[@id='customer.firstName.errors']")
-  ).toContainText('First name is required.');
+    logger.info(
+      'Validating mandatory field messages'
+    );
 
-  await expect(
-    this.page.locator("//span[@id='customer.lastName.errors']")
-  ).toContainText('Last name is required.');
+    await this.verifyMandatoryFieldErrors();
+  }
 
-  await expect(
-    this.page.locator("//span[@id='customer.address.street.errors']")
-  ).toContainText('Address is required.');
 
-  await expect(
-    this.page.locator("//span[@id='customer.address.city.errors']")
-  ).toContainText('City is required.');
+  private async verifyMandatoryFieldErrors() {
 
-  await expect(
-    this.page.locator("//span[@id='customer.address.state.errors']")
-  ).toContainText('State is required.');
+    const validationMessages = [
+      {
+        locator:
+          "//span[@id='customer.firstName.errors']",
+        message: 'First name is required.',
+      },
+      {
+        locator:
+          "//span[@id='customer.lastName.errors']",
+        message: 'Last name is required.',
+      },
+      {
+        locator:
+          "//span[@id='customer.address.street.errors']",
+        message: 'Address is required.',
+      },
+      {
+        locator:
+          "//span[@id='customer.address.city.errors']",
+        message: 'City is required.',
+      },
+      {
+        locator:
+          "//span[@id='customer.address.state.errors']",
+        message: 'State is required.',
+      },
+      {
+        locator:
+          "//span[@id='customer.address.zipCode.errors']",
+        message: 'Zip Code is required.',
+      },
+      {
+        locator:
+          "//span[@id='customer.ssn.errors']",
+        message:
+          'Social Security Number is required.',
+      },
+      {
+        locator:
+          "//span[@id='customer.username.errors']",
+        message: 'Username is required.',
+      },
+      {
+        locator:
+          "//span[@id='customer.password.errors']",
+        message: 'Password is required.',
+      },
+      {
+        locator:
+          "//span[@id='repeatedPassword.errors']",
+        message:
+          'Password confirmation is required.',
+      },
+    ];
 
-  await expect(
-    this.page.locator("//span[@id='customer.address.zipCode.errors']")
-  ).toContainText('Zip Code is required.');
+    for (const field of validationMessages) {
 
-  await expect(
-    this.page.locator("//span[@id='customer.ssn.errors']")
-  ).toContainText('Social Security Number is required.');
-
-  await expect(
-    this.page.locator("//span[@id='customer.username.errors']")
-  ).toContainText('Username is required.');
-
-  await expect(
-    this.page.locator("//span[@id='customer.password.errors']")
-  ).toContainText('Password is required.');
-
-  await expect(
-    this.page.locator("//span[@id='repeatedPassword.errors']")
-  ).toContainText('Password confirmation is required.');
-}
-
- 
-
- 
+      await this.verifyErrorMessage(
+        field.locator,
+        field.message
+      );
+    }
+  }
 }

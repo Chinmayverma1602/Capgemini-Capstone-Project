@@ -1,0 +1,5 @@
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-16T09:42:02.006Z"}
+{"level":"info","message":"Submitting registration form with blank fields","timestamp":"2026-05-16T09:42:04.055Z"}
+{"level":"info","message":"Screenshot captured: blank-registration-form.png","timestamp":"2026-05-16T09:42:06.069Z"}
+{"level":"info","message":"Clicked Register button","timestamp":"2026-05-16T09:42:08.198Z"}
+{"level":"info","message":"Validating blank field error messages","timestamp":"2026-05-16T09:42:08.198Z"}
