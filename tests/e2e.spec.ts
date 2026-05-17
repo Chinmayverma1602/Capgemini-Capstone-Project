@@ -7,10 +7,10 @@ import { logger } from '../utils/logger';
 
 test.describe('Hybrid E2E Tests', () => {
 
-  test('TC-E2E-01 Register user via UI and validate account using API',
+  test.fail('TC-E2E-01 Register user via UI and validate account using API',
     async ({ page, apiContext }) => {
 
-      test.fail('Known issue: test expected to fail');
+     // test.fail('Known issue: test expected to fail');
 
       logger.info('Launching registration flow');
 
