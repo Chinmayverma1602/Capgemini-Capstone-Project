@@ -27,10 +27,19 @@ test.describe('Hybrid E2E Tests', () => {
 
       logger.info('Navigating to Open New Account page');
 
-      await page.getByRole('link', { name: 'Open New Account' }).click();
+      const createacc = page.getByRole('link', { name: 'Open New Account' });
+
+await createacc.waitFor({
+    state: 'visible',
+    timeout: 30000
+});
+
+await createacc.click();
 
       await page.waitForSelector('#type', {
         state: 'visible',
+            timeout: 30000
+
       });
 
       await page.selectOption('#type', '1');
