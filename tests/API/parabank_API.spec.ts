@@ -1,12 +1,11 @@
-// tests/accountOperations.spec.ts
 
-import { test, expect } from '../fixtures/apiFixture';
-import { logger } from '../utils/logger';
-import apiData from '../test-data/api_Data.json';
+import { test, expect } from '../../fixtures/apiFixture';
+import { logger } from '../../utils/logger';
+import apiData from '../../test-data/api_Data.json';
 
 test.describe('API Test Cases - Account Operations', () => {
 
-  test('TC-API-01 Create SAVINGS account then verify via GET', async ({ apiContext }) => {
+  test('@api @smoke TC-API-01 Create SAVINGS account', async ({ apiContext }) => {
 
     logger.info(
       `Calling API: POST /parabank/services/bank/createAccount — SAVINGS`
@@ -69,7 +68,7 @@ test.describe('API Test Cases - Account Operations', () => {
     );
   });
 
-  test('TC-API-02 Create CHECKING account — response should reflect correct type',
+  test('@api @smoke TC-API-02 Create CHECKING account — response should reflect correct type',
     async ({ apiContext }) => {
 
       logger.info(
@@ -112,7 +111,7 @@ test.describe('API Test Cases - Account Operations', () => {
     }
   );
 
-  test('TC-API-03 GET non-existent account — should return an error response',
+  test('@api @negative @regression TC-API-03 GET non-existent account — should return an error response',
     async ({ apiContext }) => {
 
       logger.info(
@@ -135,7 +134,7 @@ test.describe('API Test Cases - Account Operations', () => {
     }
   );
 
-  test('TC-API-04 Create account with invalid customerId — should return an error response',
+  test('@api @negative @regression TC-API-04 Create account with invalid customerId — should return an error response',
     async ({ apiContext }) => {
 
       logger.info(

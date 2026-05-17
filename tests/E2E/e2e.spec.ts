@@ -1,16 +1,14 @@
 
-import { test, expect } from '../fixtures/apiFixture';
+import { test, expect } from '../../fixtures/apiFixture';
 
-import registerData from '../test-data/registerData.json';
-import { RegisterPage } from '../pages/RegisterPage';
-import { logger } from '../utils/logger';
+import registerData from '../../test-data/registerData.json';
+import { RegisterPage } from '../../pages/RegisterPage';
+import { logger } from '../../utils/logger';
 
 test.describe('Hybrid E2E Tests', () => {
 
-  test.fail('TC-E2E-01 Register user via UI and validate account using API',
+  test.fail('@e2e @regression TC-E2E-01 Register user via UI and validate API',
     async ({ page, apiContext }) => {
-
-     // test.fail('Known issue: test expected to fail');
 
       logger.info('Launching registration flow');
 

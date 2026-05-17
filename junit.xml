@@ -1,25 +1,38 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="22.933217000000003">
-<testsuite name="e2e.spec.ts" timestamp="2026-05-17T05:14:15.191Z" hostname="chromium" tests="1" failures="0" skipped="0" time="10.533" errors="0">
-<testcase name="Hybrid E2E Tests › TC-E2E-01 Register user via UI and validate account using API" classname="e2e.spec.ts" time="10.533">
-<properties>
-<property name="fail" value="">
-</property>
-</properties>
+<testsuites id="" name="" tests="2" failures="0" skipped="0" errors="0" time="42.264146999999994">
+<testsuite name="performance-lite\performance.spec.ts" timestamp="2026-05-17T06:27:13.968Z" hostname="chromium" tests="1" failures="0" skipped="0" time="21.578" errors="0">
+<testcase name="@performance Login page load time" classname="performance-lite\performance.spec.ts" time="21.578">
 <system-out>
-<![CDATA[{"level":"info","message":"API Context Created","timestamp":"2026-05-17T05:14:27.227Z"}
-{"level":"info","message":"Launching registration flow","timestamp":"2026-05-17T05:14:27.239Z"}
-{"level":"info","message":"Opening registration page","timestamp":"2026-05-17T05:14:27.240Z"}
-{"level":"info","message":"Registering a new user","timestamp":"2026-05-17T05:14:31.366Z"}
-{"level":"info","message":"Registering new user","timestamp":"2026-05-17T05:14:31.367Z"}
-{"level":"info","message":"Filling registration form","timestamp":"2026-05-17T05:14:31.367Z"}
-{"level":"info","message":"Screenshot captured: register-filled.png","timestamp":"2026-05-17T05:14:31.982Z"}
-{"level":"info","message":"Clicked Register button","timestamp":"2026-05-17T05:14:32.328Z"}
-{"level":"info","message":"Validating successful registration","timestamp":"2026-05-17T05:14:32.329Z"}
-{"level":"info","message":"User registration completed successfully","timestamp":"2026-05-17T05:14:32.528Z"}
-{"level":"info","message":"Navigating to Open New Account page","timestamp":"2026-05-17T05:14:32.529Z"}
-{"level":"info","message":"API Context Disposed","timestamp":"2026-05-17T05:14:36.522Z"}
+<![CDATA[Load time=10859
 
-[[ATTACHMENT|test-results\e2e-Hybrid-E2E-Tests-TC-E2-2ee3c--validate-account-using-API-chromium\error-context.md]]
+[[ATTACHMENT|test-results\performance-lite-performan-b9c5e-rmance-Login-page-load-time-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\performance-lite-performan-b9c5e-rmance-Login-page-load-time-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\performance-lite-performan-b9c5e-rmance-Login-page-load-time-chromium\error-context.md]]
+
+[[ATTACHMENT|test-results\performance-lite-performan-b9c5e-rmance-Login-page-load-time-chromium\trace.zip]]
+Load time=1672
+
+[[ATTACHMENT|test-results\performance-lite-performan-b9c5e-rmance-Login-page-load-time-chromium-retry1\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="performance-lite\performance.spec.ts" timestamp="2026-05-17T06:27:13.968Z" hostname="firefox" tests="1" failures="0" skipped="0" time="25.99" errors="0">
+<testcase name="@performance Login page load time" classname="performance-lite\performance.spec.ts" time="25.99">
+<system-out>
+<![CDATA[Load time=6118
+
+[[ATTACHMENT|test-results\performance-lite-performan-b9c5e-rmance-Login-page-load-time-firefox\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\performance-lite-performan-b9c5e-rmance-Login-page-load-time-firefox\video.webm]]
+
+[[ATTACHMENT|test-results\performance-lite-performan-b9c5e-rmance-Login-page-load-time-firefox\error-context.md]]
+
+[[ATTACHMENT|test-results\performance-lite-performan-b9c5e-rmance-Login-page-load-time-firefox\trace.zip]]
+Load time=1279
+
+[[ATTACHMENT|test-results\performance-lite-performan-b9c5e-rmance-Login-page-load-time-firefox-retry1\trace.zip]]
 ]]>
 </system-out>
 </testcase>
