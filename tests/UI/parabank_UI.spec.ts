@@ -5,7 +5,7 @@ import registerData from '../../test-data/registerData.json';
 
 test.describe('UI Test Cases', () => {
 
-  test.fail('@ui,@smoke @regression TC-AC-UI-01 Create New User Account', async ({ registerPage }) => {
+  test.fail('@ui,@smoke @regression TC-AC-UI-01 Create New User Account with old username', async ({ registerPage }) => {
     await registerPage.navigateToRegisterPage();
     await registerPage.registerUser(registerData.validUser);
     await registerPage.verifyRegistrationSuccess();

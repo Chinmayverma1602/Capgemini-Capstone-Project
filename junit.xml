@@ -1,55 +1,9 @@
-<testsuites id="" name="" tests="4" failures="0" skipped="0" errors="0" time="1.7460770000000485">
-<testsuite name="API\parabank_API.spec.ts" timestamp="2026-05-17T16:33:30.966Z" hostname="chromium" tests="4" failures="0" skipped="0" time="0.271" errors="0">
-<testcase name="API Test Cases - Account Operations › @api @smoke TC-API-01 Create SAVINGS account" classname="API\parabank_API.spec.ts" time="0.139">
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="1.307085999999661">
+<testsuite name="API\accountValidation.spec.ts" timestamp="2026-05-17T17:05:35.615Z" hostname="chromium" tests="1" failures="0" skipped="0" time="0.086" errors="0">
+<testcase name="Validate Account Schema &amp; Data Types" classname="API\accountValidation.spec.ts" time="0.086">
 <system-out>
-<![CDATA[{"level":"info","message":"API Context Created","timestamp":"2026-05-17T16:33:31.752Z"}
-{"level":"info","message":"Calling API: POST /parabank/services/bank/createAccount — SAVINGS","timestamp":"2026-05-17T16:33:31.755Z"}
-{"level":"info","message":"API response: {\"id\":13788,\"customerId\":12212,\"type\":\"SAVINGS\",\"balance\":0}","timestamp":"2026-05-17T16:33:31.823Z"}
-{"level":"info","message":"Account type matches: expected=\"SAVINGS\" API=\"SAVINGS\"","timestamp":"2026-05-17T16:33:31.824Z"}
-{"level":"info","message":"Customer ID matches: expected=\"12212\" API=\"12212\"","timestamp":"2026-05-17T16:33:31.826Z"}
-{"level":"info","message":"New account ID received: 13788","timestamp":"2026-05-17T16:33:31.827Z"}
-{"level":"info","message":"Calling API: GET /parabank/services/bank/accounts/13788","timestamp":"2026-05-17T16:33:31.828Z"}
-API Response Time: 12 ms
-{"level":"info","message":"API response: {\"id\":13788,\"customerId\":12212,\"type\":\"SAVINGS\",\"balance\":100}","timestamp":"2026-05-17T16:33:31.842Z"}
-{"level":"info","message":"Account ID matches: POST=\"13788\" GET=\"13788\"","timestamp":"2026-05-17T16:33:31.876Z"}
-{"level":"info","message":"Account type matches: expected=\"SAVINGS\" GET=\"SAVINGS\"","timestamp":"2026-05-17T16:33:31.878Z"}
-{"level":"info","message":"API Context Disposed","timestamp":"2026-05-17T16:33:31.884Z"}
-]]>
-</system-out>
-</testcase>
-<testcase name="API Test Cases - Account Operations › @api @smoke TC-API-02 Create CHECKING account — response should reflect correct type" classname="API\parabank_API.spec.ts" time="0.051">
-<system-out>
-<![CDATA[{"level":"info","message":"API Context Created","timestamp":"2026-05-17T16:33:31.910Z"}
-{"level":"info","message":"Calling API: POST /parabank/services/bank/createAccount — CHECKING","timestamp":"2026-05-17T16:33:31.911Z"}
-API Response Time: 31 ms
-{"level":"info","message":"API response: {\"id\":13899,\"customerId\":12212,\"type\":\"CHECKING\",\"balance\":0}","timestamp":"2026-05-17T16:33:31.944Z"}
-{"level":"info","message":"Account type matches: expected=\"CHECKING\" API=\"CHECKING\"","timestamp":"2026-05-17T16:33:31.948Z"}
-{"level":"info","message":"Customer ID matches: expected=\"12212\" API=\"12212\"","timestamp":"2026-05-17T16:33:31.949Z"}
-{"level":"info","message":"Balance is 0 for a newly opened account","timestamp":"2026-05-17T16:33:31.951Z"}
-{"level":"info","message":"New CHECKING account ID received: 13899","timestamp":"2026-05-17T16:33:31.952Z"}
-{"level":"info","message":"API Context Disposed","timestamp":"2026-05-17T16:33:31.955Z"}
-]]>
-</system-out>
-</testcase>
-<testcase name="API Test Cases - Account Operations › @api @negative @regression TC-API-03 GET non-existent account — should return an error response" classname="API\parabank_API.spec.ts" time="0.037">
-<system-out>
-<![CDATA[{"level":"info","message":"API Context Created","timestamp":"2026-05-17T16:33:31.976Z"}
-{"level":"info","message":"Calling API: GET /parabank/services/bank/accounts/999999999 — expecting failure","timestamp":"2026-05-17T16:33:31.977Z"}
-API Response Time: 27 ms
-{"level":"info","message":"API response: Could not find account #999999999","timestamp":"2026-05-17T16:33:32.005Z"}
-{"level":"info","message":"Confirmed: status was 400 — invalid account ID rejected","timestamp":"2026-05-17T16:33:32.007Z"}
-{"level":"info","message":"API Context Disposed","timestamp":"2026-05-17T16:33:32.010Z"}
-]]>
-</system-out>
-</testcase>
-<testcase name="API Test Cases - Account Operations › @api @negative @regression TC-API-04 Create account with invalid customerId — should return an error response" classname="API\parabank_API.spec.ts" time="0.044">
-<system-out>
-<![CDATA[{"level":"info","message":"API Context Created","timestamp":"2026-05-17T16:33:32.032Z"}
-{"level":"info","message":"Calling API: POST /parabank/services/bank/createAccount — invalid customerId: 99999999","timestamp":"2026-05-17T16:33:32.032Z"}
-API Response Time: 33 ms
-{"level":"info","message":"API response: Could not create new account for customer 99999999 from account 12345","timestamp":"2026-05-17T16:33:32.066Z"}
-{"level":"info","message":"Confirmed: status was 400 — invalid customer ID rejected","timestamp":"2026-05-17T16:33:32.070Z"}
-{"level":"info","message":"API Context Disposed","timestamp":"2026-05-17T16:33:32.074Z"}
+<![CDATA[{"level":"info","message":"API Context Created","timestamp":"2026-05-17T17:05:36.258Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-17T17:05:36.337Z"}
 ]]>
 </system-out>
 </testcase>

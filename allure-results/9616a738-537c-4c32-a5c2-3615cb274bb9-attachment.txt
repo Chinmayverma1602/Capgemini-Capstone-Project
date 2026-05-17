@@ -1,0 +1,6 @@
+{"level":"info","message":"API Context Created","timestamp":"2026-05-17T17:03:59.013Z"}
+{"level":"info","message":"Calling API: GET /parabank/services/bank/accounts/999999999 — expecting failure","timestamp":"2026-05-17T17:03:59.014Z"}
+API Response Time: 63 ms
+{"level":"info","message":"API response: Could not find account #999999999","timestamp":"2026-05-17T17:03:59.077Z"}
+{"level":"info","message":"Confirmed: status was 400 — invalid account ID rejected","timestamp":"2026-05-17T17:03:59.079Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-17T17:03:59.082Z"}

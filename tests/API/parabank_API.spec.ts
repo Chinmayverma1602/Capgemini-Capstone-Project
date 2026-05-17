@@ -12,10 +12,7 @@ from '../../utils/performanceHelper';
 
 test.describe('API Test Cases - Account Operations', () => {
 
-  // =========================================================
-  // TC-API-01
-  // Create SAVINGS Account
-  // =========================================================
+
 
   test('@api @smoke TC-API-01 Create SAVINGS account',
     async ({ apiContext }) => {
@@ -69,12 +66,10 @@ test.describe('API Test Cases - Account Operations', () => {
         `/parabank/services/bank/accounts/${newAccountId}`
       );
 
-      // PERFORMANCE END
       const endTime = Date.now();
 
       const responseTime = endTime - startTime;
 
-      // PERFORMANCE VALIDATION
       PerformanceHelper.validateApiResponseTime(
         responseTime
       );
@@ -93,11 +88,9 @@ test.describe('API Test Cases - Account Operations', () => {
         fetchedAccount
       );
 
-      // DATA TYPE VALIDATION
       expect(typeof fetchedAccount.balance)
         .toBe('number');
 
-      // NUMERIC CORRECTNESS VALIDATION
       expect(fetchedAccount.balance)
         .toBeGreaterThanOrEqual(0);
 
@@ -116,10 +109,7 @@ test.describe('API Test Cases - Account Operations', () => {
       );
   });
 
-  // =========================================================
-  // TC-API-02
-  // Create CHECKING Account
-  // =========================================================
+
 
   test('@api @smoke TC-API-02 Create CHECKING account — response should reflect correct type',
     async ({ apiContext }) => {
@@ -128,19 +118,16 @@ test.describe('API Test Cases - Account Operations', () => {
         `Calling API: POST /parabank/services/bank/createAccount — CHECKING`
       );
 
-      // PERFORMANCE START
       const startTime = Date.now();
 
       const response = await apiContext.post(
         `/parabank/services/bank/createAccount?customerId=${apiData.validCustomer.customerId}&newAccountType=${apiData.accountTypes.checking}&fromAccountId=${apiData.validCustomer.fromAccountId}`
       );
 
-      // PERFORMANCE END
       const endTime = Date.now();
 
       const responseTime = endTime - startTime;
 
-      // PERFORMANCE VALIDATION
       PerformanceHelper.validateApiResponseTime(
         responseTime
       );
@@ -153,17 +140,14 @@ test.describe('API Test Cases - Account Operations', () => {
         `API response: ${JSON.stringify(accountData)}`
       );
 
-      // SCHEMA VALIDATION
       SchemaValidator.validateSchema(
         accountSchema,
         accountData
       );
 
-      // DATA TYPE VALIDATION
       expect(typeof accountData.balance)
         .toBe('number');
 
-      // NUMERIC CORRECTNESS VALIDATION
       expect(accountData.balance)
         .toBeGreaterThanOrEqual(0);
 
@@ -196,10 +180,7 @@ test.describe('API Test Cases - Account Operations', () => {
       );
   });
 
-  // =========================================================
-  // TC-API-03
-  // GET Invalid Account
-  // =========================================================
+
 
   test('@api @negative @regression TC-API-03 GET non-existent account — should return an error response',
     async ({ apiContext }) => {
@@ -208,19 +189,16 @@ test.describe('API Test Cases - Account Operations', () => {
         `Calling API: GET /parabank/services/bank/accounts/${apiData.invalidData.fakeAccountId} — expecting failure`
       );
 
-      // PERFORMANCE START
       const startTime = Date.now();
 
       const response = await apiContext.get(
         `/parabank/services/bank/accounts/${apiData.invalidData.fakeAccountId}`
       );
 
-      // PERFORMANCE END
       const endTime = Date.now();
 
       const responseTime = endTime - startTime;
 
-      // PERFORMANCE VALIDATION
       PerformanceHelper.validateApiResponseTime(
         responseTime
       );
@@ -236,10 +214,7 @@ test.describe('API Test Cases - Account Operations', () => {
       );
   });
 
-  // =========================================================
-  // TC-API-04
-  // Invalid Customer ID
-  // =========================================================
+
 
   test('@api @negative @regression TC-API-04 Create account with invalid customerId — should return an error response',
     async ({ apiContext }) => {
@@ -248,19 +223,16 @@ test.describe('API Test Cases - Account Operations', () => {
         `Calling API: POST /parabank/services/bank/createAccount — invalid customerId: ${apiData.invalidData.fakeCustomerId}`
       );
 
-      // PERFORMANCE START
       const startTime = Date.now();
 
       const response = await apiContext.post(
         `/parabank/services/bank/createAccount?customerId=${apiData.invalidData.fakeCustomerId}&newAccountType=${apiData.accountTypes.savings}&fromAccountId=${apiData.validCustomer.fromAccountId}`
       );
 
-      // PERFORMANCE END
       const endTime = Date.now();
 
       const responseTime = endTime - startTime;
 
-      // PERFORMANCE VALIDATION
       PerformanceHelper.validateApiResponseTime(
         responseTime
       );

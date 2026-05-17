@@ -2037,3 +2037,197 @@
 {"level":"info","message":"API response: Could not create new account for customer 99999999 from account 12345","timestamp":"2026-05-17T16:33:32.066Z"}
 {"level":"info","message":"Confirmed: status was 400 — invalid customer ID rejected","timestamp":"2026-05-17T16:33:32.070Z"}
 {"level":"info","message":"API Context Disposed","timestamp":"2026-05-17T16:33:32.074Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-17T16:35:49.803Z"}
+{"level":"info","message":"Calling API: POST /parabank/services/bank/createAccount — SAVINGS","timestamp":"2026-05-17T16:35:49.806Z"}
+{"level":"info","message":"API response: {\"id\":14010,\"customerId\":12212,\"type\":\"SAVINGS\",\"balance\":0}","timestamp":"2026-05-17T16:35:49.880Z"}
+{"level":"info","message":"Account type matches: expected=\"SAVINGS\" API=\"SAVINGS\"","timestamp":"2026-05-17T16:35:49.881Z"}
+{"level":"info","message":"Customer ID matches: expected=\"12212\" API=\"12212\"","timestamp":"2026-05-17T16:35:49.882Z"}
+{"level":"info","message":"New account ID received: 14010","timestamp":"2026-05-17T16:35:49.884Z"}
+{"level":"info","message":"Calling API: GET /parabank/services/bank/accounts/14010","timestamp":"2026-05-17T16:35:49.885Z"}
+{"level":"info","message":"API response: {\"id\":14010,\"customerId\":12212,\"type\":\"SAVINGS\",\"balance\":100}","timestamp":"2026-05-17T16:35:49.902Z"}
+{"level":"info","message":"Account ID matches: POST=\"14010\" GET=\"14010\"","timestamp":"2026-05-17T16:35:49.938Z"}
+{"level":"info","message":"Account type matches: expected=\"SAVINGS\" GET=\"SAVINGS\"","timestamp":"2026-05-17T16:35:49.939Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-17T16:35:49.944Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-17T16:35:49.967Z"}
+{"level":"info","message":"Calling API: POST /parabank/services/bank/createAccount — CHECKING","timestamp":"2026-05-17T16:35:49.968Z"}
+{"level":"info","message":"API response: {\"id\":14121,\"customerId\":12212,\"type\":\"CHECKING\",\"balance\":0}","timestamp":"2026-05-17T16:35:50.003Z"}
+{"level":"info","message":"Account type matches: expected=\"CHECKING\" API=\"CHECKING\"","timestamp":"2026-05-17T16:35:50.006Z"}
+{"level":"info","message":"Customer ID matches: expected=\"12212\" API=\"12212\"","timestamp":"2026-05-17T16:35:50.007Z"}
+{"level":"info","message":"Balance is 0 for a newly opened account","timestamp":"2026-05-17T16:35:50.009Z"}
+{"level":"info","message":"New CHECKING account ID received: 14121","timestamp":"2026-05-17T16:35:50.010Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-17T16:35:50.013Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-17T16:35:50.032Z"}
+{"level":"info","message":"Calling API: GET /parabank/services/bank/accounts/999999999 — expecting failure","timestamp":"2026-05-17T16:35:50.032Z"}
+{"level":"info","message":"API response: Could not find account #999999999","timestamp":"2026-05-17T16:35:50.053Z"}
+{"level":"info","message":"Confirmed: status was 400 — invalid account ID rejected","timestamp":"2026-05-17T16:35:50.054Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-17T16:35:50.057Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-17T16:35:50.075Z"}
+{"level":"info","message":"Calling API: POST /parabank/services/bank/createAccount — invalid customerId: 99999999","timestamp":"2026-05-17T16:35:50.075Z"}
+{"level":"info","message":"API response: Could not create new account for customer 99999999 from account 12345","timestamp":"2026-05-17T16:35:50.108Z"}
+{"level":"info","message":"Confirmed: status was 400 — invalid customer ID rejected","timestamp":"2026-05-17T16:35:50.110Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-17T16:35:50.114Z"}
+{"level":"info","message":"RegisterPage instance created","timestamp":"2026-05-17T16:39:49.597Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-17T16:39:49.602Z"}
+{"level":"info","message":"Registering new user","timestamp":"2026-05-17T16:39:50.685Z"}
+{"level":"info","message":"Filling registration form","timestamp":"2026-05-17T16:39:50.686Z"}
+{"level":"info","message":"Screenshot captured: register-filled.png","timestamp":"2026-05-17T16:39:51.130Z"}
+{"level":"info","message":"Clicked Register button","timestamp":"2026-05-17T16:39:51.448Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-17T16:39:51.448Z"}
+{"level":"info","message":"RegisterPage instance disposed","timestamp":"2026-05-17T16:39:56.515Z"}
+{"level":"info","message":"LoginPage instance created","timestamp":"2026-05-17T16:39:56.748Z"}
+{"level":"info","message":"Starting valid login flow","timestamp":"2026-05-17T16:39:56.749Z"}
+{"level":"info","message":"Opening login page","timestamp":"2026-05-17T16:39:56.749Z"}
+{"level":"info","message":"Entering login credentials","timestamp":"2026-05-17T16:39:56.891Z"}
+{"level":"info","message":"Clicking login button","timestamp":"2026-05-17T16:39:56.940Z"}
+{"level":"info","message":"Validating successful login","timestamp":"2026-05-17T16:39:57.081Z"}
+{"level":"info","message":"User logged in successfully","timestamp":"2026-05-17T16:39:57.082Z"}
+{"level":"info","message":"LoginPage instance disposed","timestamp":"2026-05-17T16:39:57.084Z"}
+{"level":"info","message":"RegisterPage instance created","timestamp":"2026-05-17T16:39:57.302Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-17T16:39:57.302Z"}
+{"level":"info","message":"Registering user with mismatched password","timestamp":"2026-05-17T16:39:57.510Z"}
+{"level":"info","message":"Filling registration form","timestamp":"2026-05-17T16:39:57.511Z"}
+{"level":"info","message":"Screenshot captured: mismatched-password.png","timestamp":"2026-05-17T16:39:57.862Z"}
+{"level":"info","message":"Clicked Register button","timestamp":"2026-05-17T16:39:57.943Z"}
+{"level":"info","message":"Validating password mismatch error","timestamp":"2026-05-17T16:39:57.944Z"}
+{"level":"info","message":"RegisterPage instance disposed","timestamp":"2026-05-17T16:39:57.984Z"}
+{"level":"info","message":"RegisterPage instance created","timestamp":"2026-05-17T16:39:58.182Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-17T16:39:58.182Z"}
+{"level":"info","message":"Submitting registration form with blank fields","timestamp":"2026-05-17T16:39:58.335Z"}
+{"level":"info","message":"Screenshot captured: blank-registration-form.png","timestamp":"2026-05-17T16:39:58.480Z"}
+{"level":"info","message":"Clicked Register button","timestamp":"2026-05-17T16:39:58.571Z"}
+{"level":"info","message":"Validating blank field error messages","timestamp":"2026-05-17T16:39:58.571Z"}
+{"level":"info","message":"RegisterPage instance disposed","timestamp":"2026-05-17T16:39:58.688Z"}
+{"level":"info","message":"LoginPage instance created","timestamp":"2026-05-17T16:39:58.899Z"}
+{"level":"info","message":"Starting invalid login scenario","timestamp":"2026-05-17T16:39:58.899Z"}
+{"level":"info","message":"Opening login page","timestamp":"2026-05-17T16:39:58.900Z"}
+{"level":"info","message":"Entering login credentials","timestamp":"2026-05-17T16:39:59.015Z"}
+{"level":"info","message":"Screenshot captured: invalid-login.png","timestamp":"2026-05-17T16:39:59.229Z"}
+{"level":"info","message":"Clicking login button","timestamp":"2026-05-17T16:39:59.229Z"}
+{"level":"info","message":"Validating invalid login error message","timestamp":"2026-05-17T16:39:59.346Z"}
+{"level":"info","message":"Invalid login error message displayed correctly","timestamp":"2026-05-17T16:39:59.398Z"}
+{"level":"info","message":"LoginPage instance disposed","timestamp":"2026-05-17T16:39:59.401Z"}
+{"level":"info","message":"RegisterPage instance created","timestamp":"2026-05-17T16:39:59.636Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-17T16:39:59.636Z"}
+{"level":"info","message":"Registering with special character username","timestamp":"2026-05-17T16:39:59.857Z"}
+{"level":"info","message":"Filling registration form","timestamp":"2026-05-17T16:39:59.857Z"}
+{"level":"info","message":"Screenshot captured: special-character-username.png","timestamp":"2026-05-17T16:40:00.305Z"}
+{"level":"info","message":"Clicked Register button","timestamp":"2026-05-17T16:40:00.405Z"}
+{"level":"info","message":"Validating username format error","timestamp":"2026-05-17T16:40:00.406Z"}
+{"level":"info","message":"RegisterPage instance disposed","timestamp":"2026-05-17T16:40:00.456Z"}
+{"level":"info","message":"RegisterPage instance created","timestamp":"2026-05-17T16:40:00.682Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-17T16:40:00.683Z"}
+{"level":"info","message":"Submitting form with mandatory fields blank","timestamp":"2026-05-17T16:40:00.916Z"}
+{"level":"info","message":"Filling registration form","timestamp":"2026-05-17T16:40:00.917Z"}
+{"level":"info","message":"Screenshot captured: mandatory-fields-blank.png","timestamp":"2026-05-17T16:40:01.101Z"}
+{"level":"info","message":"Clicked Register button","timestamp":"2026-05-17T16:40:01.174Z"}
+{"level":"info","message":"Validating mandatory field messages","timestamp":"2026-05-17T16:40:01.174Z"}
+{"level":"info","message":"RegisterPage instance disposed","timestamp":"2026-05-17T16:40:01.302Z"}
+{"level":"info","message":"RegisterPage instance created","timestamp":"2026-05-17T16:40:01.534Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-17T16:40:01.535Z"}
+{"level":"info","message":"Registering new user","timestamp":"2026-05-17T16:40:01.854Z"}
+{"level":"info","message":"Filling registration form","timestamp":"2026-05-17T16:40:01.854Z"}
+{"level":"info","message":"Screenshot captured: register-filled.png","timestamp":"2026-05-17T16:40:02.425Z"}
+{"level":"info","message":"Clicked Register button","timestamp":"2026-05-17T16:40:02.751Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-17T16:40:02.752Z"}
+{"level":"info","message":"RegisterPage instance disposed","timestamp":"2026-05-17T16:40:02.798Z"}
+{"level":"info","message":"RegisterPage instance created","timestamp":"2026-05-17T17:03:13.165Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-17T17:03:13.170Z"}
+{"level":"info","message":"Registering new user","timestamp":"2026-05-17T17:03:14.584Z"}
+{"level":"info","message":"Filling registration form","timestamp":"2026-05-17T17:03:14.584Z"}
+{"level":"info","message":"Screenshot captured: register-filled.png","timestamp":"2026-05-17T17:03:14.955Z"}
+{"level":"info","message":"Clicked Register button","timestamp":"2026-05-17T17:03:15.304Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-17T17:03:15.304Z"}
+{"level":"info","message":"RegisterPage instance disposed","timestamp":"2026-05-17T17:03:20.340Z"}
+{"level":"info","message":"LoginPage instance created","timestamp":"2026-05-17T17:03:20.572Z"}
+{"level":"info","message":"Starting valid login flow","timestamp":"2026-05-17T17:03:20.573Z"}
+{"level":"info","message":"Opening login page","timestamp":"2026-05-17T17:03:20.573Z"}
+{"level":"info","message":"Entering login credentials","timestamp":"2026-05-17T17:03:20.740Z"}
+{"level":"info","message":"Clicking login button","timestamp":"2026-05-17T17:03:20.778Z"}
+{"level":"info","message":"Validating successful login","timestamp":"2026-05-17T17:03:20.960Z"}
+{"level":"info","message":"User logged in successfully","timestamp":"2026-05-17T17:03:20.961Z"}
+{"level":"info","message":"LoginPage instance disposed","timestamp":"2026-05-17T17:03:20.962Z"}
+{"level":"info","message":"RegisterPage instance created","timestamp":"2026-05-17T17:03:21.171Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-17T17:03:21.171Z"}
+{"level":"info","message":"Registering user with mismatched password","timestamp":"2026-05-17T17:03:21.321Z"}
+{"level":"info","message":"Filling registration form","timestamp":"2026-05-17T17:03:21.321Z"}
+{"level":"info","message":"Screenshot captured: mismatched-password.png","timestamp":"2026-05-17T17:03:21.611Z"}
+{"level":"info","message":"Clicked Register button","timestamp":"2026-05-17T17:03:21.677Z"}
+{"level":"info","message":"Validating password mismatch error","timestamp":"2026-05-17T17:03:21.677Z"}
+{"level":"info","message":"RegisterPage instance disposed","timestamp":"2026-05-17T17:03:21.715Z"}
+{"level":"info","message":"RegisterPage instance created","timestamp":"2026-05-17T17:03:21.888Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-17T17:03:21.889Z"}
+{"level":"info","message":"Submitting registration form with blank fields","timestamp":"2026-05-17T17:03:22.078Z"}
+{"level":"info","message":"Screenshot captured: blank-registration-form.png","timestamp":"2026-05-17T17:03:22.194Z"}
+{"level":"info","message":"Clicked Register button","timestamp":"2026-05-17T17:03:22.290Z"}
+{"level":"info","message":"Validating blank field error messages","timestamp":"2026-05-17T17:03:22.291Z"}
+{"level":"info","message":"RegisterPage instance disposed","timestamp":"2026-05-17T17:03:22.421Z"}
+{"level":"info","message":"LoginPage instance created","timestamp":"2026-05-17T17:03:22.623Z"}
+{"level":"info","message":"Starting invalid login scenario","timestamp":"2026-05-17T17:03:22.624Z"}
+{"level":"info","message":"Opening login page","timestamp":"2026-05-17T17:03:22.624Z"}
+{"level":"info","message":"Entering login credentials","timestamp":"2026-05-17T17:03:22.738Z"}
+{"level":"info","message":"Screenshot captured: invalid-login.png","timestamp":"2026-05-17T17:03:22.912Z"}
+{"level":"info","message":"Clicking login button","timestamp":"2026-05-17T17:03:22.912Z"}
+{"level":"info","message":"Validating invalid login error message","timestamp":"2026-05-17T17:03:23.011Z"}
+{"level":"info","message":"Invalid login error message displayed correctly","timestamp":"2026-05-17T17:03:23.048Z"}
+{"level":"info","message":"LoginPage instance disposed","timestamp":"2026-05-17T17:03:23.049Z"}
+{"level":"info","message":"RegisterPage instance created","timestamp":"2026-05-17T17:03:23.205Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-17T17:03:23.205Z"}
+{"level":"info","message":"Registering with special character username","timestamp":"2026-05-17T17:03:23.338Z"}
+{"level":"info","message":"Filling registration form","timestamp":"2026-05-17T17:03:23.338Z"}
+{"level":"info","message":"Screenshot captured: special-character-username.png","timestamp":"2026-05-17T17:03:23.565Z"}
+{"level":"info","message":"Clicked Register button","timestamp":"2026-05-17T17:03:23.660Z"}
+{"level":"info","message":"Validating username format error","timestamp":"2026-05-17T17:03:23.661Z"}
+{"level":"info","message":"RegisterPage instance disposed","timestamp":"2026-05-17T17:03:23.698Z"}
+{"level":"info","message":"RegisterPage instance created","timestamp":"2026-05-17T17:03:23.874Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-17T17:03:23.874Z"}
+{"level":"info","message":"Submitting form with mandatory fields blank","timestamp":"2026-05-17T17:03:24.038Z"}
+{"level":"info","message":"Filling registration form","timestamp":"2026-05-17T17:03:24.038Z"}
+{"level":"info","message":"Screenshot captured: mandatory-fields-blank.png","timestamp":"2026-05-17T17:03:24.174Z"}
+{"level":"info","message":"Clicked Register button","timestamp":"2026-05-17T17:03:24.221Z"}
+{"level":"info","message":"Validating mandatory field messages","timestamp":"2026-05-17T17:03:24.221Z"}
+{"level":"info","message":"RegisterPage instance disposed","timestamp":"2026-05-17T17:03:24.314Z"}
+{"level":"info","message":"RegisterPage instance created","timestamp":"2026-05-17T17:03:24.456Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-17T17:03:24.456Z"}
+{"level":"info","message":"Registering new user","timestamp":"2026-05-17T17:03:24.586Z"}
+{"level":"info","message":"Filling registration form","timestamp":"2026-05-17T17:03:24.586Z"}
+{"level":"info","message":"Screenshot captured: register-filled.png","timestamp":"2026-05-17T17:03:24.844Z"}
+{"level":"info","message":"Clicked Register button","timestamp":"2026-05-17T17:03:24.967Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-17T17:03:24.967Z"}
+{"level":"info","message":"RegisterPage instance disposed","timestamp":"2026-05-17T17:03:24.991Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-17T17:03:58.621Z"}
+{"level":"info","message":"Calling API: POST /parabank/services/bank/createAccount — SAVINGS","timestamp":"2026-05-17T17:03:58.624Z"}
+{"level":"info","message":"API response: {\"id\":15009,\"customerId\":12212,\"type\":\"SAVINGS\",\"balance\":0}","timestamp":"2026-05-17T17:03:58.840Z"}
+{"level":"info","message":"Account type matches: expected=\"SAVINGS\" API=\"SAVINGS\"","timestamp":"2026-05-17T17:03:58.841Z"}
+{"level":"info","message":"Customer ID matches: expected=\"12212\" API=\"12212\"","timestamp":"2026-05-17T17:03:58.842Z"}
+{"level":"info","message":"New account ID received: 15009","timestamp":"2026-05-17T17:03:58.843Z"}
+{"level":"info","message":"Calling API: GET /parabank/services/bank/accounts/15009","timestamp":"2026-05-17T17:03:58.843Z"}
+{"level":"info","message":"API response: {\"id\":15009,\"customerId\":12212,\"type\":\"SAVINGS\",\"balance\":100}","timestamp":"2026-05-17T17:03:58.867Z"}
+{"level":"info","message":"Account ID matches: POST=\"15009\" GET=\"15009\"","timestamp":"2026-05-17T17:03:58.910Z"}
+{"level":"info","message":"Account type matches: expected=\"SAVINGS\" GET=\"SAVINGS\"","timestamp":"2026-05-17T17:03:58.911Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-17T17:03:58.917Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-17T17:03:58.948Z"}
+{"level":"info","message":"Calling API: POST /parabank/services/bank/createAccount — CHECKING","timestamp":"2026-05-17T17:03:58.949Z"}
+{"level":"info","message":"API response: {\"id\":15120,\"customerId\":12212,\"type\":\"CHECKING\",\"balance\":0}","timestamp":"2026-05-17T17:03:58.984Z"}
+{"level":"info","message":"Account type matches: expected=\"CHECKING\" API=\"CHECKING\"","timestamp":"2026-05-17T17:03:58.987Z"}
+{"level":"info","message":"Customer ID matches: expected=\"12212\" API=\"12212\"","timestamp":"2026-05-17T17:03:58.988Z"}
+{"level":"info","message":"Balance is 0 for a newly opened account","timestamp":"2026-05-17T17:03:58.989Z"}
+{"level":"info","message":"New CHECKING account ID received: 15120","timestamp":"2026-05-17T17:03:58.990Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-17T17:03:58.992Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-17T17:03:59.013Z"}
+{"level":"info","message":"Calling API: GET /parabank/services/bank/accounts/999999999 — expecting failure","timestamp":"2026-05-17T17:03:59.014Z"}
+{"level":"info","message":"API response: Could not find account #999999999","timestamp":"2026-05-17T17:03:59.077Z"}
+{"level":"info","message":"Confirmed: status was 400 — invalid account ID rejected","timestamp":"2026-05-17T17:03:59.079Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-17T17:03:59.082Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-17T17:03:59.106Z"}
+{"level":"info","message":"Calling API: POST /parabank/services/bank/createAccount — invalid customerId: 99999999","timestamp":"2026-05-17T17:03:59.106Z"}
+{"level":"info","message":"API response: Could not create new account for customer 99999999 from account 12345","timestamp":"2026-05-17T17:03:59.148Z"}
+{"level":"info","message":"Confirmed: status was 400 — invalid customer ID rejected","timestamp":"2026-05-17T17:03:59.149Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-17T17:03:59.152Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-17T17:04:14.005Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-17T17:04:14.208Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-17T17:04:45.119Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-17T17:04:45.197Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-17T17:05:19.159Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-17T17:05:19.237Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-17T17:05:36.258Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-17T17:05:36.337Z"}
