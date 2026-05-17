@@ -1,0 +1,10 @@
+{"level":"info","message":"API Context Created","timestamp":"2026-05-17T11:36:54.740Z"}
+{"level":"info","message":"Launching registration flow","timestamp":"2026-05-17T11:36:54.741Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-17T11:36:54.741Z"}
+{"level":"info","message":"Registering a new user","timestamp":"2026-05-17T11:37:01.038Z"}
+{"level":"info","message":"Registering new user","timestamp":"2026-05-17T11:37:01.039Z"}
+{"level":"info","message":"Filling registration form","timestamp":"2026-05-17T11:37:01.040Z"}
+{"level":"info","message":"Screenshot captured: register-filled.png","timestamp":"2026-05-17T11:37:01.718Z"}
+{"level":"info","message":"Clicked Register button","timestamp":"2026-05-17T11:37:02.949Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-17T11:37:02.950Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-17T11:37:08.024Z"}

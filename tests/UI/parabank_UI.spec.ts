@@ -1,4 +1,6 @@
 import { test, expect } from '../../fixtures/uiFixtures';
+import { TestDataGenerator } from '../../utils/testDataGenerator';
+
 import registerData from '../../test-data/registerData.json';
 
 test.describe('UI Test Cases', () => {
@@ -54,4 +56,48 @@ test.describe('UI Test Cases', () => {
     await registerPage.registerWithMandatoryFieldsBlank(registerData.validUser);
     await registerPage.verifyMandatoryFieldValidationMessages();
   });
+
+  test('@ai @ui TC-AI-01 Register User with AI Generated Data',
+async ({ registerPage }) => {
+
+const aiUser = {
+
+    firstName:
+    TestDataGenerator.randomFirstName(),
+
+    lastName:
+    TestDataGenerator.randomLastName(),
+
+    address:
+    'New York Street',
+
+    city:
+    'New York',
+
+    state:
+    'NY',
+
+    zipCode:
+    '10001',
+
+    phone:
+    TestDataGenerator.randomPhone(),
+
+    ssn:
+    '123456789',
+
+    username:
+    TestDataGenerator.randomUsername(),
+
+    password:
+    TestDataGenerator.randomPassword()
+};
+
+await registerPage.navigateToRegisterPage();
+
+await registerPage.registerUser(aiUser);
+
+await registerPage.verifyRegistrationSuccess();
+
+});
 });
