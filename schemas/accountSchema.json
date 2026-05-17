@@ -4,12 +4,20 @@
     "id": {
       "type": "integer"
     },
+    "customerId": {
+      "type": "integer"
+    },
+    "type": {
+      "type": "string"
+    },
     "balance": {
       "type": "number"
     }
   },
   "required": [
     "id",
+    "customerId",
+    "type",
     "balance"
   ]
 }

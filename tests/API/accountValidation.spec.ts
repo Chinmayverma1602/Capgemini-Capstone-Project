@@ -1,67 +1,39 @@
-// import {
-//   test,
-//   expect,
-//   request
-// } from '@playwright/test';
+import { test, expect }
+from '../../fixtures/apiFixture';
 
-// import {
-// parseStringPromise
-// }
-// from 'xml2js';
+import accountSchema
+from '../../schemas/accountSchema.json';
 
-// test(
-// 'Validate account balance',
-// async () => {
+import { SchemaValidator }
+from '../../utils/schemaValidator';
 
-// const api =
-// await request.newContext();
+test(
+  'Validate Account Schema & Data Types',
 
-// //
-// // create account first
-// //
-// const createResponse =
-// await api.post(
-// 'http://localhost:9090/parabank/services/bank/createAccount',
-// {
-// params:{
-// customerId:12212,
-// newAccountType:0,
-// fromAccountId:12345
-// }
-// }
-// );
+  async ({ apiContext }) => {
 
-// const account =
-// await createResponse.json();
+    const response = await apiContext.get(
+      '/parabank/services/bank/accounts/12345'
+    );
 
-// const response =
-// await api.get(
-// `http://localhost:9090/parabank/services/bank/accounts/${account.id}`
-// );
+    expect(response.status()).toBe(200);
 
-// const xml =
-// await response.text();
+    const data = await response.json();
 
-// const parsed =
-// await parseStringPromise(
-// xml
-// );
+    SchemaValidator.validateSchema(
+      accountSchema,
+      data
+    );
 
-// const body =
-// parsed.account;
+    expect(typeof data.balance)
+      .toBe('number');
 
-// const balance =
-// Number(
-// body.balance[0]
-// );
+    expect(data.balance)
+      .toBe(-2500)
 
-// expect(
-// typeof balance
-// ).toBe('number');
+    expect(data.id)
+      .toBeDefined();
 
-// expect(balance)
-// .toBeGreaterThanOrEqual(
-// 0
-// );
-
-// });
+    expect(data.customerId)
+      .toBeDefined();
+});

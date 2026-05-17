@@ -1,0 +1,2 @@
+Total Throughput Time:
+       3286 ms

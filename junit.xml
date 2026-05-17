@@ -1,149 +1,55 @@
-<testsuites id="" name="" tests="6" failures="2" skipped="0" errors="1" time="4.70901">
-<testsuite name="API\accountSchema.spec.ts" timestamp="2026-05-17T13:07:38.851Z" hostname="chromium" tests="1" failures="1" skipped="0" time="0.913" errors="0">
-<testcase name="Validate account schema" classname="API\accountSchema.spec.ts" time="0.913">
+<testsuites id="" name="" tests="4" failures="0" skipped="0" errors="0" time="1.7460770000000485">
+<testsuite name="API\parabank_API.spec.ts" timestamp="2026-05-17T16:33:30.966Z" hostname="chromium" tests="4" failures="0" skipped="0" time="0.271" errors="0">
+<testcase name="API Test Cases - Account Operations › @api @smoke TC-API-01 Create SAVINGS account" classname="API\parabank_API.spec.ts" time="0.139">
 <system-out>
-<![CDATA[
-[[ATTACHMENT|test-results\API-accountSchema-Validate-account-schema-chromium\error-context.md]]
-
-[[ATTACHMENT|test-results\API-accountSchema-Validate-account-schema-chromium\trace.zip]]
-]]>
-</system-out>
-<failure message="expect(received).toBeTruthy()" type="expect.toBeTruthy">
-<![CDATA[  [chromium] › API\accountSchema.spec.ts:15:5 › Validate account schema ────────────────────────────
-
-    Error: expect(received).toBeTruthy()
-
-    Received: false
-
-      37 | expect(
-      38 | createResponse.ok()
-    > 39 | ).toBeTruthy();
-         |   ^
-      40 |
-      41 | const createdAccount =
-      42 | await createResponse.json();
-        at C:\Users\chinm\OneDrive\Desktop\Capgemini_Capstone_Project\tests\API\accountSchema.spec.ts:39:3
-
-    Error Context: ..\test-results\API-accountSchema-Validate-account-schema-chromium\error-context.md
-
-    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
-    ..\test-results\API-accountSchema-Validate-account-schema-chromium\trace.zip
-    Usage:
-
-        npx playwright show-trace ..\test-results\API-accountSchema-Validate-account-schema-chromium\trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
-</testcase>
-</testsuite>
-<testsuite name="API\accountValidation.spec.ts" timestamp="2026-05-17T13:07:38.851Z" hostname="chromium" tests="1" failures="0" skipped="0" time="0.97" errors="1">
-<testcase name="Validate account balance" classname="API\accountValidation.spec.ts" time="0.97">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|test-results\API-accountValidation-Validate-account-balance-chromium\error-context.md]]
-
-[[ATTACHMENT|test-results\API-accountValidation-Validate-account-balance-chromium\trace.zip]]
-]]>
-</system-out>
-<error message="Unexpected token &apos;C&apos;, &quot;Could not &quot;... is not valid JSON" type="SyntaxError">
-<![CDATA[  [chromium] › API\accountValidation.spec.ts:12:5 › Validate account balance ───────────────────────
-
-    SyntaxError: Unexpected token 'C', "Could not "... is not valid JSON
-
-      33 |
-      34 | const account =
-    > 35 | await createResponse.json();
-         | ^
-      36 |
-      37 | const response =
-      38 | await api.get(
-        at C:\Users\chinm\OneDrive\Desktop\Capgemini_Capstone_Project\tests\API\accountValidation.spec.ts:35:1
-
-    Error Context: ..\test-results\API-accountValidation-Validate-account-balance-chromium\error-context.md
-
-    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
-    ..\test-results\API-accountValidation-Validate-account-balance-chromium\trace.zip
-    Usage:
-
-        npx playwright show-trace ..\test-results\API-accountValidation-Validate-account-balance-chromium\trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</error>
-</testcase>
-</testsuite>
-<testsuite name="API\parabank_API.spec.ts" timestamp="2026-05-17T13:07:38.851Z" hostname="chromium" tests="4" failures="1" skipped="0" time="2.184" errors="0">
-<testcase name="API Test Cases - Account Operations › @api @smoke TC-API-01 Create SAVINGS account" classname="API\parabank_API.spec.ts" time="1.005">
-<system-out>
-<![CDATA[{"level":"info","message":"API Context Created","timestamp":"2026-05-17T13:07:40.023Z"}
-{"level":"info","message":"Calling API: POST /parabank/services/bank/createAccount — SAVINGS","timestamp":"2026-05-17T13:07:40.033Z"}
-{"level":"info","message":"API Context Disposed","timestamp":"2026-05-17T13:07:41.006Z"}
-
-[[ATTACHMENT|test-results\API-parabank_API-API-Test--cda01-I-01-Create-SAVINGS-account-chromium\error-context.md]]
-
-[[ATTACHMENT|test-results\API-parabank_API-API-Test--cda01-I-01-Create-SAVINGS-account-chromium\trace.zip]]
-]]>
-</system-out>
-<failure message="expect(received).toBe(expected) // Object.is equality" type="expect.toBe">
-<![CDATA[  [chromium] › API\parabank_API.spec.ts:8:7 › API Test Cases - Account Operations › @api @smoke TC-API-01 Create SAVINGS account 
-
-    Error: expect(received).toBe(expected) // Object.is equality
-
-    Expected: 200
-    Received: 400
-
-      16 |     );
-      17 |
-    > 18 |     expect(createResponse.status()).toBe(200);
-         |                                     ^
-      19 |
-      20 |     const createdAccount = await createResponse.json();
-      21 |
-        at C:\Users\chinm\OneDrive\Desktop\Capgemini_Capstone_Project\tests\API\parabank_API.spec.ts:18:37
-
-    Error Context: ..\test-results\API-parabank_API-API-Test--cda01-I-01-Create-SAVINGS-account-chromium\error-context.md
-
-    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
-    ..\test-results\API-parabank_API-API-Test--cda01-I-01-Create-SAVINGS-account-chromium\trace.zip
-    Usage:
-
-        npx playwright show-trace ..\test-results\API-parabank_API-API-Test--cda01-I-01-Create-SAVINGS-account-chromium\trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
-</testcase>
-<testcase name="API Test Cases - Account Operations › @api @smoke TC-API-02 Create CHECKING account — response should reflect correct type" classname="API\parabank_API.spec.ts" time="0.865">
-<system-out>
-<![CDATA[{"level":"info","message":"API Context Created","timestamp":"2026-05-17T13:07:40.051Z"}
-{"level":"info","message":"Calling API: POST /parabank/services/bank/createAccount — CHECKING","timestamp":"2026-05-17T13:07:40.054Z"}
-{"level":"info","message":"API response: {\"id\":17007,\"customerId\":12212,\"type\":\"CHECKING\",\"balance\":0}","timestamp":"2026-05-17T13:07:40.879Z"}
-{"level":"info","message":"Account type matches: expected=\"CHECKING\" API=\"CHECKING\"","timestamp":"2026-05-17T13:07:40.882Z"}
-{"level":"info","message":"Customer ID matches: expected=\"12212\" API=\"12212\"","timestamp":"2026-05-17T13:07:40.883Z"}
-{"level":"info","message":"Balance is 0 for a newly opened account","timestamp":"2026-05-17T13:07:40.885Z"}
-{"level":"info","message":"New CHECKING account ID received: 17007","timestamp":"2026-05-17T13:07:40.888Z"}
-{"level":"info","message":"API Context Disposed","timestamp":"2026-05-17T13:07:40.902Z"}
+<![CDATA[{"level":"info","message":"API Context Created","timestamp":"2026-05-17T16:33:31.752Z"}
+{"level":"info","message":"Calling API: POST /parabank/services/bank/createAccount — SAVINGS","timestamp":"2026-05-17T16:33:31.755Z"}
+{"level":"info","message":"API response: {\"id\":13788,\"customerId\":12212,\"type\":\"SAVINGS\",\"balance\":0}","timestamp":"2026-05-17T16:33:31.823Z"}
+{"level":"info","message":"Account type matches: expected=\"SAVINGS\" API=\"SAVINGS\"","timestamp":"2026-05-17T16:33:31.824Z"}
+{"level":"info","message":"Customer ID matches: expected=\"12212\" API=\"12212\"","timestamp":"2026-05-17T16:33:31.826Z"}
+{"level":"info","message":"New account ID received: 13788","timestamp":"2026-05-17T16:33:31.827Z"}
+{"level":"info","message":"Calling API: GET /parabank/services/bank/accounts/13788","timestamp":"2026-05-17T16:33:31.828Z"}
+API Response Time: 12 ms
+{"level":"info","message":"API response: {\"id\":13788,\"customerId\":12212,\"type\":\"SAVINGS\",\"balance\":100}","timestamp":"2026-05-17T16:33:31.842Z"}
+{"level":"info","message":"Account ID matches: POST=\"13788\" GET=\"13788\"","timestamp":"2026-05-17T16:33:31.876Z"}
+{"level":"info","message":"Account type matches: expected=\"SAVINGS\" GET=\"SAVINGS\"","timestamp":"2026-05-17T16:33:31.878Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-17T16:33:31.884Z"}
 ]]>
 </system-out>
 </testcase>
-<testcase name="API Test Cases - Account Operations › @api @negative @regression TC-API-03 GET non-existent account — should return an error response" classname="API\parabank_API.spec.ts" time="0.164">
+<testcase name="API Test Cases - Account Operations › @api @smoke TC-API-02 Create CHECKING account — response should reflect correct type" classname="API\parabank_API.spec.ts" time="0.051">
 <system-out>
-<![CDATA[{"level":"info","message":"API Context Created","timestamp":"2026-05-17T13:07:40.964Z"}
-{"level":"info","message":"Calling API: GET /parabank/services/bank/accounts/999999999 — expecting failure","timestamp":"2026-05-17T13:07:40.965Z"}
-{"level":"info","message":"API response: Could not find account #999999999","timestamp":"2026-05-17T13:07:41.113Z"}
-{"level":"info","message":"Confirmed: status was 400 — invalid account ID rejected","timestamp":"2026-05-17T13:07:41.115Z"}
-{"level":"info","message":"API Context Disposed","timestamp":"2026-05-17T13:07:41.122Z"}
+<![CDATA[{"level":"info","message":"API Context Created","timestamp":"2026-05-17T16:33:31.910Z"}
+{"level":"info","message":"Calling API: POST /parabank/services/bank/createAccount — CHECKING","timestamp":"2026-05-17T16:33:31.911Z"}
+API Response Time: 31 ms
+{"level":"info","message":"API response: {\"id\":13899,\"customerId\":12212,\"type\":\"CHECKING\",\"balance\":0}","timestamp":"2026-05-17T16:33:31.944Z"}
+{"level":"info","message":"Account type matches: expected=\"CHECKING\" API=\"CHECKING\"","timestamp":"2026-05-17T16:33:31.948Z"}
+{"level":"info","message":"Customer ID matches: expected=\"12212\" API=\"12212\"","timestamp":"2026-05-17T16:33:31.949Z"}
+{"level":"info","message":"Balance is 0 for a newly opened account","timestamp":"2026-05-17T16:33:31.951Z"}
+{"level":"info","message":"New CHECKING account ID received: 13899","timestamp":"2026-05-17T16:33:31.952Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-17T16:33:31.955Z"}
 ]]>
 </system-out>
 </testcase>
-<testcase name="API Test Cases - Account Operations › @api @negative @regression TC-API-04 Create account with invalid customerId — should return an error response" classname="API\parabank_API.spec.ts" time="0.15">
+<testcase name="API Test Cases - Account Operations › @api @negative @regression TC-API-03 GET non-existent account — should return an error response" classname="API\parabank_API.spec.ts" time="0.037">
 <system-out>
-<![CDATA[{"level":"info","message":"API Context Created","timestamp":"2026-05-17T13:07:43.017Z"}
-{"level":"info","message":"Calling API: POST /parabank/services/bank/createAccount — invalid customerId: 99999999","timestamp":"2026-05-17T13:07:43.021Z"}
-{"level":"info","message":"API response: Could not create new account for customer 99999999 from account 12345","timestamp":"2026-05-17T13:07:43.127Z"}
-{"level":"info","message":"Confirmed: status was 400 — invalid customer ID rejected","timestamp":"2026-05-17T13:07:43.136Z"}
-{"level":"info","message":"API Context Disposed","timestamp":"2026-05-17T13:07:43.149Z"}
+<![CDATA[{"level":"info","message":"API Context Created","timestamp":"2026-05-17T16:33:31.976Z"}
+{"level":"info","message":"Calling API: GET /parabank/services/bank/accounts/999999999 — expecting failure","timestamp":"2026-05-17T16:33:31.977Z"}
+API Response Time: 27 ms
+{"level":"info","message":"API response: Could not find account #999999999","timestamp":"2026-05-17T16:33:32.005Z"}
+{"level":"info","message":"Confirmed: status was 400 — invalid account ID rejected","timestamp":"2026-05-17T16:33:32.007Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-17T16:33:32.010Z"}
+]]>
+</system-out>
+</testcase>
+<testcase name="API Test Cases - Account Operations › @api @negative @regression TC-API-04 Create account with invalid customerId — should return an error response" classname="API\parabank_API.spec.ts" time="0.044">
+<system-out>
+<![CDATA[{"level":"info","message":"API Context Created","timestamp":"2026-05-17T16:33:32.032Z"}
+{"level":"info","message":"Calling API: POST /parabank/services/bank/createAccount — invalid customerId: 99999999","timestamp":"2026-05-17T16:33:32.032Z"}
+API Response Time: 33 ms
+{"level":"info","message":"API response: Could not create new account for customer 99999999 from account 12345","timestamp":"2026-05-17T16:33:32.066Z"}
+{"level":"info","message":"Confirmed: status was 400 — invalid customer ID rejected","timestamp":"2026-05-17T16:33:32.070Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-17T16:33:32.074Z"}
 ]]>
 </system-out>
 </testcase>

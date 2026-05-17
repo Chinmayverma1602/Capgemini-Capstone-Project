@@ -1,39 +1,22 @@
-// import {
-//   test,
-//   expect,
-//   request
-// }
-// from '@playwright/test';
+import { test, expect } from '@playwright/test';
+import { PerformanceHelper } from '../../utils/performanceHelper';
 
-// test(
-// 'API response performance',
-// async () => {
+test('Validate API Response Time',
+  async ({ request }) => {
 
-// const api =
-// await request.newContext();
+    const startTime = Date.now();
 
-// const startTime =
-// Date.now();
+    const response = await request.get(
+      'https://parabank.parasoft.com/parabank/services/bank/accounts/12345'
+    );
 
-// const response =
-// await api.get(
-// 'http://localhost:9090/parabank/services/bank/accounts/13344'
-// );
+    const endTime = Date.now();
 
-// const responseTime =
-// Date.now() - startTime;
+    const responseTime = endTime - startTime;
 
-// console.log(
-// `API Response Time:
-// ${responseTime} ms`
-// );
+    PerformanceHelper.validateApiResponseTime(
+      responseTime
+    );
 
-// expect(
-// response.ok()
-// ).toBeTruthy();
-
-// expect(
-// responseTime
-// ).toBeLessThan(2000);
-
-// });
+    expect(response.status()).toBe(200);
+});

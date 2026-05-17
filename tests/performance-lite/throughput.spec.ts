@@ -1,42 +1,36 @@
-// import {
-//   test,
-//   expect,
-//   request
-// }
-// from '@playwright/test';
+import { test, expect } from '@playwright/test';
 
-// test(
-// 'Basic throughput validation',
-// async () => {
+test('Repeated GET Accounts API Calls',
+  async ({ request }) => {
 
-// const api =
-// await request.newContext();
+    const totalRequests = 20;
 
-// const requests =
-// Array.from(
-// { length: 20 },
-// () =>
-// api.get(
-// 'http://localhost:9090/parabank/services/bank/accounts/13344'
-// )
-// );
+    const promises = [];
 
-// const responses =
-// await Promise.all(
-// requests
-// );
+    for (let i = 0; i < totalRequests; i++) {
 
-// responses.forEach(
-// response => {
+      promises.push(
+        request.get(
+          'https://parabank.parasoft.com/parabank/services/bank/accounts/12345'
+        )
+      );
+    }
 
-// expect(
-// response.ok()
-// ).toBeTruthy();
+    const startTime = Date.now();
 
-// });
+    const responses = await Promise.all(promises);
 
-// console.log(
-// '20 async API calls passed'
-// );
+    const endTime = Date.now();
 
-// });
+    const totalTime = endTime - startTime;
+
+    console.log(
+      `Total Throughput Time:
+       ${totalTime} ms`
+    );
+
+    for (const response of responses) {
+
+      expect(response.status()).toBe(200);
+    }
+});

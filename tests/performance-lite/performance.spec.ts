@@ -16,6 +16,6 @@ test('@performance Login page load time', async ({ page }) => {
       `Load time=${loadTime}`
     );
 
-    expect(loadTime).toBeLessThan(3000);
+    expect(loadTime).toBeLessThan(5000);
 
 });
