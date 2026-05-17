@@ -1,0 +1,2 @@
+UI Page Load Time:
+    1324 ms

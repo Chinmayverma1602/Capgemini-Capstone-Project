@@ -7,14 +7,14 @@
     "faker": "^6.6.6",
     "winston": "^3.19.0"
   },
-  "scripts": {"test": "playwright test",
-  "ai-report":
-  "ts-node utils/aiFailureAnalysis.ts",
-
-  "full-test":
-  "playwright test && ts-node utils/aiFailureAnalysis.ts"
+  "scripts": {
+    "test": "playwright test",
+    "ai-report": "ts-node utils/aiFailureAnalysis.ts",
+    "full-test": "playwright test && ts-node utils/aiFailureAnalysis.ts"
   },
   "dependencies": {
-    "ts-node": "^10.9.2"
+    "ajv": "^8.20.0",
+    "ts-node": "^10.9.2",
+    "xml2js": "^0.6.2"
   }
 }

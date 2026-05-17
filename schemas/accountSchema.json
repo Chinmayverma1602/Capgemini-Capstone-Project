@@ -1,0 +1,15 @@
+{
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "balance": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "id",
+    "balance"
+  ]
+}

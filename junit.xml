@@ -1,10 +1,84 @@
-<testsuites id="" name="" tests="14" failures="1" skipped="0" errors="0" time="25.655832000000004">
-<testsuite name="API\parabank_API.spec.ts" timestamp="2026-05-17T11:36:48.829Z" hostname="chromium" tests="4" failures="1" skipped="0" time="4.83" errors="0">
-<testcase name="API Test Cases - Account Operations › @api @smoke TC-API-01 Create SAVINGS account" classname="API\parabank_API.spec.ts" time="1.287">
+<testsuites id="" name="" tests="6" failures="2" skipped="0" errors="1" time="4.70901">
+<testsuite name="API\accountSchema.spec.ts" timestamp="2026-05-17T13:07:38.851Z" hostname="chromium" tests="1" failures="1" skipped="0" time="0.913" errors="0">
+<testcase name="Validate account schema" classname="API\accountSchema.spec.ts" time="0.913">
 <system-out>
-<![CDATA[{"level":"info","message":"API Context Created","timestamp":"2026-05-17T11:36:49.807Z"}
-{"level":"info","message":"Calling API: POST /parabank/services/bank/createAccount — SAVINGS","timestamp":"2026-05-17T11:36:49.812Z"}
-{"level":"info","message":"API Context Disposed","timestamp":"2026-05-17T11:36:51.072Z"}
+<![CDATA[
+[[ATTACHMENT|test-results\API-accountSchema-Validate-account-schema-chromium\error-context.md]]
+
+[[ATTACHMENT|test-results\API-accountSchema-Validate-account-schema-chromium\trace.zip]]
+]]>
+</system-out>
+<failure message="expect(received).toBeTruthy()" type="expect.toBeTruthy">
+<![CDATA[  [chromium] › API\accountSchema.spec.ts:15:5 › Validate account schema ────────────────────────────
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      37 | expect(
+      38 | createResponse.ok()
+    > 39 | ).toBeTruthy();
+         |   ^
+      40 |
+      41 | const createdAccount =
+      42 | await createResponse.json();
+        at C:\Users\chinm\OneDrive\Desktop\Capgemini_Capstone_Project\tests\API\accountSchema.spec.ts:39:3
+
+    Error Context: ..\test-results\API-accountSchema-Validate-account-schema-chromium\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\API-accountSchema-Validate-account-schema-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\API-accountSchema-Validate-account-schema-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="API\accountValidation.spec.ts" timestamp="2026-05-17T13:07:38.851Z" hostname="chromium" tests="1" failures="0" skipped="0" time="0.97" errors="1">
+<testcase name="Validate account balance" classname="API\accountValidation.spec.ts" time="0.97">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\API-accountValidation-Validate-account-balance-chromium\error-context.md]]
+
+[[ATTACHMENT|test-results\API-accountValidation-Validate-account-balance-chromium\trace.zip]]
+]]>
+</system-out>
+<error message="Unexpected token &apos;C&apos;, &quot;Could not &quot;... is not valid JSON" type="SyntaxError">
+<![CDATA[  [chromium] › API\accountValidation.spec.ts:12:5 › Validate account balance ───────────────────────
+
+    SyntaxError: Unexpected token 'C', "Could not "... is not valid JSON
+
+      33 |
+      34 | const account =
+    > 35 | await createResponse.json();
+         | ^
+      36 |
+      37 | const response =
+      38 | await api.get(
+        at C:\Users\chinm\OneDrive\Desktop\Capgemini_Capstone_Project\tests\API\accountValidation.spec.ts:35:1
+
+    Error Context: ..\test-results\API-accountValidation-Validate-account-balance-chromium\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\API-accountValidation-Validate-account-balance-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\API-accountValidation-Validate-account-balance-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</error>
+</testcase>
+</testsuite>
+<testsuite name="API\parabank_API.spec.ts" timestamp="2026-05-17T13:07:38.851Z" hostname="chromium" tests="4" failures="1" skipped="0" time="2.184" errors="0">
+<testcase name="API Test Cases - Account Operations › @api @smoke TC-API-01 Create SAVINGS account" classname="API\parabank_API.spec.ts" time="1.005">
+<system-out>
+<![CDATA[{"level":"info","message":"API Context Created","timestamp":"2026-05-17T13:07:40.023Z"}
+{"level":"info","message":"Calling API: POST /parabank/services/bank/createAccount — SAVINGS","timestamp":"2026-05-17T13:07:40.033Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-17T13:07:41.006Z"}
 
 [[ATTACHMENT|test-results\API-parabank_API-API-Test--cda01-I-01-Create-SAVINGS-account-chromium\error-context.md]]
 
@@ -40,179 +114,36 @@
 ]]>
 </failure>
 </testcase>
-<testcase name="API Test Cases - Account Operations › @api @smoke TC-API-02 Create CHECKING account — response should reflect correct type" classname="API\parabank_API.spec.ts" time="1.149">
+<testcase name="API Test Cases - Account Operations › @api @smoke TC-API-02 Create CHECKING account — response should reflect correct type" classname="API\parabank_API.spec.ts" time="0.865">
 <system-out>
-<![CDATA[{"level":"info","message":"API Context Created","timestamp":"2026-05-17T11:36:49.932Z"}
-{"level":"info","message":"Calling API: POST /parabank/services/bank/createAccount — CHECKING","timestamp":"2026-05-17T11:36:49.936Z"}
-{"level":"info","message":"API response: {\"id\":14454,\"customerId\":12212,\"type\":\"CHECKING\",\"balance\":0}","timestamp":"2026-05-17T11:36:51.025Z"}
-{"level":"info","message":"Account type matches: expected=\"CHECKING\" API=\"CHECKING\"","timestamp":"2026-05-17T11:36:51.026Z"}
-{"level":"info","message":"Customer ID matches: expected=\"12212\" API=\"12212\"","timestamp":"2026-05-17T11:36:51.028Z"}
-{"level":"info","message":"Balance is 0 for a newly opened account","timestamp":"2026-05-17T11:36:51.029Z"}
-{"level":"info","message":"New CHECKING account ID received: 14454","timestamp":"2026-05-17T11:36:51.031Z"}
-{"level":"info","message":"API Context Disposed","timestamp":"2026-05-17T11:36:51.045Z"}
+<![CDATA[{"level":"info","message":"API Context Created","timestamp":"2026-05-17T13:07:40.051Z"}
+{"level":"info","message":"Calling API: POST /parabank/services/bank/createAccount — CHECKING","timestamp":"2026-05-17T13:07:40.054Z"}
+{"level":"info","message":"API response: {\"id\":17007,\"customerId\":12212,\"type\":\"CHECKING\",\"balance\":0}","timestamp":"2026-05-17T13:07:40.879Z"}
+{"level":"info","message":"Account type matches: expected=\"CHECKING\" API=\"CHECKING\"","timestamp":"2026-05-17T13:07:40.882Z"}
+{"level":"info","message":"Customer ID matches: expected=\"12212\" API=\"12212\"","timestamp":"2026-05-17T13:07:40.883Z"}
+{"level":"info","message":"Balance is 0 for a newly opened account","timestamp":"2026-05-17T13:07:40.885Z"}
+{"level":"info","message":"New CHECKING account ID received: 17007","timestamp":"2026-05-17T13:07:40.888Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-17T13:07:40.902Z"}
 ]]>
 </system-out>
 </testcase>
-<testcase name="API Test Cases - Account Operations › @api @negative @regression TC-API-03 GET non-existent account — should return an error response" classname="API\parabank_API.spec.ts" time="1.227">
+<testcase name="API Test Cases - Account Operations › @api @negative @regression TC-API-03 GET non-existent account — should return an error response" classname="API\parabank_API.spec.ts" time="0.164">
 <system-out>
-<![CDATA[{"level":"info","message":"API Context Created","timestamp":"2026-05-17T11:36:49.848Z"}
-{"level":"info","message":"Calling API: GET /parabank/services/bank/accounts/999999999 — expecting failure","timestamp":"2026-05-17T11:36:49.855Z"}
-{"level":"info","message":"API response: Could not find account #999999999","timestamp":"2026-05-17T11:36:51.018Z"}
-{"level":"info","message":"Confirmed: status was 400 — invalid account ID rejected","timestamp":"2026-05-17T11:36:51.024Z"}
-{"level":"info","message":"API Context Disposed","timestamp":"2026-05-17T11:36:51.037Z"}
+<![CDATA[{"level":"info","message":"API Context Created","timestamp":"2026-05-17T13:07:40.964Z"}
+{"level":"info","message":"Calling API: GET /parabank/services/bank/accounts/999999999 — expecting failure","timestamp":"2026-05-17T13:07:40.965Z"}
+{"level":"info","message":"API response: Could not find account #999999999","timestamp":"2026-05-17T13:07:41.113Z"}
+{"level":"info","message":"Confirmed: status was 400 — invalid account ID rejected","timestamp":"2026-05-17T13:07:41.115Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-17T13:07:41.122Z"}
 ]]>
 </system-out>
 </testcase>
-<testcase name="API Test Cases - Account Operations › @api @negative @regression TC-API-04 Create account with invalid customerId — should return an error response" classname="API\parabank_API.spec.ts" time="1.167">
+<testcase name="API Test Cases - Account Operations › @api @negative @regression TC-API-04 Create account with invalid customerId — should return an error response" classname="API\parabank_API.spec.ts" time="0.15">
 <system-out>
-<![CDATA[{"level":"info","message":"API Context Created","timestamp":"2026-05-17T11:36:49.911Z"}
-{"level":"info","message":"Calling API: POST /parabank/services/bank/createAccount — invalid customerId: 99999999","timestamp":"2026-05-17T11:36:49.916Z"}
-{"level":"info","message":"API response: Could not create new account for customer 99999999 from account 12345","timestamp":"2026-05-17T11:36:51.018Z"}
-{"level":"info","message":"Confirmed: status was 400 — invalid customer ID rejected","timestamp":"2026-05-17T11:36:51.025Z"}
-{"level":"info","message":"API Context Disposed","timestamp":"2026-05-17T11:36:51.037Z"}
-]]>
-</system-out>
-</testcase>
-</testsuite>
-<testsuite name="E2E\e2e.spec.ts" timestamp="2026-05-17T11:36:48.829Z" hostname="chromium" tests="1" failures="0" skipped="0" time="16.49" errors="0">
-<testcase name="Hybrid E2E Tests › @e2e @regression TC-E2E-01 Register user via UI and validate API" classname="E2E\e2e.spec.ts" time="16.49">
-<properties>
-<property name="fail" value="">
-</property>
-</properties>
-<system-out>
-<![CDATA[{"level":"info","message":"API Context Created","timestamp":"2026-05-17T11:36:54.740Z"}
-{"level":"info","message":"Launching registration flow","timestamp":"2026-05-17T11:36:54.741Z"}
-{"level":"info","message":"Opening registration page","timestamp":"2026-05-17T11:36:54.741Z"}
-{"level":"info","message":"Registering a new user","timestamp":"2026-05-17T11:37:01.038Z"}
-{"level":"info","message":"Registering new user","timestamp":"2026-05-17T11:37:01.039Z"}
-{"level":"info","message":"Filling registration form","timestamp":"2026-05-17T11:37:01.040Z"}
-{"level":"info","message":"Screenshot captured: register-filled.png","timestamp":"2026-05-17T11:37:01.718Z"}
-{"level":"info","message":"Clicked Register button","timestamp":"2026-05-17T11:37:02.949Z"}
-{"level":"info","message":"Validating successful registration","timestamp":"2026-05-17T11:37:02.950Z"}
-{"level":"info","message":"API Context Disposed","timestamp":"2026-05-17T11:37:08.024Z"}
-
-[[ATTACHMENT|test-results\E2E-e2e-Hybrid-E2E-Tests-e-f074d-ser-via-UI-and-validate-API-chromium\error-context.md]]
-]]>
-</system-out>
-</testcase>
-</testsuite>
-<testsuite name="performance-lite\performance.spec.ts" timestamp="2026-05-17T11:36:48.829Z" hostname="chromium" tests="1" failures="0" skipped="0" time="9.966" errors="0">
-<testcase name="@performance Login page load time" classname="performance-lite\performance.spec.ts" time="9.966">
-<system-out>
-<![CDATA[Load time=2250
-]]>
-</system-out>
-</testcase>
-</testsuite>
-<testsuite name="UI\parabank_UI.spec.ts" timestamp="2026-05-17T11:36:48.829Z" hostname="chromium" tests="8" failures="0" skipped="0" time="55.818" errors="0">
-<testcase name="UI Test Cases › @ui,@smoke @regression TC-AC-UI-01 Create New User Account" classname="UI\parabank_UI.spec.ts" time="16.338">
-<properties>
-<property name="fail" value="">
-</property>
-</properties>
-<system-out>
-<![CDATA[{"level":"info","message":"RegisterPage instance created","timestamp":"2026-05-17T11:36:54.733Z"}
-{"level":"info","message":"Opening registration page","timestamp":"2026-05-17T11:36:54.734Z"}
-{"level":"info","message":"Registering new user","timestamp":"2026-05-17T11:37:00.844Z"}
-{"level":"info","message":"Filling registration form","timestamp":"2026-05-17T11:37:00.845Z"}
-{"level":"info","message":"Screenshot captured: register-filled.png","timestamp":"2026-05-17T11:37:01.593Z"}
-{"level":"info","message":"Clicked Register button","timestamp":"2026-05-17T11:37:02.930Z"}
-{"level":"info","message":"Validating successful registration","timestamp":"2026-05-17T11:37:02.931Z"}
-{"level":"info","message":"RegisterPage instance disposed","timestamp":"2026-05-17T11:37:07.964Z"}
-
-[[ATTACHMENT|test-results\UI-parabank_UI-UI-Test-Cas-19da5--01-Create-New-User-Account-chromium\error-context.md]]
-]]>
-</system-out>
-</testcase>
-<testcase name="UI Test Cases › @ui,@smoke @regression TC-LOGIN-01 Login with Valid Credentials" classname="UI\parabank_UI.spec.ts" time="14.493">
-<system-out>
-<![CDATA[{"level":"info","message":"LoginPage instance created","timestamp":"2026-05-17T11:36:54.730Z"}
-{"level":"info","message":"Starting valid login flow","timestamp":"2026-05-17T11:36:54.734Z"}
-{"level":"info","message":"Opening login page","timestamp":"2026-05-17T11:36:54.734Z"}
-{"level":"info","message":"Entering login credentials","timestamp":"2026-05-17T11:36:56.973Z"}
-{"level":"info","message":"Clicking login button","timestamp":"2026-05-17T11:36:57.822Z"}
-{"level":"info","message":"Validating successful login","timestamp":"2026-05-17T11:37:04.506Z"}
-{"level":"info","message":"User logged in successfully","timestamp":"2026-05-17T11:37:04.508Z"}
-{"level":"info","message":"LoginPage instance disposed","timestamp":"2026-05-17T11:37:04.512Z"}
-]]>
-</system-out>
-</testcase>
-<testcase name="UI Test Cases › @ui ,@regression TC-NEG-02 Register with Mismatched Password" classname="UI\parabank_UI.spec.ts" time="6.749">
-<system-out>
-<![CDATA[{"level":"info","message":"RegisterPage instance created","timestamp":"2026-05-17T11:37:03.482Z"}
-{"level":"info","message":"Opening registration page","timestamp":"2026-05-17T11:37:03.483Z"}
-{"level":"info","message":"Registering user with mismatched password","timestamp":"2026-05-17T11:37:05.093Z"}
-{"level":"info","message":"Filling registration form","timestamp":"2026-05-17T11:37:05.094Z"}
-{"level":"info","message":"Screenshot captured: mismatched-password.png","timestamp":"2026-05-17T11:37:05.830Z"}
-{"level":"info","message":"Clicked Register button","timestamp":"2026-05-17T11:37:08.008Z"}
-{"level":"info","message":"Validating password mismatch error","timestamp":"2026-05-17T11:37:08.008Z"}
-{"level":"info","message":"RegisterPage instance disposed","timestamp":"2026-05-17T11:37:08.068Z"}
-]]>
-</system-out>
-</testcase>
-<testcase name="UI Test Cases › @ui @negative @regression TC-NEG-01 Register with All Blank Fields" classname="UI\parabank_UI.spec.ts" time="3.36">
-<system-out>
-<![CDATA[{"level":"info","message":"RegisterPage instance created","timestamp":"2026-05-17T11:37:07.795Z"}
-{"level":"info","message":"Opening registration page","timestamp":"2026-05-17T11:37:07.796Z"}
-{"level":"info","message":"Submitting registration form with blank fields","timestamp":"2026-05-17T11:37:09.076Z"}
-{"level":"info","message":"Screenshot captured: blank-registration-form.png","timestamp":"2026-05-17T11:37:09.288Z"}
-{"level":"info","message":"Clicked Register button","timestamp":"2026-05-17T11:37:09.472Z"}
-{"level":"info","message":"Validating blank field error messages","timestamp":"2026-05-17T11:37:09.473Z"}
-{"level":"info","message":"RegisterPage instance disposed","timestamp":"2026-05-17T11:37:09.823Z"}
-]]>
-</system-out>
-</testcase>
-<testcase name="UI Test Cases › @ui @negative @regression TC-LOGIN-02 Login with Invalid Password" classname="UI\parabank_UI.spec.ts" time="3.427">
-<system-out>
-<![CDATA[{"level":"info","message":"LoginPage instance created","timestamp":"2026-05-17T11:37:08.720Z"}
-{"level":"info","message":"Starting invalid login scenario","timestamp":"2026-05-17T11:37:08.721Z"}
-{"level":"info","message":"Opening login page","timestamp":"2026-05-17T11:37:08.722Z"}
-{"level":"info","message":"Entering login credentials","timestamp":"2026-05-17T11:37:09.598Z"}
-{"level":"info","message":"Screenshot captured: invalid-login.png","timestamp":"2026-05-17T11:37:09.887Z"}
-{"level":"info","message":"Clicking login button","timestamp":"2026-05-17T11:37:09.887Z"}
-{"level":"info","message":"Validating invalid login error message","timestamp":"2026-05-17T11:37:10.882Z"}
-{"level":"info","message":"Invalid login error message displayed correctly","timestamp":"2026-05-17T11:37:11.040Z"}
-{"level":"info","message":"LoginPage instance disposed","timestamp":"2026-05-17T11:37:11.042Z"}
-]]>
-</system-out>
-</testcase>
-<testcase name="UI Test Cases › @ui @negative @regression TC-NEG-06 Username with Special Characters" classname="UI\parabank_UI.spec.ts" time="4.017">
-<system-out>
-<![CDATA[{"level":"info","message":"RegisterPage instance created","timestamp":"2026-05-17T11:37:08.841Z"}
-{"level":"info","message":"Opening registration page","timestamp":"2026-05-17T11:37:08.842Z"}
-{"level":"info","message":"Registering with special character username","timestamp":"2026-05-17T11:37:10.119Z"}
-{"level":"info","message":"Filling registration form","timestamp":"2026-05-17T11:37:10.119Z"}
-{"level":"info","message":"Screenshot captured: special-character-username.png","timestamp":"2026-05-17T11:37:10.840Z"}
-{"level":"info","message":"Clicked Register button","timestamp":"2026-05-17T11:37:11.614Z"}
-{"level":"info","message":"Validating username format error","timestamp":"2026-05-17T11:37:11.614Z"}
-{"level":"info","message":"RegisterPage instance disposed","timestamp":"2026-05-17T11:37:11.826Z"}
-]]>
-</system-out>
-</testcase>
-<testcase name="UI Test Cases › @ui @regression TC-AC-UI-02 Mandatory Field Validation" classname="UI\parabank_UI.spec.ts" time="4.425">
-<system-out>
-<![CDATA[{"level":"info","message":"RegisterPage instance created","timestamp":"2026-05-17T11:37:09.125Z"}
-{"level":"info","message":"Opening registration page","timestamp":"2026-05-17T11:37:09.126Z"}
-{"level":"info","message":"Submitting form with mandatory fields blank","timestamp":"2026-05-17T11:37:11.154Z"}
-{"level":"info","message":"Filling registration form","timestamp":"2026-05-17T11:37:11.154Z"}
-{"level":"info","message":"Screenshot captured: mandatory-fields-blank.png","timestamp":"2026-05-17T11:37:11.398Z"}
-{"level":"info","message":"Clicked Register button","timestamp":"2026-05-17T11:37:12.437Z"}
-{"level":"info","message":"Validating mandatory field messages","timestamp":"2026-05-17T11:37:12.438Z"}
-{"level":"info","message":"RegisterPage instance disposed","timestamp":"2026-05-17T11:37:13.015Z"}
-]]>
-</system-out>
-</testcase>
-<testcase name="UI Test Cases › @ai @ui TC-AI-01 Register User with AI Generated Data" classname="UI\parabank_UI.spec.ts" time="3.009">
-<system-out>
-<![CDATA[{"level":"info","message":"RegisterPage instance created","timestamp":"2026-05-17T11:37:11.291Z"}
-{"level":"info","message":"Opening registration page","timestamp":"2026-05-17T11:37:11.293Z"}
-{"level":"info","message":"Registering new user","timestamp":"2026-05-17T11:37:12.479Z"}
-{"level":"info","message":"Filling registration form","timestamp":"2026-05-17T11:37:12.480Z"}
-{"level":"info","message":"Screenshot captured: register-filled.png","timestamp":"2026-05-17T11:37:13.233Z"}
-{"level":"info","message":"Clicked Register button","timestamp":"2026-05-17T11:37:13.522Z"}
-{"level":"info","message":"Validating successful registration","timestamp":"2026-05-17T11:37:13.523Z"}
-{"level":"info","message":"RegisterPage instance disposed","timestamp":"2026-05-17T11:37:13.613Z"}
+<![CDATA[{"level":"info","message":"API Context Created","timestamp":"2026-05-17T13:07:43.017Z"}
+{"level":"info","message":"Calling API: POST /parabank/services/bank/createAccount — invalid customerId: 99999999","timestamp":"2026-05-17T13:07:43.021Z"}
+{"level":"info","message":"API response: Could not create new account for customer 99999999 from account 12345","timestamp":"2026-05-17T13:07:43.127Z"}
+{"level":"info","message":"Confirmed: status was 400 — invalid customer ID rejected","timestamp":"2026-05-17T13:07:43.136Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-17T13:07:43.149Z"}
 ]]>
 </system-out>
 </testcase>
