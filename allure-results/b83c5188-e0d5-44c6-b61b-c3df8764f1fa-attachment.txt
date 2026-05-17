@@ -1,12 +1,4 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="22.933217000000003">
-<testsuite name="e2e.spec.ts" timestamp="2026-05-17T05:14:15.191Z" hostname="chromium" tests="1" failures="0" skipped="0" time="10.533" errors="0">
-<testcase name="Hybrid E2E Tests › TC-E2E-01 Register user via UI and validate account using API" classname="e2e.spec.ts" time="10.533">
-<properties>
-<property name="fail" value="">
-</property>
-</properties>
-<system-out>
-<![CDATA[{"level":"info","message":"API Context Created","timestamp":"2026-05-17T05:14:27.227Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-17T05:14:27.227Z"}
 {"level":"info","message":"Launching registration flow","timestamp":"2026-05-17T05:14:27.239Z"}
 {"level":"info","message":"Opening registration page","timestamp":"2026-05-17T05:14:27.240Z"}
 {"level":"info","message":"Registering a new user","timestamp":"2026-05-17T05:14:31.366Z"}
@@ -18,10 +10,3 @@
 {"level":"info","message":"User registration completed successfully","timestamp":"2026-05-17T05:14:32.528Z"}
 {"level":"info","message":"Navigating to Open New Account page","timestamp":"2026-05-17T05:14:32.529Z"}
 {"level":"info","message":"API Context Disposed","timestamp":"2026-05-17T05:14:36.522Z"}
-
-[[ATTACHMENT|test-results\e2e-Hybrid-E2E-Tests-TC-E2-2ee3c--validate-account-using-API-chromium\error-context.md]]
-]]>
-</system-out>
-</testcase>
-</testsuite>
-</testsuites>

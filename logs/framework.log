@@ -1120,3 +1120,15 @@
 {"level":"info","message":"API response: Could not create new account for customer 99999999 from account 12345","timestamp":"2026-05-17T04:47:41.111Z"}
 {"level":"info","message":"Confirmed: status was 400 — invalid customer ID rejected","timestamp":"2026-05-17T04:47:41.123Z"}
 {"level":"info","message":"API Context Disposed","timestamp":"2026-05-17T04:47:41.134Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-17T05:14:27.227Z"}
+{"level":"info","message":"Launching registration flow","timestamp":"2026-05-17T05:14:27.239Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-17T05:14:27.240Z"}
+{"level":"info","message":"Registering a new user","timestamp":"2026-05-17T05:14:31.366Z"}
+{"level":"info","message":"Registering new user","timestamp":"2026-05-17T05:14:31.367Z"}
+{"level":"info","message":"Filling registration form","timestamp":"2026-05-17T05:14:31.367Z"}
+{"level":"info","message":"Screenshot captured: register-filled.png","timestamp":"2026-05-17T05:14:31.982Z"}
+{"level":"info","message":"Clicked Register button","timestamp":"2026-05-17T05:14:32.328Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-17T05:14:32.329Z"}
+{"level":"info","message":"User registration completed successfully","timestamp":"2026-05-17T05:14:32.528Z"}
+{"level":"info","message":"Navigating to Open New Account page","timestamp":"2026-05-17T05:14:32.529Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-17T05:14:36.522Z"}
