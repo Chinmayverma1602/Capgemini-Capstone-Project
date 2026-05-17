@@ -1,0 +1,8 @@
+{"level":"info","message":"RegisterPage instance created","timestamp":"2026-05-17T07:52:21.067Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-17T07:52:21.068Z"}
+{"level":"info","message":"Registering new user","timestamp":"2026-05-17T07:52:27.269Z"}
+{"level":"info","message":"Filling registration form","timestamp":"2026-05-17T07:52:27.270Z"}
+{"level":"info","message":"Screenshot captured: register-filled.png","timestamp":"2026-05-17T07:52:28.122Z"}
+{"level":"info","message":"Clicked Register button","timestamp":"2026-05-17T07:52:29.733Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-17T07:52:29.733Z"}
+{"level":"info","message":"RegisterPage instance disposed","timestamp":"2026-05-17T07:52:29.941Z"}

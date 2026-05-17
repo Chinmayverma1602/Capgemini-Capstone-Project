@@ -1,0 +1,9 @@
+{"level":"info","message":"LoginPage instance created","timestamp":"2026-05-17T08:00:41.261Z"}
+{"level":"info","message":"Starting invalid login scenario","timestamp":"2026-05-17T08:00:41.262Z"}
+{"level":"info","message":"Opening login page","timestamp":"2026-05-17T08:00:41.262Z"}
+{"level":"info","message":"Entering login credentials","timestamp":"2026-05-17T08:00:41.475Z"}
+{"level":"info","message":"Screenshot captured: invalid-login.png","timestamp":"2026-05-17T08:00:41.756Z"}
+{"level":"info","message":"Clicking login button","timestamp":"2026-05-17T08:00:41.756Z"}
+{"level":"info","message":"Validating invalid login error message","timestamp":"2026-05-17T08:00:41.961Z"}
+{"level":"info","message":"Invalid login error message displayed correctly","timestamp":"2026-05-17T08:00:42.208Z"}
+{"level":"info","message":"LoginPage instance disposed","timestamp":"2026-05-17T08:00:42.210Z"}

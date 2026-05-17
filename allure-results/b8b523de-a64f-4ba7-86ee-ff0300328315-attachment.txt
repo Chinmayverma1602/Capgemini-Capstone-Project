@@ -1,0 +1,8 @@
+{"level":"info","message":"API Context Created","timestamp":"2026-05-17T07:52:15.351Z"}
+{"level":"info","message":"Calling API: POST /parabank/services/bank/createAccount — CHECKING","timestamp":"2026-05-17T07:52:15.366Z"}
+{"level":"info","message":"API response: {\"id\":18006,\"customerId\":12212,\"type\":\"CHECKING\",\"balance\":0}","timestamp":"2026-05-17T07:52:17.886Z"}
+{"level":"info","message":"Account type matches: expected=\"CHECKING\" API=\"CHECKING\"","timestamp":"2026-05-17T07:52:17.889Z"}
+{"level":"info","message":"Customer ID matches: expected=\"12212\" API=\"12212\"","timestamp":"2026-05-17T07:52:17.892Z"}
+{"level":"info","message":"Balance is 0 for a newly opened account","timestamp":"2026-05-17T07:52:17.896Z"}
+{"level":"info","message":"New CHECKING account ID received: 18006","timestamp":"2026-05-17T07:52:17.900Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-17T07:52:17.922Z"}

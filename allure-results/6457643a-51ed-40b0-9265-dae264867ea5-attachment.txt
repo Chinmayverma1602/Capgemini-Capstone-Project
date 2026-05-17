@@ -1,0 +1,7 @@
+{"level":"info","message":"RegisterPage instance created","timestamp":"2026-05-17T08:00:40.191Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-17T08:00:40.191Z"}
+{"level":"info","message":"Submitting registration form with blank fields","timestamp":"2026-05-17T08:00:40.385Z"}
+{"level":"info","message":"Screenshot captured: blank-registration-form.png","timestamp":"2026-05-17T08:00:40.591Z"}
+{"level":"info","message":"Clicked Register button","timestamp":"2026-05-17T08:00:40.692Z"}
+{"level":"info","message":"Validating blank field error messages","timestamp":"2026-05-17T08:00:40.692Z"}
+{"level":"info","message":"RegisterPage instance disposed","timestamp":"2026-05-17T08:00:40.867Z"}

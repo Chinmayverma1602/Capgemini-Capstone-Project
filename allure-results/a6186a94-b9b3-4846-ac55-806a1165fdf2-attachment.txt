@@ -1,0 +1,8 @@
+{"level":"info","message":"RegisterPage instance created","timestamp":"2026-05-17T07:52:36.379Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-17T07:52:36.380Z"}
+{"level":"info","message":"Submitting form with mandatory fields blank","timestamp":"2026-05-17T07:52:38.758Z"}
+{"level":"info","message":"Filling registration form","timestamp":"2026-05-17T07:52:38.758Z"}
+{"level":"info","message":"Screenshot captured: mandatory-fields-blank.png","timestamp":"2026-05-17T07:52:39.079Z"}
+{"level":"info","message":"Clicked Register button","timestamp":"2026-05-17T07:52:39.573Z"}
+{"level":"info","message":"Validating mandatory field messages","timestamp":"2026-05-17T07:52:39.573Z"}
+{"level":"info","message":"RegisterPage instance disposed","timestamp":"2026-05-17T07:52:39.713Z"}
