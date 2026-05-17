@@ -1,27 +1,25 @@
 import fs from 'fs';
 import path from 'path';
 
-const reportPath =
-  path.join(
-    process.cwd(),
-    'test-results',
-    'results.json'
-  );
+const reportPath = path.join(
+  process.cwd(),
+  'test-results',
+  'results.json'
+);
 
-const historyPath =
-  path.join(
-    process.cwd(),
-    'reports',
-    'history.json'
-  );
+const historyPath = path.join(
+  process.cwd(),
+  'reports',
+  'history.json'
+);
 
-const outputPath =
-  path.join(
-    process.cwd(),
-    'reports',
-    'aiFailureReport.html'
-  );
+const outputPath = path.join(
+  process.cwd(),
+  'reports',
+  'aiFailureReport.html'
+);
 
+// Ensure report exists
 if (!fs.existsSync(reportPath)) {
   console.log(
     'results.json not found. Run tests first.'
@@ -29,6 +27,7 @@ if (!fs.existsSync(reportPath)) {
   process.exit(1);
 }
 
+// Read Playwright JSON report
 const report = JSON.parse(
   fs.readFileSync(reportPath, 'utf8')
 );
@@ -37,7 +36,8 @@ let failureCount = 0;
 
 const failures: any[] = [];
 
-function analyzeReason(reason: string) {
+// AI Failure Reason Analysis
+function analyzeReason(reason: string): string {
 
   const lower = reason.toLowerCase();
 
@@ -63,13 +63,20 @@ function analyzeReason(reason: string) {
   if (
     lower.includes('null')
   ) {
-    return 'Null/undefined data issue';
+    return 'Null or undefined data issue';
+  }
+
+  if (
+    lower.includes('network')
+  ) {
+    return 'Network/API communication issue';
   }
 
   return 'Unknown failure pattern';
 }
 
-report.suites.forEach((suite: any) => {
+// Parse Playwright results
+report.suites?.forEach((suite: any) => {
 
   suite.specs?.forEach((spec: any) => {
 
@@ -77,7 +84,9 @@ report.suites.forEach((suite: any) => {
 
       test.results?.forEach((result: any) => {
 
-        if (result.status === 'failed') {
+        if (
+          result.status === 'failed'
+        ) {
 
           failureCount++;
 
@@ -97,55 +106,101 @@ report.suites.forEach((suite: any) => {
   });
 });
 
+// Read/Create History File
 let history: any[] = [];
 
 if (fs.existsSync(historyPath)) {
 
-  history = JSON.parse(
-    fs.readFileSync(historyPath, 'utf8')
-  );
+  try {
+    history = JSON.parse(
+      fs.readFileSync(
+        historyPath,
+        'utf8'
+      )
+    );
+  } catch {
+    history = [];
+  }
 }
 
+// Add current execution history
 history.push({
   date: new Date()
     .toLocaleString(),
   failures: failureCount
 });
 
+// Save history
 fs.writeFileSync(
   historyPath,
-  JSON.stringify(history, null, 2)
+  JSON.stringify(
+    history,
+    null,
+    2
+  )
 );
 
+// Generate Jenkins-safe HTML report
 const html = `
 <html>
 
 <head>
-<title>AI Failure Analysis</title>
 
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<title>
+AI Failure Analysis Report
+</title>
 
 <style>
 
 body{
-font-family:Arial;
+font-family:Arial,sans-serif;
 padding:20px;
+background:#f4f6f9;
+}
+
+h1{
+color:#333;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:
+0 2px 6px rgba(0,0,0,0.1);
+margin-bottom:20px;
 }
 
 table{
 border-collapse:collapse;
 width:100%;
-margin-top:20px;
+margin-top:15px;
+background:white;
 }
 
-td,th{
-border:1px solid #ccc;
-padding:10px;
+th,td{
+border:1px solid #ddd;
+padding:12px;
 text-align:left;
 }
 
 th{
 background:#f5f5f5;
+}
+
+.success{
+color:green;
+font-weight:bold;
+}
+
+.fail{
+color:red;
+font-weight:bold;
+}
+
+.warning{
+color:#ff9800;
+font-weight:bold;
 }
 
 </style>
@@ -154,11 +209,24 @@ background:#f5f5f5;
 
 <body>
 
-<h1>AI Failure Analysis Report</h1>
+<h1>
+AI Failure Analysis Report
+</h1>
 
-<h2>Total Failures: ${failureCount}</h2>
+<div class="card">
 
-<canvas id="historyChart"></canvas>
+<h2>
+Total Failures:
+${failureCount}
+</h2>
+
+</div>
+
+<div class="card">
+
+<h2>
+Failure Analysis
+</h2>
 
 <table>
 
@@ -168,50 +236,75 @@ background:#f5f5f5;
 <th>AI Analysis</th>
 </tr>
 
-${failures.map(f => `
+${
+failures.length > 0
+? failures.map(f => `
 <tr>
 <td>${f.title}</td>
 <td>${f.reason}</td>
 <td>${f.aiReason}</td>
 </tr>
+`).join('')
+: `
+<tr>
+<td colspan="3"
+class="success">
+No Failures Found 🎉
+</td>
+</tr>
+`
+}
+
+</table>
+
+</div>
+
+<div class="card">
+
+<h2>
+Historical Analysis
+</h2>
+
+<table>
+
+<tr>
+<th>Date</th>
+<th>Failure Count</th>
+<th>Status</th>
+</tr>
+
+${history.map(h => `
+<tr>
+<td>${h.date}</td>
+<td>${h.failures}</td>
+<td class="${
+h.failures > 0
+? 'fail'
+: 'success'
+}">
+${
+h.failures > 0
+? 'Failed'
+: 'Passed'
+}
+</td>
+</tr>
 `).join('')}
 
 </table>
 
-<script>
-
-const labels =
-${JSON.stringify(
-  history.map(x => x.date)
-)};
-
-const data =
-${JSON.stringify(
-  history.map(x => x.failures)
-)};
-
-new Chart(
-document.getElementById('historyChart'),
-{
-type:'line',
-data:{
-labels,
-datasets:[{
-label:'Failure Trend',
-data
-}]
-}
-}
-);
-
-</script>
+</div>
 
 </body>
 </html>
 `;
 
-fs.writeFileSync(outputPath, html);
+// Save HTML report
+fs.writeFileSync(
+  outputPath,
+  html
+);
 
 console.log(
-  'AI Failure Report Generated'
+  'AI Failure Report Generated Successfully'
 );
