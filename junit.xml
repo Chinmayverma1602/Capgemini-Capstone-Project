@@ -1,0 +1,14 @@
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="3.399100000000035">
+<testsuite name="parabank_API.spec.ts" timestamp="2026-05-17T04:47:39.406Z" hostname="chromium" tests="1" failures="0" skipped="0" time="0.2" errors="0">
+<testcase name="API Test Cases - Account Operations › TC-API-04 Create account with invalid customerId — should return an error response" classname="parabank_API.spec.ts" time="0.2">
+<system-out>
+<![CDATA[{"level":"info","message":"API Context Created","timestamp":"2026-05-17T04:47:40.966Z"}
+{"level":"info","message":"Calling API: POST /parabank/services/bank/createAccount — invalid customerId: 99999999","timestamp":"2026-05-17T04:47:40.979Z"}
+{"level":"info","message":"API response: Could not create new account for customer 99999999 from account 12345","timestamp":"2026-05-17T04:47:41.111Z"}
+{"level":"info","message":"Confirmed: status was 400 — invalid customer ID rejected","timestamp":"2026-05-17T04:47:41.123Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-17T04:47:41.134Z"}
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>
