@@ -1,23 +1,20 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="14.103875">
-<testsuite name="E2E\e2e.spec.ts" timestamp="2026-05-18T06:43:25.405Z" hostname="chromium" tests="1" failures="0" skipped="0" time="10.146" errors="0">
-<testcase name="Hybrid E2E Tests › @e2e @regression TC-E2E-01 Register user via UI and validate API" classname="E2E\e2e.spec.ts" time="10.146">
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="17.42614599999972">
+<testsuite name="UI\parabank_UI.spec.ts" timestamp="2026-05-18T08:46:42.381Z" hostname="chromium" tests="1" failures="0" skipped="0" time="11.728" errors="0">
+<testcase name="UI Test Cases › @ui,@smoke @regression TC-AC-UI-01 Create New User Account with old username" classname="UI\parabank_UI.spec.ts" time="11.728">
 <properties>
 <property name="fail" value="">
 </property>
 </properties>
 <system-out>
-<![CDATA[{"level":"info","message":"API Context Created","timestamp":"2026-05-18T06:43:29.351Z"}
-{"level":"info","message":"Launching registration flow","timestamp":"2026-05-18T06:43:29.365Z"}
-{"level":"info","message":"Opening registration page","timestamp":"2026-05-18T06:43:29.366Z"}
-{"level":"info","message":"Registering a new user","timestamp":"2026-05-18T06:43:31.753Z"}
-{"level":"info","message":"Registering new user","timestamp":"2026-05-18T06:43:31.754Z"}
-{"level":"info","message":"Filling registration form","timestamp":"2026-05-18T06:43:31.755Z"}
-{"level":"info","message":"Screenshot captured: register-filled.png","timestamp":"2026-05-18T06:43:32.634Z"}
-{"level":"info","message":"Clicked Register button","timestamp":"2026-05-18T06:43:33.441Z"}
-{"level":"info","message":"Validating successful registration","timestamp":"2026-05-18T06:43:33.441Z"}
-{"level":"info","message":"API Context Disposed","timestamp":"2026-05-18T06:43:38.399Z"}
+<![CDATA[{"level":"info","message":"RegisterPage instance created","timestamp":"2026-05-18T08:46:46.884Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-18T08:46:46.891Z"}
+{"level":"info","message":"Registering new user","timestamp":"2026-05-18T08:46:50.649Z"}
+{"level":"info","message":"Filling registration form","timestamp":"2026-05-18T08:46:50.650Z"}
+{"level":"info","message":"Screenshot captured: register-filled.png","timestamp":"2026-05-18T08:46:51.383Z"}
+{"level":"info","message":"Clicked Register button","timestamp":"2026-05-18T08:46:52.648Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-18T08:46:52.649Z"}
 
-[[ATTACHMENT|test-results\E2E-e2e-Hybrid-E2E-Tests-e-f074d-ser-via-UI-and-validate-API-chromium\error-context.md]]
+[[ATTACHMENT|test-results\UI-parabank_UI-UI-Test-Cas-ef286-r-Account-with-old-username-chromium\error-context.md]]
 ]]>
 </system-out>
 </testcase>

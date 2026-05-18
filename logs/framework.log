@@ -2438,3 +2438,36 @@
 {"level":"info","message":"Clicked Register button","timestamp":"2026-05-18T06:43:33.441Z"}
 {"level":"info","message":"Validating successful registration","timestamp":"2026-05-18T06:43:33.441Z"}
 {"level":"info","message":"API Context Disposed","timestamp":"2026-05-18T06:43:38.399Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-18T07:58:46.310Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-18T07:58:48.954Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-18T07:58:49.101Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-18T07:58:49.677Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-18T07:58:49.747Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-18T07:58:50.289Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-18T07:58:50.351Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-18T07:58:50.588Z"}
+{"level":"info","message":"RegisterPage instance created","timestamp":"2026-05-18T08:03:15.729Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-18T08:03:15.735Z"}
+{"level":"info","message":"Submitting form with mandatory fields blank","timestamp":"2026-05-18T08:03:18.902Z"}
+{"level":"info","message":"Filling registration form","timestamp":"2026-05-18T08:03:18.903Z"}
+{"level":"info","message":"Screenshot captured: mandatory-fields-blank.png","timestamp":"2026-05-18T08:03:19.345Z"}
+{"level":"info","message":"Clicked Register button","timestamp":"2026-05-18T08:03:20.249Z"}
+{"level":"info","message":"Validating mandatory field messages","timestamp":"2026-05-18T08:03:20.250Z"}
+{"level":"info","message":"RegisterPage instance created","timestamp":"2026-05-18T08:03:39.278Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-18T08:03:39.285Z"}
+{"level":"info","message":"Registering new user","timestamp":"2026-05-18T08:03:42.185Z"}
+{"level":"info","message":"Filling registration form","timestamp":"2026-05-18T08:03:42.186Z"}
+{"level":"info","message":"Screenshot captured: register-filled.png","timestamp":"2026-05-18T08:03:43.061Z"}
+{"level":"info","message":"Clicked Register button","timestamp":"2026-05-18T08:03:44.636Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-18T08:03:44.637Z"}
+{"level":"info","message":"RegisterPage instance created","timestamp":"2026-05-18T08:44:29.701Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-18T08:44:29.707Z"}
+{"level":"info","message":"Registering new user","timestamp":"2026-05-18T08:44:32.668Z"}
+{"level":"info","message":"Filling registration form","timestamp":"2026-05-18T08:44:32.669Z"}
+{"level":"info","message":"RegisterPage instance created","timestamp":"2026-05-18T08:46:46.884Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-18T08:46:46.891Z"}
+{"level":"info","message":"Registering new user","timestamp":"2026-05-18T08:46:50.649Z"}
+{"level":"info","message":"Filling registration form","timestamp":"2026-05-18T08:46:50.650Z"}
+{"level":"info","message":"Screenshot captured: register-filled.png","timestamp":"2026-05-18T08:46:51.383Z"}
+{"level":"info","message":"Clicked Register button","timestamp":"2026-05-18T08:46:52.648Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-18T08:46:52.649Z"}

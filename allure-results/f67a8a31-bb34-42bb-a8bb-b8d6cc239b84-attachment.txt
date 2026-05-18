@@ -1,0 +1,4 @@
+{"level":"info","message":"RegisterPage instance created","timestamp":"2026-05-18T08:44:29.701Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-18T08:44:29.707Z"}
+{"level":"info","message":"Registering new user","timestamp":"2026-05-18T08:44:32.668Z"}
+{"level":"info","message":"Filling registration form","timestamp":"2026-05-18T08:44:32.669Z"}
