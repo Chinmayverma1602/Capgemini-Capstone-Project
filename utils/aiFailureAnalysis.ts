@@ -19,7 +19,6 @@ const outputPath = path.join(
   'aiFailureReport.html'
 );
 
-// Ensure report exists
 if (!fs.existsSync(reportPath)) {
   console.log(
     'results.json not found. Run tests first.'
@@ -27,7 +26,6 @@ if (!fs.existsSync(reportPath)) {
   process.exit(1);
 }
 
-// Read Playwright JSON report
 const report = JSON.parse(
   fs.readFileSync(reportPath, 'utf8')
 );
@@ -75,7 +73,6 @@ function analyzeReason(reason: string): string {
   return 'Unknown failure pattern';
 }
 
-// Parse Playwright results
 report.suites?.forEach((suite: any) => {
 
   suite.specs?.forEach((spec: any) => {
@@ -123,14 +120,12 @@ if (fs.existsSync(historyPath)) {
   }
 }
 
-// Add current execution history
 history.push({
   date: new Date()
     .toLocaleString(),
   failures: failureCount
 });
 
-// Save history
 fs.writeFileSync(
   historyPath,
   JSON.stringify(
@@ -140,7 +135,6 @@ fs.writeFileSync(
   )
 );
 
-// Generate Jenkins-safe HTML report
 const html = `
 <html>
 
@@ -249,7 +243,7 @@ failures.length > 0
 <tr>
 <td colspan="3"
 class="success">
-No Failures Found 🎉
+No Failures Found 
 </td>
 </tr>
 `
