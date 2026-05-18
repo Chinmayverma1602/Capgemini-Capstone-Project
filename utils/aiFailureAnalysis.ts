@@ -103,7 +103,6 @@ report.suites?.forEach((suite: any) => {
   });
 });
 
-// Read/Create History File
 let history: any[] = [];
 
 if (fs.existsSync(historyPath)) {

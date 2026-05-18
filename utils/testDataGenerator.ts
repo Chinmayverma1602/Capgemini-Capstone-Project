@@ -1,8 +1,3 @@
-/**
- * AI-assisted utility generated using GitHub Copilot
- * Used for dynamic test data generation
- */
-
 export class TestDataGenerator {
 
   static randomFirstName(): string {

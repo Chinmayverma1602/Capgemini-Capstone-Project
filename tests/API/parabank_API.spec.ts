@@ -1,5 +1,4 @@
 import { test, expect } from '../../fixtures/apiFixture';
-import { logger } from '../../utils/logger';
 import apiData from '../../test-data/api_Data.json';
 
 import accountSchema from '../../schemas/accountSchema.json';
@@ -17,10 +16,6 @@ test.describe('API Test Cases - Account Operations', () => {
   test('@api @smoke TC-API-01 Create SAVINGS account',
     async ({ apiContext }) => {
 
-      logger.info(
-        `Calling API: POST /parabank/services/bank/createAccount — SAVINGS`
-      );
-
       const createResponse = await apiContext.post(
         `/parabank/services/bank/createAccount?customerId=${apiData.validCustomer.customerId}&newAccountType=${apiData.accountTypes.savings}&fromAccountId=${apiData.validCustomer.fromAccountId}`
       );
@@ -29,37 +24,16 @@ test.describe('API Test Cases - Account Operations', () => {
 
       const createdAccount = await createResponse.json();
 
-      logger.info(
-        `API response: ${JSON.stringify(createdAccount)}`
-      );
-
       const newAccountId = createdAccount.id;
 
       expect(createdAccount.type).toBe('SAVINGS');
-
-      logger.info(
-        `Account type matches: expected="SAVINGS" API="${createdAccount.type}"`
-      );
 
       expect(createdAccount.customerId).toBe(
         apiData.validCustomer.customerId
       );
 
-      logger.info(
-        `Customer ID matches: expected="${apiData.validCustomer.customerId}" API="${createdAccount.customerId}"`
-      );
-
       expect(newAccountId).toBeDefined();
 
-      logger.info(
-        `New account ID received: ${newAccountId}`
-      );
-
-      logger.info(
-        `Calling API: GET /parabank/services/bank/accounts/${newAccountId}`
-      );
-
-      // PERFORMANCE START
       const startTime = Date.now();
 
       const getResponse = await apiContext.get(
@@ -78,11 +52,6 @@ test.describe('API Test Cases - Account Operations', () => {
 
       const fetchedAccount = await getResponse.json();
 
-      logger.info(
-        `API response: ${JSON.stringify(fetchedAccount)}`
-      );
-
-      // SCHEMA VALIDATION
       SchemaValidator.validateSchema(
         accountSchema,
         fetchedAccount
@@ -97,26 +66,14 @@ test.describe('API Test Cases - Account Operations', () => {
       expect(String(fetchedAccount.id))
         .toBe(String(newAccountId));
 
-      logger.info(
-        `Account ID matches: POST="${newAccountId}" GET="${fetchedAccount.id}"`
-      );
-
       expect(fetchedAccount.type)
         .toBe('SAVINGS');
-
-      logger.info(
-        `Account type matches: expected="SAVINGS" GET="${fetchedAccount.type}"`
-      );
   });
 
 
 
-  test('@api @smoke TC-API-02 Create CHECKING account — response should reflect correct type',
+  test('@api @smoke TC-API-02 Create CHECKING account and response should reflect correct type',
     async ({ apiContext }) => {
-
-      logger.info(
-        `Calling API: POST /parabank/services/bank/createAccount — CHECKING`
-      );
 
       const startTime = Date.now();
 
@@ -136,10 +93,6 @@ test.describe('API Test Cases - Account Operations', () => {
 
       const accountData = await response.json();
 
-      logger.info(
-        `API response: ${JSON.stringify(accountData)}`
-      );
-
       SchemaValidator.validateSchema(
         accountSchema,
         accountData
@@ -154,40 +107,20 @@ test.describe('API Test Cases - Account Operations', () => {
       expect(accountData.type)
         .toBe('CHECKING');
 
-      logger.info(
-        `Account type matches: expected="CHECKING" API="${accountData.type}"`
-      );
-
       expect(accountData.customerId)
         .toBe(apiData.validCustomer.customerId);
-
-      logger.info(
-        `Customer ID matches: expected="${apiData.validCustomer.customerId}" API="${accountData.customerId}"`
-      );
 
       expect(accountData.balance)
         .toBe(0);
 
-      logger.info(
-        `Balance is 0 for a newly opened account`
-      );
-
       expect(accountData.id)
         .toBeDefined();
-
-      logger.info(
-        `New CHECKING account ID received: ${accountData.id}`
-      );
   });
 
 
 
-  test('@api @negative @regression TC-API-03 GET non-existent account — should return an error response',
+  test('@api @negative @regression TC-API-03 GET non-existent account and should return an error response',
     async ({ apiContext }) => {
-
-      logger.info(
-        `Calling API: GET /parabank/services/bank/accounts/${apiData.invalidData.fakeAccountId} — expecting failure`
-      );
 
       const startTime = Date.now();
 
@@ -205,23 +138,13 @@ test.describe('API Test Cases - Account Operations', () => {
 
       const responseBody = await response.text();
 
-      logger.info(`API response: ${responseBody}`);
-
       expect(response.status()).not.toBe(200);
-
-      logger.info(
-        `Confirmed: status was ${response.status()} — invalid account ID rejected`
-      );
   });
 
 
 
-  test('@api @negative @regression TC-API-04 Create account with invalid customerId — should return an error response',
+  test('@api @negative @regression TC-API-04 Create account with invalid customerId and should return an error response',
     async ({ apiContext }) => {
-
-      logger.info(
-        `Calling API: POST /parabank/services/bank/createAccount — invalid customerId: ${apiData.invalidData.fakeCustomerId}`
-      );
 
       const startTime = Date.now();
 
@@ -239,13 +162,7 @@ test.describe('API Test Cases - Account Operations', () => {
 
       const responseBody = await response.text();
 
-      logger.info(`API response: ${responseBody}`);
-
       expect(response.status()).not.toBe(200);
-
-      logger.info(
-        `Confirmed: status was ${response.status()} — invalid customer ID rejected`
-      );
   });
 
 });

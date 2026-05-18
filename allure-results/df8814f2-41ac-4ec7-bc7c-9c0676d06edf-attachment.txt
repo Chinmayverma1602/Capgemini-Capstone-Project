@@ -1,0 +1,12 @@
+{"level":"info","message":"API Context Created","timestamp":"2026-05-18T06:07:52.232Z"}
+{"level":"info","message":"Calling API: POST /parabank/services/bank/createAccount — SAVINGS","timestamp":"2026-05-18T06:07:52.250Z"}
+{"level":"info","message":"API response: {\"id\":14121,\"customerId\":12212,\"type\":\"SAVINGS\",\"balance\":0}","timestamp":"2026-05-18T06:07:52.508Z"}
+{"level":"info","message":"Account type matches: expected=\"SAVINGS\" API=\"SAVINGS\"","timestamp":"2026-05-18T06:07:52.511Z"}
+{"level":"info","message":"Customer ID matches: expected=\"12212\" API=\"12212\"","timestamp":"2026-05-18T06:07:52.513Z"}
+{"level":"info","message":"New account ID received: 14121","timestamp":"2026-05-18T06:07:52.516Z"}
+{"level":"info","message":"Calling API: GET /parabank/services/bank/accounts/14121","timestamp":"2026-05-18T06:07:52.517Z"}
+API Response Time: 41 ms
+{"level":"info","message":"API response: {\"id\":14121,\"customerId\":12212,\"type\":\"SAVINGS\",\"balance\":100}","timestamp":"2026-05-18T06:07:52.562Z"}
+{"level":"info","message":"Account ID matches: POST=\"14121\" GET=\"14121\"","timestamp":"2026-05-18T06:07:52.639Z"}
+{"level":"info","message":"Account type matches: expected=\"SAVINGS\" GET=\"SAVINGS\"","timestamp":"2026-05-18T06:07:52.641Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-18T06:07:52.652Z"}

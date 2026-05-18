@@ -2231,3 +2231,103 @@
 {"level":"info","message":"API Context Disposed","timestamp":"2026-05-17T17:05:19.237Z"}
 {"level":"info","message":"API Context Created","timestamp":"2026-05-17T17:05:36.258Z"}
 {"level":"info","message":"API Context Disposed","timestamp":"2026-05-17T17:05:36.337Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-18T06:06:44.997Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-18T06:06:45.129Z"}
+{"level":"info","message":"Calling API: POST /parabank/services/bank/createAccount — SAVINGS","timestamp":"2026-05-18T06:06:45.140Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-18T06:06:45.182Z"}
+{"level":"info","message":"Calling API: POST /parabank/services/bank/createAccount — CHECKING","timestamp":"2026-05-18T06:06:45.194Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-18T06:06:45.245Z"}
+{"level":"info","message":"Calling API: GET /parabank/services/bank/accounts/999999999 — expecting failure","timestamp":"2026-05-18T06:06:45.255Z"}
+{"level":"info","message":"API response: {\"id\":14010,\"customerId\":12212,\"type\":\"SAVINGS\",\"balance\":0}","timestamp":"2026-05-18T06:06:47.263Z"}
+{"level":"info","message":"Account type matches: expected=\"SAVINGS\" API=\"SAVINGS\"","timestamp":"2026-05-18T06:06:47.266Z"}
+{"level":"info","message":"Customer ID matches: expected=\"12212\" API=\"12212\"","timestamp":"2026-05-18T06:06:47.268Z"}
+{"level":"info","message":"New account ID received: 14010","timestamp":"2026-05-18T06:06:47.271Z"}
+{"level":"info","message":"Calling API: GET /parabank/services/bank/accounts/14010","timestamp":"2026-05-18T06:06:47.271Z"}
+{"level":"info","message":"API response: {\"id\":14010,\"customerId\":12212,\"type\":\"SAVINGS\",\"balance\":100}","timestamp":"2026-05-18T06:06:47.463Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-18T06:06:47.489Z"}
+{"level":"info","message":"Account ID matches: POST=\"14010\" GET=\"14010\"","timestamp":"2026-05-18T06:06:47.600Z"}
+{"level":"info","message":"Account type matches: expected=\"SAVINGS\" GET=\"SAVINGS\"","timestamp":"2026-05-18T06:06:47.603Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-18T06:06:47.655Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-18T06:06:47.682Z"}
+{"level":"info","message":"Calling API: POST /parabank/services/bank/createAccount — invalid customerId: 99999999","timestamp":"2026-05-18T06:06:47.683Z"}
+{"level":"info","message":"API response: Could not create new account for customer 99999999 from account 12345","timestamp":"2026-05-18T06:06:48.566Z"}
+{"level":"info","message":"Confirmed: status was 400 — invalid customer ID rejected","timestamp":"2026-05-18T06:06:48.568Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-18T06:06:48.579Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-18T06:06:48.622Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-18T06:06:48.622Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-18T06:07:52.232Z"}
+{"level":"info","message":"Calling API: POST /parabank/services/bank/createAccount — SAVINGS","timestamp":"2026-05-18T06:07:52.250Z"}
+{"level":"info","message":"API response: {\"id\":14121,\"customerId\":12212,\"type\":\"SAVINGS\",\"balance\":0}","timestamp":"2026-05-18T06:07:52.508Z"}
+{"level":"info","message":"Account type matches: expected=\"SAVINGS\" API=\"SAVINGS\"","timestamp":"2026-05-18T06:07:52.511Z"}
+{"level":"info","message":"Customer ID matches: expected=\"12212\" API=\"12212\"","timestamp":"2026-05-18T06:07:52.513Z"}
+{"level":"info","message":"New account ID received: 14121","timestamp":"2026-05-18T06:07:52.516Z"}
+{"level":"info","message":"Calling API: GET /parabank/services/bank/accounts/14121","timestamp":"2026-05-18T06:07:52.517Z"}
+{"level":"info","message":"API response: {\"id\":14121,\"customerId\":12212,\"type\":\"SAVINGS\",\"balance\":100}","timestamp":"2026-05-18T06:07:52.562Z"}
+{"level":"info","message":"Account ID matches: POST=\"14121\" GET=\"14121\"","timestamp":"2026-05-18T06:07:52.639Z"}
+{"level":"info","message":"Account type matches: expected=\"SAVINGS\" GET=\"SAVINGS\"","timestamp":"2026-05-18T06:07:52.641Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-18T06:07:52.652Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-18T06:07:52.727Z"}
+{"level":"info","message":"Calling API: POST /parabank/services/bank/createAccount — CHECKING","timestamp":"2026-05-18T06:07:52.728Z"}
+{"level":"info","message":"API response: {\"id\":14232,\"customerId\":12212,\"type\":\"CHECKING\",\"balance\":0}","timestamp":"2026-05-18T06:07:52.813Z"}
+{"level":"info","message":"Account type matches: expected=\"CHECKING\" API=\"CHECKING\"","timestamp":"2026-05-18T06:07:52.818Z"}
+{"level":"info","message":"Customer ID matches: expected=\"12212\" API=\"12212\"","timestamp":"2026-05-18T06:07:52.820Z"}
+{"level":"info","message":"Balance is 0 for a newly opened account","timestamp":"2026-05-18T06:07:52.822Z"}
+{"level":"info","message":"New CHECKING account ID received: 14232","timestamp":"2026-05-18T06:07:52.823Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-18T06:07:52.828Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-18T06:07:52.863Z"}
+{"level":"info","message":"Calling API: GET /parabank/services/bank/accounts/999999999 — expecting failure","timestamp":"2026-05-18T06:07:52.864Z"}
+{"level":"info","message":"API response: Could not find account #999999999","timestamp":"2026-05-18T06:07:52.911Z"}
+{"level":"info","message":"Confirmed: status was 400 — invalid account ID rejected","timestamp":"2026-05-18T06:07:52.913Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-18T06:07:52.917Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-18T06:07:52.953Z"}
+{"level":"info","message":"Calling API: POST /parabank/services/bank/createAccount — invalid customerId: 99999999","timestamp":"2026-05-18T06:07:52.954Z"}
+{"level":"info","message":"API response: Could not create new account for customer 99999999 from account 12345","timestamp":"2026-05-18T06:07:53.043Z"}
+{"level":"info","message":"Confirmed: status was 400 — invalid customer ID rejected","timestamp":"2026-05-18T06:07:53.045Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-18T06:07:53.049Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-18T06:08:03.330Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-18T06:08:03.669Z"}
+{"level":"info","message":"RegisterPage instance created","timestamp":"2026-05-18T06:10:42.897Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-18T06:10:42.904Z"}
+{"level":"info","message":"Registering new user","timestamp":"2026-05-18T06:10:45.433Z"}
+{"level":"info","message":"Filling registration form","timestamp":"2026-05-18T06:10:45.434Z"}
+{"level":"info","message":"Screenshot captured: register-filled.png","timestamp":"2026-05-18T06:10:46.005Z"}
+{"level":"info","message":"Clicked Register button","timestamp":"2026-05-18T06:10:46.410Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-18T06:10:46.411Z"}
+{"level":"info","message":"RegisterPage instance disposed","timestamp":"2026-05-18T06:10:46.505Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-18T06:12:02.663Z"}
+{"level":"info","message":"Calling API: POST /parabank/services/bank/createAccount — SAVINGS","timestamp":"2026-05-18T06:12:02.668Z"}
+{"level":"info","message":"API response: {\"id\":14454,\"customerId\":12212,\"type\":\"SAVINGS\",\"balance\":0}","timestamp":"2026-05-18T06:12:02.912Z"}
+{"level":"info","message":"Account type matches: expected=\"SAVINGS\" API=\"SAVINGS\"","timestamp":"2026-05-18T06:12:02.914Z"}
+{"level":"info","message":"Customer ID matches: expected=\"12212\" API=\"12212\"","timestamp":"2026-05-18T06:12:02.917Z"}
+{"level":"info","message":"New account ID received: 14454","timestamp":"2026-05-18T06:12:02.920Z"}
+{"level":"info","message":"Calling API: GET /parabank/services/bank/accounts/14454","timestamp":"2026-05-18T06:12:02.920Z"}
+{"level":"info","message":"API response: {\"id\":14454,\"customerId\":12212,\"type\":\"SAVINGS\",\"balance\":100}","timestamp":"2026-05-18T06:12:02.955Z"}
+{"level":"info","message":"Account ID matches: POST=\"14454\" GET=\"14454\"","timestamp":"2026-05-18T06:12:03.055Z"}
+{"level":"info","message":"Account type matches: expected=\"SAVINGS\" GET=\"SAVINGS\"","timestamp":"2026-05-18T06:12:03.059Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-18T06:12:03.071Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-18T06:12:03.146Z"}
+{"level":"info","message":"Calling API: POST /parabank/services/bank/createAccount — CHECKING","timestamp":"2026-05-18T06:12:03.147Z"}
+{"level":"info","message":"API response: {\"id\":14565,\"customerId\":12212,\"type\":\"CHECKING\",\"balance\":0}","timestamp":"2026-05-18T06:12:03.227Z"}
+{"level":"info","message":"Account type matches: expected=\"CHECKING\" API=\"CHECKING\"","timestamp":"2026-05-18T06:12:03.231Z"}
+{"level":"info","message":"Customer ID matches: expected=\"12212\" API=\"12212\"","timestamp":"2026-05-18T06:12:03.233Z"}
+{"level":"info","message":"Balance is 0 for a newly opened account","timestamp":"2026-05-18T06:12:03.235Z"}
+{"level":"info","message":"New CHECKING account ID received: 14565","timestamp":"2026-05-18T06:12:03.237Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-18T06:12:03.243Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-18T06:12:03.282Z"}
+{"level":"info","message":"Calling API: GET /parabank/services/bank/accounts/999999999 — expecting failure","timestamp":"2026-05-18T06:12:03.283Z"}
+{"level":"info","message":"API response: Could not find account #999999999","timestamp":"2026-05-18T06:12:03.369Z"}
+{"level":"info","message":"Confirmed: status was 400 — invalid account ID rejected","timestamp":"2026-05-18T06:12:03.371Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-18T06:12:03.375Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-18T06:12:03.420Z"}
+{"level":"info","message":"Calling API: POST /parabank/services/bank/createAccount — invalid customerId: 99999999","timestamp":"2026-05-18T06:12:03.421Z"}
+{"level":"info","message":"API response: Could not create new account for customer 99999999 from account 12345","timestamp":"2026-05-18T06:12:03.479Z"}
+{"level":"info","message":"Confirmed: status was 400 — invalid customer ID rejected","timestamp":"2026-05-18T06:12:03.480Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-18T06:12:03.484Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-18T06:16:54.666Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-18T06:16:55.481Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-18T06:16:55.542Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-18T06:16:55.786Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-18T06:16:55.822Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-18T06:16:55.947Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-18T06:16:55.979Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-18T06:16:56.051Z"}
