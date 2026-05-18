@@ -1,0 +1,4 @@
+{"level":"info","message":"RegisterPage instance created","timestamp":"2026-05-18T06:37:44.692Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-18T06:37:44.701Z"}
+{"level":"info","message":"Submitting form with mandatory fields blank","timestamp":"2026-05-18T06:37:46.763Z"}
+{"level":"info","message":"Verifying mandatory field errors","timestamp":"2026-05-18T06:37:46.988Z"}

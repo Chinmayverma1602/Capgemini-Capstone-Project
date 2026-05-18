@@ -1,12 +1,13 @@
-// pages/RegisterPage.ts
 
 import { Page, expect } from '@playwright/test';
 import { logger } from '../utils/logger';
 
 export class RegisterPage {
-  private readonly BASE_URL = 'http://localhost:9090/parabank/register.htm';
 
-  private readonly selectors = {
+  constructor(private page: Page) {}
+
+
+  private selectors = {
     firstName: 'input[id="customer.firstName"]',
     lastName: 'input[id="customer.lastName"]',
     address: 'input[id="customer.address.street"]',
@@ -20,146 +21,334 @@ export class RegisterPage {
     confirmPassword: 'input[id="repeatedPassword"]',
     registerButton: 'input[value="Register"]',
     pageTitle: 'h1.title',
-    welcomeText: 'text=Welcome',
   };
 
-  private readonly mandatoryFieldErrors = [
-    { field: 'firstName', message: 'First name is required.' },
-    { field: 'lastName', message: 'Last name is required.' },
-    { field: 'address', message: 'Address is required.' },
-    { field: 'city', message: 'City is required.' },
-    { field: 'state', message: 'State is required.' },
-    { field: 'zipCode', message: 'Zip Code is required.' },
-    { field: 'ssn', message: 'Social Security Number is required.' },
-    { field: 'username', message: 'Username is required.' },
-    { field: 'password', message: 'Password is required.' },
-    { field: 'confirmPassword', message: 'Password confirmation is required.' },
-  ];
 
-  constructor(private page: Page) {}
+  async navigateToRegisterPage() {
 
-
-  /**
-   * Navigate to the ParaBank registration page
-   */
-  async navigateToRegisterPage(): Promise<void> {
     logger.info('Opening registration page');
-    await this.page.goto(this.BASE_URL);
+
+    await this.page.goto(
+      'http://localhost:9090/parabank/register.htm'
+    );
+
     await this.page.click('text=Register');
   }
 
-  /**
-   * Fill registration form with user data
-   */
-  private async fillRegistrationForm(userData: any, overrides?: { username?: string; confirmPassword?: string }): Promise<void> {
+  private async fillRegistrationForm(
+    userData: any,
+    options?: {
+      username?: string;
+      confirmPassword?: string;
+      fillMandatoryOnly?: boolean;
+    }
+  ) {
+
+    const {
+      username,
+      confirmPassword,
+      fillMandatoryOnly = false,
+    } = options || {};
+
     logger.info('Filling registration form');
-    const { username, confirmPassword } = overrides || {};
 
-    await this.page.fill(this.selectors.firstName, userData.firstName);
-    await this.page.fill(this.selectors.lastName, userData.lastName);
-    await this.page.fill(this.selectors.address, userData.address);
-    await this.page.fill(this.selectors.city, userData.city);
-    await this.page.fill(this.selectors.state, userData.state);
-    await this.page.fill(this.selectors.zipCode, userData.zipCode);
-    await this.page.fill(this.selectors.phone, userData.phone);
-    await this.page.fill(this.selectors.ssn, userData.ssn);
-    await this.page.fill(this.selectors.username, username || userData.username);
-    await this.page.fill(this.selectors.password, userData.password);
-    await this.page.fill(this.selectors.confirmPassword, confirmPassword || userData.password);
+    if (fillMandatoryOnly) {
+
+      await this.page.fill(
+        this.selectors.phone,
+        userData.phone
+      );
+
+      return;
+    }
+
+    await this.page.fill(
+      this.selectors.firstName,
+      userData.firstName
+    );
+
+    await this.page.fill(
+      this.selectors.lastName,
+      userData.lastName
+    );
+
+    await this.page.fill(
+      this.selectors.address,
+      userData.address
+    );
+
+    await this.page.fill(
+      this.selectors.city,
+      userData.city
+    );
+
+    await this.page.fill(
+      this.selectors.state,
+      userData.state
+    );
+
+    await this.page.fill(
+      this.selectors.zipCode,
+      userData.zipCode
+    );
+
+    await this.page.fill(
+      this.selectors.phone,
+      userData.phone
+    );
+
+    await this.page.fill(
+      this.selectors.ssn,
+      userData.ssn
+    );
+
+    await this.page.fill(
+      this.selectors.username,
+      username || userData.username
+    );
+
+    await this.page.fill(
+      this.selectors.password,
+      userData.password
+    );
+
+    await this.page.fill(
+      this.selectors.confirmPassword,
+      confirmPassword || userData.password
+    );
   }
 
-  /**
-   * Register a new user with provided data
-   */
-  async registerUser(userData: any): Promise<void> {
+  private async takeScreenshot(fileName: string) {
+
+    await this.page.screenshot({
+      path: `screenshots/${fileName}.png`,
+    });
+
+    logger.info(`Screenshot captured: ${fileName}.png`);
+  }
+
+  private async clickRegisterButton() {
+
+    await this.page.click(this.selectors.registerButton);
+
+    logger.info('Clicked Register button');
+  }
+
+  private async verifyErrorMessage(
+    locator: string,
+    expectedText: string
+  ) {
+
+    await expect(
+      this.page.locator(locator)
+    ).toContainText(expectedText);
+  }
+
+
+  async registerUser(userData: any) {
+
     logger.info('Registering new user');
+
     await this.fillRegistrationForm(userData);
-    await this.page.click(this.selectors.registerButton);
+
+    await this.takeScreenshot('register-filled');
+
+    await this.clickRegisterButton();
   }
 
-  /**
-   * Verify that registration was successful
-   */
-  async verifyRegistrationSuccess(): Promise<void> {
-    logger.info('Verifying registration success');
-    await expect(this.page.locator(this.selectors.welcomeText)).toBeVisible();
+  async verifyRegistrationSuccess() {
+
+    logger.info('Validating successful registration');
+
+    await expect(
+      this.page.locator(this.selectors.pageTitle)
+    ).toContainText('Welcome');
+
   }
 
-  /**
-   * Register with mismatched passwords and verify error
-   */
-  async registerWithMismatchedPassword(userData: any, wrongPassword: string): Promise<void> {
-    logger.info('Registering with mismatched password');
-    await this.fillRegistrationForm(userData, { confirmPassword: wrongPassword });
-    await this.page.click(this.selectors.registerButton);
+
+  async registerUserWithMismatchedPassword(
+    userData: any,
+    wrongPassword: string
+  ) {
+
+    logger.info(
+      'Registering user with mismatched password'
+    );
+
+    await this.fillRegistrationForm(userData, {
+      confirmPassword: wrongPassword,
+    });
+
+    await this.takeScreenshot(
+      'mismatched-password'
+    );
+
+    await this.clickRegisterButton();
   }
 
-  /**
-   * Verify password mismatch error message
-   */
-  async verifyPasswordMismatchError(): Promise<void> {
-    logger.info('Verifying password mismatch error');
-    await expect(this.page.locator("//span[@id='repeatedPassword.errors']"))
-      .toContainText('Passwords did not match.');
+  async verifyPasswordMismatchError() {
+
+    logger.info(
+      'Validating password mismatch error'
+    );
+
+    await this.verifyErrorMessage(
+      "//span[@id='repeatedPassword.errors']",
+      'Passwords did not match.'
+    );
   }
 
-  /**
-   * Submit registration form with all blank fields
-   */
-  async registerWithBlankFields(): Promise<void> {
-    logger.info('Submitting blank registration form');
-    await this.page.click(this.selectors.registerButton);
+
+  async registerWithBlankFields() {
+
+    logger.info(
+      'Submitting registration form with blank fields'
+    );
+
+    await this.takeScreenshot(
+      'blank-registration-form'
+    );
+
+    await this.clickRegisterButton();
   }
 
-  /**
-   * Verify all mandatory field validation errors
-   */
-  async verifyBlankFieldValidationErrors(): Promise<void> {
-    logger.info('Verifying blank field errors');
+  async verifyBlankFieldValidationErrors() {
+
+    logger.info(
+      'Validating blank field error messages'
+    );
+
     await this.verifyMandatoryFieldErrors();
   }
 
-  /**
-   * Register with special character username
-   */
-  async registerWithSpecialCharacterUsername(userData: any, specialUsername: string): Promise<void> {
-    logger.info('Registering with special character username');
-    await this.fillRegistrationForm(userData, { username: specialUsername });
-    await this.page.click(this.selectors.registerButton);
+
+  async registerWithSpecialCharacterUsername(
+    userData: any,
+    specialUsername: string
+  ) {
+
+    logger.info(
+      'Registering with special character username'
+    );
+
+    await this.fillRegistrationForm(userData, {
+      username: specialUsername,
+    });
+
+    await this.takeScreenshot(
+      'special-character-username'
+    );
+
+    await this.clickRegisterButton();
   }
 
-  /**
-   * Verify special character username error
-   */
-  async verifySpecialCharacterUsernameError(): Promise<void> {
-    logger.info('Verifying special character username error');
-    await expect(this.page.locator("//span[@id='customer.username.errors']")).toBeVisible();
+  async verifySpecialCharacterUsernameError() {
+
+    logger.info(
+      'Validating username format error'
+    );
+
+    await expect(
+      this.page.locator(
+        "//span[@id='customer.username.errors']"
+      )
+    ).toBeVisible();
+  }
+  
+
+  async registerWithMandatoryFieldsBlank(
+    userData: any
+  ) {
+
+    logger.info(
+      'Submitting form with mandatory fields blank'
+    );
+
+    await this.fillRegistrationForm(userData, {
+      fillMandatoryOnly: true,
+    });
+
+    await this.takeScreenshot(
+      'mandatory-fields-blank'
+    );
+
+    await this.clickRegisterButton();
   }
 
-  /**
-   * Submit registration with only phone field filled
-   */
-  async registerWithOnlyPhoneField(userData: any): Promise<void> {
-    logger.info('Submitting form with only phone field');
-    await this.page.fill(this.selectors.phone, userData.phone);
-    await this.page.click(this.selectors.registerButton);
-  }
+  async verifyMandatoryFieldValidationMessages() {
 
-  /**
-   * Verify all mandatory field validation errors
-   */
-  async verifyMandatoryFieldValidationMessages(): Promise<void> {
-    logger.info('Verifying mandatory field errors');
+    logger.info(
+      'Validating mandatory field messages'
+    );
+
     await this.verifyMandatoryFieldErrors();
   }
 
-  /**
-   * Verify error message for a specific field
-   */
-  private async verifyMandatoryFieldErrors(): Promise<void> {
-    for (const { field, message } of this.mandatoryFieldErrors) {
-      const errorLocator = `//span[@id='customer.${field}.errors'], //span[@id='repeatedPassword.errors']`;
-      await expect(this.page.locator(errorLocator).first()).toContainText(message);
+
+  private async verifyMandatoryFieldErrors() {
+
+    const validationMessages = [
+      {
+        locator:
+          "//span[@id='customer.firstName.errors']",
+        message: 'First name is required.',
+      },
+      {
+        locator:
+          "//span[@id='customer.lastName.errors']",
+        message: 'Last name is required.',
+      },
+      {
+        locator:
+          "//span[@id='customer.address.street.errors']",
+        message: 'Address is required.',
+      },
+      {
+        locator:
+          "//span[@id='customer.address.city.errors']",
+        message: 'City is required.',
+      },
+      {
+        locator:
+          "//span[@id='customer.address.state.errors']",
+        message: 'State is required.',
+      },
+      {
+        locator:
+          "//span[@id='customer.address.zipCode.errors']",
+        message: 'Zip Code is required.',
+      },
+      {
+        locator:
+          "//span[@id='customer.ssn.errors']",
+        message:
+          'Social Security Number is required.',
+      },
+      {
+        locator:
+          "//span[@id='customer.username.errors']",
+        message: 'Username is required.',
+      },
+      {
+        locator:
+          "//span[@id='customer.password.errors']",
+        message: 'Password is required.',
+      },
+      {
+        locator:
+          "//span[@id='repeatedPassword.errors']",
+        message:
+          'Password confirmation is required.',
+      },
+    ];
+
+    for (const field of validationMessages) {
+
+      await this.verifyErrorMessage(
+        field.locator,
+        field.message
+      );
     }
   }
 }

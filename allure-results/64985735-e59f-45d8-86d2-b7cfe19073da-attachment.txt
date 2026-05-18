@@ -1,0 +1,5 @@
+{"level":"info","message":"RegisterPage instance created","timestamp":"2026-05-18T06:35:54.129Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-18T06:35:54.130Z"}
+{"level":"info","message":"Registering with mismatched password","timestamp":"2026-05-18T06:35:54.516Z"}
+{"level":"info","message":"Filling registration form","timestamp":"2026-05-18T06:35:54.516Z"}
+{"level":"info","message":"Verifying password mismatch error","timestamp":"2026-05-18T06:35:54.982Z"}

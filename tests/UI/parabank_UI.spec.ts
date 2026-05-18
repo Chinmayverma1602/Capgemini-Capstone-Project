@@ -19,7 +19,7 @@ test.describe('UI Test Cases', () => {
     await loginPage.verifyLoginSuccess();
   });
 
-  test('@ui ,@regression TC-NEG-02 Register with Mismatched Password', async ({ registerPage }) => {
+  test('@ui ,@regression TC-NEG-01 Register with Mismatched Password', async ({ registerPage }) => {
     await registerPage.navigateToRegisterPage();
     await registerPage.registerUserWithMismatchedPassword(
       registerData.validUser,
@@ -28,7 +28,7 @@ test.describe('UI Test Cases', () => {
     await registerPage.verifyPasswordMismatchError();
   });
 
-  test('@ui @negative @regression TC-NEG-01 Register with All Blank Fields', async ({ registerPage }) => {
+  test('@ui @negative @regression TC-NEG-02 Register with All Blank Fields', async ({ registerPage }) => {
     await registerPage.navigateToRegisterPage();
     await registerPage.registerWithBlankFields();
     await registerPage.verifyBlankFieldValidationErrors();
@@ -42,7 +42,7 @@ test.describe('UI Test Cases', () => {
     await loginPage.verifyInvalidLoginError();
   });
 
-  test('@ui @negative @regression TC-NEG-06 Username with Special Characters', async ({ registerPage }) => {
+  test('@ui @negative @regression TC-NEG-03 Username with Special Characters', async ({ registerPage }) => {
     await registerPage.navigateToRegisterPage();
     await registerPage.registerWithSpecialCharacterUsername(
       registerData.validUser,

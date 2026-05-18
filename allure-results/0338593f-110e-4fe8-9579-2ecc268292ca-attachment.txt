@@ -1,0 +1,7 @@
+{"level":"info","message":"RegisterPage instance created","timestamp":"2026-05-18T06:40:51.324Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-18T06:40:51.331Z"}
+{"level":"info","message":"Registering user with mismatched password","timestamp":"2026-05-18T06:40:53.956Z"}
+{"level":"info","message":"Filling registration form","timestamp":"2026-05-18T06:40:53.957Z"}
+{"level":"info","message":"Screenshot captured: mismatched-password.png","timestamp":"2026-05-18T06:40:54.675Z"}
+{"level":"info","message":"Clicked Register button","timestamp":"2026-05-18T06:40:54.782Z"}
+{"level":"info","message":"Validating password mismatch error","timestamp":"2026-05-18T06:40:54.783Z"}

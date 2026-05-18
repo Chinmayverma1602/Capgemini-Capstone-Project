@@ -1,0 +1,5 @@
+{"level":"info","message":"RegisterPage instance created","timestamp":"2026-05-18T06:32:43.877Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-18T06:32:43.883Z"}
+{"level":"info","message":"Registering with special character username","timestamp":"2026-05-18T06:32:46.429Z"}
+{"level":"info","message":"Filling registration form","timestamp":"2026-05-18T06:32:46.430Z"}
+{"level":"info","message":"Verifying special character username error","timestamp":"2026-05-18T06:32:48.037Z"}
