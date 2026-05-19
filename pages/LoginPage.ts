@@ -16,17 +16,13 @@ export class LoginPage {
 
   constructor(private page: Page) {}
 
-  /**
-   * Navigate to the ParaBank login page
-   */
+
   async navigateToLoginPage(): Promise<void> {
     logger.info('Opening login page');
     await this.page.goto(this.BASE_URL);
   }
 
-  /**
-   * Perform a login with provided credentials
-   */
+  
   async login(username: string, password: string): Promise<void> {
     logger.info(`Logging in with username: ${username}`);
     await this.navigateToLoginPage();
@@ -35,25 +31,19 @@ export class LoginPage {
     await this.page.click(this.selectors.loginButton);
   }
 
-  /**
-   * Verify that login was successful
-   */
+  
   async verifyLoginSuccess(): Promise<void> {
     logger.info('Verifying login success');
     await expect(this.page.locator(this.selectors.welcomeMessage)).toBeVisible();
   }
 
-  /**
-   * Perform a login with invalid credentials (without verification)
-   */
+  
   async loginWithInvalidPassword(username: string, password: string): Promise<void> {
     logger.info('Attempting login with invalid credentials');
     await this.login(username, password);
   }
 
-  /**
-   * Verify that login error message is displayed
-   */
+  
   async verifyInvalidLoginError(): Promise<void> {
     logger.info('Verifying login error message');
     await expect(this.page.locator(this.selectors.errorMessage))

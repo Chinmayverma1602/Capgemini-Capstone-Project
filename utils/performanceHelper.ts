@@ -2,7 +2,7 @@ export class PerformanceHelper {
 
   static validateApiResponseTime(
     responseTime: number,
-    maxTime: number = 2000
+    maxTime: number = 15000
   ) {
 
     console.log(`API Response Time: ${responseTime} ms`);

@@ -9,7 +9,7 @@ export const test = base.extend<ApiFixture>({
   apiContext: async ({}, use) => {
 
     const apiContext = await request.newContext({
-      baseURL: 'http://localhost:9090',
+      baseURL: 'https://parabank.parasoft.com',
       extraHTTPHeaders: {
         Accept: 'application/json',
       },

@@ -5,7 +5,7 @@ import registerData from '../../test-data/registerData.json';
 
 test.describe('UI Test Cases', () => {
 
-  test.fail('@ui,@smoke @regression TC-AC-UI-01 Create New User Account with old username', async ({ registerPage }) => {
+  test.fail('@ui,@smoke @regression TC-AC-UI-01 Create New User Account with duplicate username', async ({ registerPage }) => {
     await registerPage.navigateToRegisterPage();
     await registerPage.registerUser(registerData.validUser);
     await registerPage.verifyRegistrationSuccess();
@@ -56,7 +56,9 @@ test.describe('UI Test Cases', () => {
     await registerPage.registerWithMandatoryFieldsBlank(registerData.validUser);
     await registerPage.verifyMandatoryFieldValidationMessages();
   });
+ 
 
+  
   test('@ai @ui TC-AI-01 Register User with AI Generated Data',
 async ({ registerPage }) => {
 

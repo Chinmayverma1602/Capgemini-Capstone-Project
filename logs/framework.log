@@ -2471,3 +2471,204 @@
 {"level":"info","message":"Screenshot captured: register-filled.png","timestamp":"2026-05-18T08:46:51.383Z"}
 {"level":"info","message":"Clicked Register button","timestamp":"2026-05-18T08:46:52.648Z"}
 {"level":"info","message":"Validating successful registration","timestamp":"2026-05-18T08:46:52.649Z"}
+{"level":"info","message":"RegisterPage instance created","timestamp":"2026-05-18T09:42:47.670Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-18T09:42:47.677Z"}
+{"level":"info","message":"Registering new user","timestamp":"2026-05-18T09:42:51.152Z"}
+{"level":"info","message":"Filling registration form","timestamp":"2026-05-18T09:42:51.154Z"}
+{"level":"info","message":"Screenshot captured: register-filled.png","timestamp":"2026-05-18T09:42:52.003Z"}
+{"level":"info","message":"Clicked Register button","timestamp":"2026-05-18T09:42:52.762Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-18T09:42:52.763Z"}
+{"level":"info","message":"LoginPage instance created","timestamp":"2026-05-18T09:43:15.746Z"}
+{"level":"info","message":"Logging in with username: Mukul01","timestamp":"2026-05-18T09:43:15.753Z"}
+{"level":"info","message":"Opening login page","timestamp":"2026-05-18T09:43:15.753Z"}
+{"level":"info","message":"Verifying login success","timestamp":"2026-05-18T09:43:20.150Z"}
+{"level":"info","message":"RegisterPage instance created","timestamp":"2026-05-18T09:43:54.986Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-18T09:43:55.002Z"}
+{"level":"info","message":"Registering user with mismatched password","timestamp":"2026-05-18T09:43:56.216Z"}
+{"level":"info","message":"Filling registration form","timestamp":"2026-05-18T09:43:56.216Z"}
+{"level":"info","message":"Screenshot captured: mismatched-password.png","timestamp":"2026-05-18T09:43:57.012Z"}
+{"level":"info","message":"Clicked Register button","timestamp":"2026-05-18T09:43:57.171Z"}
+{"level":"info","message":"Validating password mismatch error","timestamp":"2026-05-18T09:43:57.172Z"}
+{"level":"info","message":"RegisterPage instance created","timestamp":"2026-05-18T09:44:17.906Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-18T09:44:17.913Z"}
+{"level":"info","message":"Submitting registration form with blank fields","timestamp":"2026-05-18T09:44:18.839Z"}
+{"level":"info","message":"Screenshot captured: blank-registration-form.png","timestamp":"2026-05-18T09:44:19.128Z"}
+{"level":"info","message":"Clicked Register button","timestamp":"2026-05-18T09:44:19.290Z"}
+{"level":"info","message":"Validating blank field error messages","timestamp":"2026-05-18T09:44:19.292Z"}
+{"level":"info","message":"LoginPage instance created","timestamp":"2026-05-18T09:44:38.084Z"}
+{"level":"info","message":"Attempting login with invalid credentials","timestamp":"2026-05-18T09:44:38.090Z"}
+{"level":"info","message":"Logging in with username: Mukul01","timestamp":"2026-05-18T09:44:38.091Z"}
+{"level":"info","message":"Opening login page","timestamp":"2026-05-18T09:44:38.091Z"}
+{"level":"info","message":"Verifying login error message","timestamp":"2026-05-18T09:44:39.678Z"}
+{"level":"info","message":"RegisterPage instance created","timestamp":"2026-05-18T09:44:57.794Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-18T09:44:57.802Z"}
+{"level":"info","message":"Registering with special character username","timestamp":"2026-05-18T09:44:58.649Z"}
+{"level":"info","message":"Filling registration form","timestamp":"2026-05-18T09:44:58.650Z"}
+{"level":"info","message":"Screenshot captured: special-character-username.png","timestamp":"2026-05-18T09:44:59.327Z"}
+{"level":"info","message":"Clicked Register button","timestamp":"2026-05-18T09:44:59.520Z"}
+{"level":"info","message":"Validating username format error","timestamp":"2026-05-18T09:44:59.521Z"}
+{"level":"info","message":"RegisterPage instance created","timestamp":"2026-05-18T09:45:23.999Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-18T09:45:24.015Z"}
+{"level":"info","message":"Submitting form with mandatory fields blank","timestamp":"2026-05-18T09:45:25.182Z"}
+{"level":"info","message":"Filling registration form","timestamp":"2026-05-18T09:45:25.183Z"}
+{"level":"info","message":"Screenshot captured: mandatory-fields-blank.png","timestamp":"2026-05-18T09:45:25.692Z"}
+{"level":"info","message":"Clicked Register button","timestamp":"2026-05-18T09:45:25.821Z"}
+{"level":"info","message":"Validating mandatory field messages","timestamp":"2026-05-18T09:45:25.821Z"}
+{"level":"info","message":"RegisterPage instance created","timestamp":"2026-05-19T04:41:27.124Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-19T04:41:27.129Z"}
+{"level":"info","message":"LoginPage instance created","timestamp":"2026-05-19T04:41:29.883Z"}
+{"level":"info","message":"Logging in with username: Mukul01","timestamp":"2026-05-19T04:41:29.884Z"}
+{"level":"info","message":"Opening login page","timestamp":"2026-05-19T04:41:29.884Z"}
+{"level":"info","message":"RegisterPage instance created","timestamp":"2026-05-19T04:41:33.222Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-19T04:41:33.224Z"}
+{"level":"info","message":"RegisterPage instance created","timestamp":"2026-05-19T04:41:34.284Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-19T04:41:34.289Z"}
+{"level":"info","message":"LoginPage instance created","timestamp":"2026-05-19T04:41:37.677Z"}
+{"level":"info","message":"Attempting login with invalid credentials","timestamp":"2026-05-19T04:41:37.680Z"}
+{"level":"info","message":"Logging in with username: Mukul01","timestamp":"2026-05-19T04:41:37.680Z"}
+{"level":"info","message":"Opening login page","timestamp":"2026-05-19T04:41:37.680Z"}
+{"level":"info","message":"RegisterPage instance created","timestamp":"2026-05-19T04:41:41.198Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-19T04:41:41.201Z"}
+{"level":"info","message":"RegisterPage instance created","timestamp":"2026-05-19T04:41:46.586Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-19T04:41:46.599Z"}
+{"level":"info","message":"RegisterPage instance created","timestamp":"2026-05-19T04:41:53.054Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-19T04:41:53.063Z"}
+{"level":"info","message":"RegisterPage instance created","timestamp":"2026-05-19T04:42:45.710Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-19T04:42:45.714Z"}
+{"level":"info","message":"Registering new user","timestamp":"2026-05-19T04:42:49.812Z"}
+{"level":"info","message":"Filling registration form","timestamp":"2026-05-19T04:42:49.813Z"}
+{"level":"info","message":"Screenshot captured: register-filled.png","timestamp":"2026-05-19T04:42:50.440Z"}
+{"level":"info","message":"Clicked Register button","timestamp":"2026-05-19T04:42:51.078Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-19T04:42:51.079Z"}
+{"level":"info","message":"LoginPage instance created","timestamp":"2026-05-19T04:42:56.542Z"}
+{"level":"info","message":"Logging in with username: Mukul01","timestamp":"2026-05-19T04:42:56.543Z"}
+{"level":"info","message":"Opening login page","timestamp":"2026-05-19T04:42:56.544Z"}
+{"level":"info","message":"Verifying login success","timestamp":"2026-05-19T04:42:58.377Z"}
+{"level":"info","message":"RegisterPage instance created","timestamp":"2026-05-19T04:43:05.001Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-19T04:43:05.005Z"}
+{"level":"info","message":"Registering user with mismatched password","timestamp":"2026-05-19T04:43:05.239Z"}
+{"level":"info","message":"Filling registration form","timestamp":"2026-05-19T04:43:05.240Z"}
+{"level":"info","message":"Screenshot captured: mismatched-password.png","timestamp":"2026-05-19T04:43:05.626Z"}
+{"level":"info","message":"Clicked Register button","timestamp":"2026-05-19T04:43:05.696Z"}
+{"level":"info","message":"Validating password mismatch error","timestamp":"2026-05-19T04:43:05.697Z"}
+{"level":"info","message":"RegisterPage instance created","timestamp":"2026-05-19T04:43:05.995Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-19T04:43:05.996Z"}
+{"level":"info","message":"Submitting registration form with blank fields","timestamp":"2026-05-19T04:43:06.225Z"}
+{"level":"info","message":"Screenshot captured: blank-registration-form.png","timestamp":"2026-05-19T04:43:06.403Z"}
+{"level":"info","message":"Clicked Register button","timestamp":"2026-05-19T04:43:06.504Z"}
+{"level":"info","message":"Validating blank field error messages","timestamp":"2026-05-19T04:43:06.505Z"}
+{"level":"info","message":"LoginPage instance created","timestamp":"2026-05-19T04:43:06.945Z"}
+{"level":"info","message":"Attempting login with invalid credentials","timestamp":"2026-05-19T04:43:06.946Z"}
+{"level":"info","message":"Logging in with username: Mukul01","timestamp":"2026-05-19T04:43:06.946Z"}
+{"level":"info","message":"Opening login page","timestamp":"2026-05-19T04:43:06.946Z"}
+{"level":"info","message":"Verifying login error message","timestamp":"2026-05-19T04:43:07.311Z"}
+{"level":"info","message":"RegisterPage instance created","timestamp":"2026-05-19T04:43:07.677Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-19T04:43:07.678Z"}
+{"level":"info","message":"Registering with special character username","timestamp":"2026-05-19T04:43:07.875Z"}
+{"level":"info","message":"Filling registration form","timestamp":"2026-05-19T04:43:07.875Z"}
+{"level":"info","message":"Screenshot captured: special-character-username.png","timestamp":"2026-05-19T04:43:08.372Z"}
+{"level":"info","message":"Clicked Register button","timestamp":"2026-05-19T04:43:08.745Z"}
+{"level":"info","message":"Validating username format error","timestamp":"2026-05-19T04:43:08.746Z"}
+{"level":"info","message":"RegisterPage instance created","timestamp":"2026-05-19T04:43:15.780Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-19T04:43:15.801Z"}
+{"level":"info","message":"Submitting form with mandatory fields blank","timestamp":"2026-05-19T04:43:16.255Z"}
+{"level":"info","message":"Filling registration form","timestamp":"2026-05-19T04:43:16.256Z"}
+{"level":"info","message":"Screenshot captured: mandatory-fields-blank.png","timestamp":"2026-05-19T04:43:16.542Z"}
+{"level":"info","message":"Clicked Register button","timestamp":"2026-05-19T04:43:16.626Z"}
+{"level":"info","message":"Validating mandatory field messages","timestamp":"2026-05-19T04:43:16.627Z"}
+{"level":"info","message":"RegisterPage instance created","timestamp":"2026-05-19T04:43:17.116Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-19T04:43:17.118Z"}
+{"level":"info","message":"Registering new user","timestamp":"2026-05-19T04:43:17.345Z"}
+{"level":"info","message":"Filling registration form","timestamp":"2026-05-19T04:43:17.345Z"}
+{"level":"info","message":"Screenshot captured: register-filled.png","timestamp":"2026-05-19T04:43:17.923Z"}
+{"level":"info","message":"Clicked Register button","timestamp":"2026-05-19T04:43:18.115Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-19T04:43:18.115Z"}
+{"level":"info","message":"RegisterPage instance created","timestamp":"2026-05-19T04:43:37.183Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-19T04:43:37.188Z"}
+{"level":"info","message":"Registering with special character username","timestamp":"2026-05-19T04:43:37.882Z"}
+{"level":"info","message":"Filling registration form","timestamp":"2026-05-19T04:43:37.884Z"}
+{"level":"info","message":"Screenshot captured: special-character-username.png","timestamp":"2026-05-19T04:43:38.459Z"}
+{"level":"info","message":"Clicked Register button","timestamp":"2026-05-19T04:43:38.544Z"}
+{"level":"info","message":"Validating username format error","timestamp":"2026-05-19T04:43:38.544Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-19T06:20:01.972Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-19T06:20:02.024Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-19T06:20:02.051Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-19T06:20:02.191Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-19T06:20:04.043Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-19T06:20:04.097Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-19T06:20:04.411Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-19T06:20:04.496Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-19T06:20:04.689Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-19T06:20:04.772Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-19T06:20:17.010Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-19T06:20:17.131Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-19T06:20:18.595Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-19T06:20:18.718Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-19T06:20:19.785Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-19T06:20:19.850Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-19T06:20:19.881Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-19T06:20:19.919Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-19T06:21:28.110Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-19T06:21:28.180Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-19T06:21:38.334Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-19T06:21:38.383Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-19T06:22:46.897Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-19T06:22:46.960Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-19T06:23:08.780Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-19T06:23:08.885Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-19T06:24:32.442Z"}
+{"level":"info","message":"Launching registration flow","timestamp":"2026-05-19T06:24:32.447Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-19T06:24:32.448Z"}
+{"level":"info","message":"Registering a new user","timestamp":"2026-05-19T06:24:38.091Z"}
+{"level":"info","message":"Registering new user","timestamp":"2026-05-19T06:24:38.092Z"}
+{"level":"info","message":"Filling registration form","timestamp":"2026-05-19T06:24:38.092Z"}
+{"level":"info","message":"Screenshot captured: register-filled.png","timestamp":"2026-05-19T06:24:38.487Z"}
+{"level":"info","message":"Clicked Register button","timestamp":"2026-05-19T06:24:38.704Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-19T06:24:38.705Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-19T06:24:43.805Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-19T06:25:08.206Z"}
+{"level":"info","message":"Launching registration flow","timestamp":"2026-05-19T06:25:08.213Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-19T06:25:08.213Z"}
+{"level":"info","message":"Registering a new user","timestamp":"2026-05-19T06:25:08.846Z"}
+{"level":"info","message":"Registering new user","timestamp":"2026-05-19T06:25:08.847Z"}
+{"level":"info","message":"Filling registration form","timestamp":"2026-05-19T06:25:08.847Z"}
+{"level":"info","message":"Screenshot captured: register-filled.png","timestamp":"2026-05-19T06:25:09.329Z"}
+{"level":"info","message":"Clicked Register button","timestamp":"2026-05-19T06:25:09.437Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-19T06:25:09.438Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-19T06:25:14.568Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-19T06:26:42.729Z"}
+{"level":"info","message":"Launching registration flow","timestamp":"2026-05-19T06:26:42.735Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-19T06:26:42.735Z"}
+{"level":"info","message":"Registering a new user","timestamp":"2026-05-19T06:26:43.250Z"}
+{"level":"info","message":"Registering new user","timestamp":"2026-05-19T06:26:43.251Z"}
+{"level":"info","message":"Filling registration form","timestamp":"2026-05-19T06:26:43.251Z"}
+{"level":"info","message":"Screenshot captured: register-filled.png","timestamp":"2026-05-19T06:26:43.600Z"}
+{"level":"info","message":"Clicked Register button","timestamp":"2026-05-19T06:26:43.657Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-19T06:26:43.658Z"}
+{"level":"info","message":"User registration completed successfully","timestamp":"2026-05-19T06:26:43.700Z"}
+{"level":"info","message":"Navigating to Open New Account page","timestamp":"2026-05-19T06:26:43.701Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-19T06:26:53.411Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-19T06:30:38.916Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-19T06:30:41.226Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-19T06:30:47.505Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-19T06:30:52.018Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-19T06:31:39.077Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-19T06:31:40.695Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-19T06:31:46.386Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-19T06:31:47.576Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-19T06:31:57.650Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-19T06:32:00.683Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-19T06:32:00.709Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-19T06:32:06.445Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-19T06:32:07.124Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-19T06:32:08.142Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-19T06:32:08.162Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-19T06:32:08.493Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-19T06:32:42.099Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-19T06:32:43.988Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-19T06:32:44.013Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-19T06:32:44.377Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-19T06:32:44.398Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-19T06:32:44.738Z"}
+{"level":"info","message":"API Context Created","timestamp":"2026-05-19T06:32:44.754Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-19T06:32:45.102Z"}
