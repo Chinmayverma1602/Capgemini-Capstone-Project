@@ -1,0 +1,4 @@
+{"level":"info","message":"API Context Created","timestamp":"2026-05-19T06:36:12.304Z"}
+{"level":"info","message":"Launching registration flow","timestamp":"2026-05-19T06:36:12.316Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-19T06:36:12.316Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-19T06:36:20.095Z"}

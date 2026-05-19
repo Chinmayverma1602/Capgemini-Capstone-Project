@@ -29,7 +29,7 @@ export class RegisterPage {
     logger.info('Opening registration page');
 
     await this.page.goto(
-      'http://localhost:9090/parabank/register.htm'
+      'https://parabank.parasoft.com/parabank/register.htm'
     );
 
     await this.page.click('text=Register');

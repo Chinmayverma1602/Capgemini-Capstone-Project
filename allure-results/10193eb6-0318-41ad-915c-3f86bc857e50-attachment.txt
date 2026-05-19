@@ -1,0 +1,22 @@
+{"level":"info","message":"API Context Created","timestamp":"2026-05-19T06:38:01.193Z"}
+{"level":"info","message":"Launching registration flow","timestamp":"2026-05-19T06:38:01.199Z"}
+{"level":"info","message":"Opening registration page","timestamp":"2026-05-19T06:38:01.200Z"}
+{"level":"info","message":"Registering a new user","timestamp":"2026-05-19T06:38:04.266Z"}
+{"level":"info","message":"Registering new user","timestamp":"2026-05-19T06:38:04.267Z"}
+{"level":"info","message":"Filling registration form","timestamp":"2026-05-19T06:38:04.268Z"}
+{"level":"info","message":"Screenshot captured: register-filled.png","timestamp":"2026-05-19T06:38:05.708Z"}
+{"level":"info","message":"Clicked Register button","timestamp":"2026-05-19T06:38:06.118Z"}
+{"level":"info","message":"Validating successful registration","timestamp":"2026-05-19T06:38:06.119Z"}
+{"level":"info","message":"User registration completed successfully","timestamp":"2026-05-19T06:38:06.194Z"}
+{"level":"info","message":"Navigating to Open New Account page","timestamp":"2026-05-19T06:38:06.195Z"}
+{"level":"info","message":"Selected account type: SAVINGS","timestamp":"2026-05-19T06:38:06.894Z"}
+{"level":"info","message":"Selected source account ID: 35322","timestamp":"2026-05-19T06:38:07.199Z"}
+{"level":"info","message":"Submitting account creation request","timestamp":"2026-05-19T06:38:07.254Z"}
+{"level":"info","message":"New account created successfully: 35433","timestamp":"2026-05-19T06:38:08.156Z"}
+{"level":"info","message":"Screenshot captured successfully","timestamp":"2026-05-19T06:38:08.302Z"}
+{"level":"info","message":"Calling API: GET /parabank/services/bank/accounts/35433","timestamp":"2026-05-19T06:38:08.302Z"}
+{"level":"info","message":"API response: {\"id\":35433,\"customerId\":26309,\"type\":\"SAVINGS\",\"balance\":100}","timestamp":"2026-05-19T06:38:09.097Z"}
+{"level":"info","message":"Account ID validation successful | UI=\"35433\" API=\"35433\"","timestamp":"2026-05-19T06:38:09.099Z"}
+{"level":"info","message":"Account type validation successful | Expected=\"SAVINGS\" API=\"SAVINGS\"","timestamp":"2026-05-19T06:38:09.101Z"}
+{"level":"info","message":"Hybrid E2E test completed successfully","timestamp":"2026-05-19T06:38:09.101Z"}
+{"level":"info","message":"API Context Disposed","timestamp":"2026-05-19T06:38:09.243Z"}

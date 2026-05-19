@@ -7,7 +7,7 @@ import { logger } from '../../utils/logger';
 
 test.describe('Hybrid E2E Tests', () => {
 
-  test.fail('@e2e @regression TC-E2E-01 Register user via UI and validate API',
+  test('@e2e @regression TC-E2E-01 Register user via UI and validate API',
     async ({ page, apiContext }) => {
 
       logger.info('Launching registration flow');

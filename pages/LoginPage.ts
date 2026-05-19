@@ -4,7 +4,7 @@ import { Page, expect } from '@playwright/test';
 import { logger } from '../utils/logger';
 
 export class LoginPage {
-  private readonly BASE_URL = 'http://localhost:9090/parabank/index.htm';
+  private readonly BASE_URL = 'https://parabank.parasoft.com/index.htm';
   
   private readonly selectors = {
     usernameInput: 'input[name="username"]',
